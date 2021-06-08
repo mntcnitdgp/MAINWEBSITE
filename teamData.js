@@ -16,17 +16,78 @@ export const team = [
     },
     {
         id: 4,
-        name: 'Karam Sahoo',
-        position: 'Noob 1'
+        name: 'Ankan',
+        position: 'Treasurer'
     },
     {
         id: 5,
-        name: 'Pratik Bhudari',
-        position: 'Simp'
+        name: 'Ankita',
+        position: 'Convenor'
     },
     {
         id: 6,
-        name: 'Anurag Sarkar',
-        position: 'Ultimate noob'
-    }
+        name: 'Shraddha',
+        position: 'Public Relations Head'
+    },
+    {
+        id: 7,
+        name: 'Piyush',
+        position: 'Sponsorship Head'
+    },
+    {
+        id: 8,
+        name: 'Sayantan',
+        position: 'Technical Head'
+    },
+    {
+        id: 9,
+        name: 'Ankita',
+        position: 'Convenor'
+    },
+    {
+        id: 10,
+        name: 'Shubhankar',
+        position: 'Graphics Head'
+    },
+    {
+        id: 11,
+        name: 'Bighnesh',
+        position: 'Photograpghy and Multimedia Head'
+    },
+    {
+        id: 12,
+        name: 'Risabh',
+        position: 'Creative Head'
+    },
+    {
+        id: 13,
+        name: 'Avirup',
+        position: 'Logistics Head'
+    },
+    {
+        id: 14,
+        name: 'Geeta',
+        position: 'Logistics Head'
+    },
+    {
+        id: 15,
+        name: 'Rabin',
+        position: 'RnD Head'
+    },
+    {
+        id: 16,
+        name: 'Harshit',
+        position: 'Workshop Head'
+    },
+    {
+        id: 17,
+        name: 'Sweta',
+        position: 'Workshop Head'
+    },
+    {
+        id: 18,
+        name: 'Ashwini',
+        position: 'Event Head'
+    },
+    
 ]
