@@ -41,51 +41,46 @@ export const team = [
     },
     {
         id: 9,
-        name: 'Ankita',
-        position: 'Convenor'
-    },
-    {
-        id: 10,
         name: 'Shubhankar',
         position: 'Graphics Head'
     },
     {
-        id: 11,
+        id: 10,
         name: 'Bighnesh',
         position: 'Photograpghy and Multimedia Head'
     },
     {
-        id: 12,
+        id: 11,
         name: 'Risabh',
         position: 'Creative Head'
     },
     {
-        id: 13,
+        id: 12,
         name: 'Avirup',
         position: 'Logistics Head'
     },
     {
-        id: 14,
+        id: 13,
         name: 'Geeta',
         position: 'Logistics Head'
     },
     {
-        id: 15,
+        id: 14,
         name: 'Rabin',
         position: 'RnD Head'
     },
     {
-        id: 16,
+        id: 15,
         name: 'Harshit',
         position: 'Workshop Head'
     },
     {
-        id: 17,
+        id: 16,
         name: 'Sweta',
         position: 'Workshop Head'
     },
     {
-        id: 18,
+        id: 17,
         name: 'Ashwini',
         position: 'Event Head'
     },
