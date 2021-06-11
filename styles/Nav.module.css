@@ -7,21 +7,20 @@
     font-size: rem;
     position: sticky;
     top: 0;
-    box-shadow: 0px 0.2rem 2rem var(--box-shadow-light);
     z-index: 10000;
 }
 
 .NavContainer {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .NavLogo {
-    padding: 0 6rem;
+    height: 100%;
+    padding: 0 3rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -46,6 +45,7 @@
     list-style: none;
     margin: 0;
     z-index: 10000;
+    margin-right: 3rem;
 }
 
 .NavItems {
@@ -56,37 +56,6 @@
     padding: 0 30px;
     border-bottom: 3px solid transparent;
     overflow: hidden;
-    transition: 0.3s;
-}
-
-.NavItems:last-child {
-    border-bottom: 3px solid transparent;
-}
-
-.NavSignUp {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    overflow: hidden;
-}
-
-.NavBtn {
-    background: var(--color-blue-light);
-    height: 60%;
-    width: 11rem;
-    outline: none;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--color-white);
-    transition: 0.3s;
-}
-
-.NavBtn:hover {
-    background-color: var(--color-blue-strong);
     transition: 0.3s;
 }
 
@@ -120,19 +89,26 @@
         z-index: 1;
     }
     .menu_icon {
-        display: block;
-        padding: 0 6rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
         transition: all 0.5s ease-out;
         font-size: 1.2rem;
         cursor: pointer;
         overflow: hidden;
+        z-index: 100000;
     }
     .menu_icon i {
         font-size: 2rem;
     }
+    .NavItems {
+        color: black;
+    }
     .NavItems:hover .NavLinks {
         border-bottom: 3px solid transparent;
-        color: var(--color-blue-light);
+        color: blue
     }
     .NavItems:hover {
         border-bottom: 3px solid transparent;

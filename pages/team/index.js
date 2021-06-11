@@ -1,24 +1,24 @@
-import { team } from '../../teamData';
+import { team } from '../../data/team/finalYear';
 import Head from 'next/head'
+import TeamCard from '../../components/TeamCard';
+import styles from '../../styles/Team.module.css'
 
 const Team = ({ teamList }) => {
     return (
-        <div>
+        <div className={styles.teamPage}>
             <Head>
                 <title>MNTC | NIT Durgapur</title>
                 <meta name="description" content="Blah Blah Blah" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h1>Meet the Team</h1>
+            <h1 className={styles.subheader}>The Valence Electrons</h1>
 
-            <ul className="jobs">
+            <div className={styles.team_cards_container}>
                 {teamList.map((member) => (
-                    <li key={member.id}>
-                        <p>{member.name}<span>____</span>{member.position}</p>
-                    </li>
+                    <TeamCard key={member.id} name={member.name} position={member.position} />
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }

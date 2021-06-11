@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../styles/Nav.module.css'
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -9,33 +11,41 @@ const Navbar = () => {
         <div className={styles.Nav}>
             <div className={styles.NavContainer}>
 
+                <div className={styles.NavLogo}>
+                    <h2>MNTC</h2>
+                </div>
+
                 <div className={styles.menu_icon} onClick={() => setClicked(!clicked)} >
-                    <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
-                    <p>MENU</p>
+                    {
+                        !clicked ?
+                            <MenuIcon /> : <CloseIcon style={{ color: "black" }} />
+
+                    }
+
                 </div>
 
                 <ul className={clicked ? styles.NavMenu + " " + styles.active : styles.NavMenu}>
                     <li className={styles.NavItems} onClick={() => setClicked(!clicked)}>
                         <Link className={styles.NavLinks} href='/'>
-                            Home
+                            <a>Home</a>
                         </Link>
                     </li>
 
                     <li className={styles.NavItems} onClick={() => setClicked(!clicked)}>
                         <Link className={styles.NavLinks} href='/about'>
-                            About
+                            <a>About</a>
                         </Link>
                     </li>
 
                     <li className={styles.NavItems} onClick={() => setClicked(!clicked)}>
                         <Link className={styles.NavLinks} href='/events'>
-                            Events
+                            <a>Events</a>
                         </Link>
                     </li>
 
                     <li className={styles.NavItems} onClick={() => setClicked(!clicked)}>
                         <Link className={styles.NavLinks} href='/team'>
-                            Team
+                            <a>Team</a>
                         </Link>
                     </li>
 

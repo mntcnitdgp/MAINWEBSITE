@@ -6,7 +6,7 @@ export const team = [
     },
     {
         id: 2,
-        name: 'Snehit Mishra',
+        name: 'Snehit',
         position: 'Vice President'
     },
     {
@@ -47,7 +47,7 @@ export const team = [
     {
         id: 10,
         name: 'Bighnesh',
-        position: 'Photograpghy and Multimedia Head'
+        position: 'Multimedia Head'
     },
     {
         id: 11,
@@ -84,5 +84,5 @@ export const team = [
         name: 'Ashwini',
         position: 'Event Head'
     },
-    
+
 ]
