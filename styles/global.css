@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --header-font: "Archivo Black", sans-serif;
+  --general-font: "Montserrat", sans-serif;
+  --header-text-color: hsla(60, 76%, 91%, 1);
+  --general-text-color: hsla(60, 100%, 93%, 0.69);
+  --card-bg: hsla(246, 74%, 21%, 0.5);
+  --card-bg-light: hsla(0, 0%, 100%, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--general-text-color);
+}
+
+body {
+  background: url("../public/images/background.png") no-repeat;
+  background-size: cover;
+  font-family: var(--general-font);
+}
+
+.container {
+  width: 100vw;
+  max-width: 1600px;
+  margin: auto;
+  padding: 20px;
+  /* background-color: var(--card-bg); */
+}
+
+@media screen and (max-width: 60em) {
+  body {
+    background-position: center;
+  }
+}
+
+.color-general-text {
+  color: var(--general-text-color);
+}
+
+a.color-header-text:hover {
+  color: var(--header-text-color);
+}
+
+.color-header-text {
+  color: var(--header-text-color);
+}
+
+.font-header {
+  font-family: var(--header-font);
+}
+
+.font-general {
+  font-family: var(--general-font);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.bg-card-light {
+  background-color: var(--card-bg-light);
+}
