@@ -2,12 +2,24 @@ import { team } from '../../data/team/finalYear';
 import Head from 'next/head'
 import TeamCard from '../../components/TeamCard';
 import styles from '../../styles/Team.module.css'
+import { motion } from 'framer-motion';
 
 const Team = ({ teamList }) => {
     return (
-        <div className={styles.teamPage}>
+        <motion.div className={styles.teamPage} initial="pageInitial" animate="pageAnimate" variants={{
+            pageInitial: {
+                opacity: 0
+            },
+            pageAnimate: {
+                opacity: 1,
+                transition: {
+                    duration: 1
+                }
+            },
+        }}
+            exit={{ opacity: 0 }}>
             <Head>
-                <title>MNTC | NIT Durgapur</title>
+                <title>MNTC | Our Team</title>
                 <meta name="description" content="Blah Blah Blah" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -19,7 +31,7 @@ const Team = ({ teamList }) => {
                     <TeamCard key={member.id} name={member.name} position={member.position} />
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
