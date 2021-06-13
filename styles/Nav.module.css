@@ -90,7 +90,7 @@
     .menu_icon {
         display: block;
         pointer-events: all;
-        padding: 0.5rem 1rem;
+        padding: 1rem 2rem;
         font-size: 1rem;
         cursor: pointer;
         z-index: 5;
