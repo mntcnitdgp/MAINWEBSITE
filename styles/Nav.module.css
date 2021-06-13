@@ -2,6 +2,9 @@
     display: flex;
     height: clamp(50px, 7vw, 80px);
     justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .NavLogo {
@@ -20,14 +23,14 @@
     display: flex;
     list-style: none;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .NavLinks {
     font-weight: 500;
     height: 100%;
     display: inline-block;
-    padding: 0 1.5rem;
+    padding-left: 3rem;
     display: grid;
     place-items: center;
     text-transform: uppercase;
@@ -74,6 +77,7 @@
         transition: all 0.5s ease-in;
         transform: scale(0);
         transform-origin: top right;
+        z-index: 4;
     }
     .NavMenu.active {
         opacity: 1;

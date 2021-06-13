@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div className={styles.Nav}>
-            <div className={"container" + " " + styles.NavContainer}>
+            <div className={styles.NavContainer}>
                 <div className={styles.NavLogo}>
                     <img src="/images/logo.svg" alt="logo"></img>
                 </div>
@@ -55,7 +55,6 @@ const Navbar = () => {
                         </li>
                     </div>
                 </nav>
-                <div style={{ flex: 0.5 }}></div>
             </div>
         </div>
     );
