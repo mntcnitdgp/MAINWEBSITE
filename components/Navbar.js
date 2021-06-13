@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
 
                 <div className={styles.menu_icon} onClick={() => setClicked(!clicked)}>
-                    {!clicked ? <MenuIcon /> : <CloseIcon />}
+                    {!clicked ? <MenuIcon style={{ fontSize: 30 }} /> : <CloseIcon style={{ fontSize: 30 }} />}
                 </div>
 
                 <nav

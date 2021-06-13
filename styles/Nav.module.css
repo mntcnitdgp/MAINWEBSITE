@@ -87,6 +87,11 @@
         border-radius: 0;
         background: hsla(0, 0%, 0%, 0.47);
     }
+    .NavLogo img {
+        height: 20px;
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
     .menu_icon {
         display: block;
         pointer-events: all;
