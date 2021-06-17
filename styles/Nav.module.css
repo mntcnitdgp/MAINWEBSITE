@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
+  padding-right: 0;
   cursor: pointer;
   color: hsla(100, 100%, 100%, 0.75);
 }
