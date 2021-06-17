@@ -1,129 +1,123 @@
-.teamPage {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
+.TeamCard {
+  background: #252335;
+  border-radius: 35px;
+  padding: clamp(5px, 4vw, 1.5rem);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.TeamList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.TeamCardAvatarContainer img {
+  border-radius: 50%;
+}
+
+.TeamCardDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.DetailsName {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.DetailsPosition {
+  display: block;
+  align-self: flex-start;
+  padding: 0.3rem 0.9rem;
+  background: #302e44;
+  border-radius: 35px;
+  font-size: 0.9rem;
+}
+
+.TeamCardSocial {
+  display: flex;
+  gap: clamp(3px, 10vw, 1rem);
+}
+
+.TeamCardSocialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.YearSwitch {
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  cursor: pointer;
+}
+
+.YearSwitch::-webkit-scrollbar {
+  display: none;
+}
+
+.Year {
+  background: #252335;
+  border-radius: 100px;
+  padding: 0.8rem 2rem;
+  white-space: nowrap;
+}
+
+.Year:hover,
+.YearActive {
+  background-color: hsla(0, 0%, 100%, 0.9);
+  color: black;
+}
+
+.PositionDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 450px) {
+  .TeamCard {
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    position: relative;
-}
-
-.team_cards_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    margin-bottom: 100px;
-}
-
-.subheader {
-    justify-self: flex-start;
-    width: 100%;
-    padding-left: 3rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 20px 0 40px 0;
-    font-size: clamp(2rem, 5vw, 100px);
-    color: var(--header-text-color);
-}
-
-@media (max-width: 1440px) {
-    .team_cards_container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 100px;
-    }
-}
-
-@media (max-width: 800px) {
-    .team_cards_container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 100px;
-    }
-}
-
-@media (max-width: 600px) {
-    .team_cards_container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 100px;
-    }
-}
-
-.card {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 80%;
-    max-width: 200px;
-    height: fit-content;
-    z-index: 2;
-    border-radius: 1rem;
-    overflow: hidden;
-    padding: 10px;
-    color: var(--header-text-color);
-}
-
-.card .bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.219);
-    z-index: -1;
-}
-
-.card .avatar {
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 10px 0;
-}
-
-.card .position {
-    background-color: rgba(0, 0, 0, 0.055);
-    padding: 10px;
-    border-radius: 2rem;
-    font-weight: 800;
     text-align: center;
-    max-width: 90%;
-}
+    gap: 1rem;
+  }
 
-.card .name {
-    font-weight: 800;
-    font-size: larger;
-}
+  .DetailsPosition {
+    display: none;
+  }
+  .PositionDesktop {
+    display: block;
+    align-self: center;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+  .TeamCardSocialLinks {
+    padding: 0.7rem;
+  }
+  .TeamCardSocial {
+    gap: clamp(1rem, 10vw, 2rem);
+  }
 
-.card .soc {
-    margin-bottom: 10px;
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+  .Year {
+    background: #252335;
+    border-radius: 20px;
+    padding: 1.5rem 3rem;
+    white-space: nowrap;
+  }
 
-.card .soc svg {
-    transition: 0.2s all;
-}
-
-.card .soc svg:nth-child(1):hover {
-    transform: translate(0px, -2px);
-    color: #4267B2;
-}
-
-.card .soc svg:nth-child(2):hover {
-    color: #dd2a7b;
-    transform: translate(0px, -2px);
-}
-
-.card .soc svg:nth-child(3):hover {
-    transform: translate(0px, -2px);
-    color: #0072b1;
+  .Year:hover,
+  .YearActive {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    color: black;
+  }
 }
