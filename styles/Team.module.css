@@ -1,119 +1,121 @@
 .TeamCard {
-    background: #252335;
-    border-radius: 35px;
-    padding: clamp(5px, 4vw, 1.5rem);
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  background: #252335;
+  border-radius: 35px;
+  padding: clamp(5px, 4vw, 1.5rem);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .TeamList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .TeamCardAvatarContainer img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .TeamCardDetailsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .DetailsName {
-    font-weight: 600;
-    font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .DetailsPosition {
-    display: block;
-    align-self: flex-start;
-    padding: 0.3rem 0.9rem;
-    background: #302e44;
-    border-radius: 35px;
-    font-size: 0.9rem;
+  display: block;
+  align-self: flex-start;
+  padding: 0.3rem 0.9rem;
+  background: #302e44;
+  border-radius: 35px;
+  font-size: 0.9rem;
 }
 
 .TeamCardSocial {
-    display: flex;
-    gap: clamp(3px, 10vw, 1rem);
+  display: flex;
+  gap: clamp(3px, 10vw, 1rem);
 }
 
 .TeamCardSocialLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.4rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .YearSwitch {
-    margin: 1rem 0;
-    padding: 1rem 1rem 1rem 0;
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    cursor: pointer;
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  cursor: pointer;
 }
 
 .YearSwitch::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .Year {
-    background: #252335;
-    border-radius: 100px;
-    padding: 0.8rem 2rem;
-    white-space: nowrap;
+  background: #252335;
+  border-radius: 100px;
+  padding: 0.8rem 2rem;
+  white-space: nowrap;
 }
 
-.Year:hover, .YearActive {
-    background-color: hsla(0, 0%, 100%, 0.9);
-    color: black;
+.Year:hover,
+.YearActive {
+  background-color: hsla(0, 0%, 100%, 0.9);
+  color: black;
 }
 
 .PositionDesktop {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 450px) {
-    .TeamCard {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-    }
-    .DetailsPosition {
-        display: none;
-    }
-    .PositionDesktop {
-        display: block;
-        align-self: center;
-        font-size: 1rem;
-        padding: 0.8rem 2rem;
-    }
-    .TeamCardSocialLinks {
-        padding: 0.7rem;
-    }
-    .TeamCardSocial {
-        gap: clamp(1rem, 10vw, 2rem);
-    }
-    .Year {
-        background: #252335;
-        border-radius: 20px;
-        padding: 1.5rem 3rem;
-        white-space: nowrap;
-    }
-    .Year:hover, .YearActive {
-        background-color: hsla(0, 0%, 100%, 0.9);
-        color: black;
-    }
+  .TeamCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .DetailsPosition {
+    display: none;
+  }
+  .PositionDesktop {
+    display: block;
+    align-self: center;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+  .TeamCardSocialLinks {
+    padding: 0.7rem;
+  }
+  .TeamCardSocial {
+    gap: clamp(1rem, 10vw, 2rem);
+  }
+  .Year {
+    background: #252335;
+    border-radius: 20px;
+    padding: 1.5rem 3rem;
+    white-space: nowrap;
+  }
+  .Year:hover,
+  .YearActive {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    color: black;
+  }
 }

@@ -1,0 +1,115 @@
+.EventCard {
+  background: #252335;
+  border-radius: 35px;
+  padding: clamp(5px, 4vw, 1.5rem);
+  display: flex;
+  gap: 2rem; /*change*/
+  align-items: center;
+}
+
+.EventList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.EventPosterContainer {
+  position: relative;
+  height: clamp(100px, 30vw, 200px);
+  width: clamp(100px, 30vw, 200px);
+}
+
+.EventPosterContainer img {
+  border-radius: 20px;
+}
+
+.EventDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  flex: 1;
+}
+
+.DetailsName {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.DetailsDate {
+  align-self: flex-start;
+  padding: 0.3rem 0.9rem;
+  background: #302e44;
+  border-radius: 35px;
+  font-size: 1rem;
+}
+
+.DetailsMore,
+.DetailsLink {
+  align-self: flex-end;
+  padding: 0.3rem 0.9rem;
+  background: #ffffff;
+  color: #000;
+  border-radius: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.EventFull {
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  left: 0;
+  z-index: 5;
+  bottom: 0;
+  background: #252335;
+  padding: clamp(5px, 4vw, 1.5rem);
+  display: none;
+  overflow: auto;
+}
+
+.EventFullActive {
+  display: block;
+}
+
+.EventFullContainer {
+  display: flex;
+  gap: 2rem; /*change*/
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.EventFullPosterContainer {
+  align-self: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.EventFullPosterContainer img {
+  border-radius: 35px;
+}
+
+.EventFullClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 0 1rem 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .EventFullContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .EventFullPosterContainer {
+    align-self: center;
+    position: relative;
+    height: clamp(300px, 30vw, 400px);
+    width: clamp(300px, 30vw, 400px);
+  }
+}
