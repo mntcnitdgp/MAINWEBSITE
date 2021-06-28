@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-  --header-font: "Archivo Black", sans-serif;
+  --header-font: "Poppins", sans-serif;
   --general-font: "Poppins", sans-serif;
-  --header-text-color: hsla(60, 76%, 91%, 1);
-  --general-text-color: hsla(0, 0%, 100%, 0.75);
+
+  --header-text-color: hsla(10, 50%, 97%, 1);
+  --general-text-color: hsla(340, 47%, 97%, 1);
+
   --card-bg: hsla(246, 74%, 21%, 0.5);
   --card-bg-light: hsla(0, 0%, 100%, 0.1);
 }
@@ -16,19 +18,23 @@
 }
 
 body {
-  background: #302e44;
+  height: 110vh;
+  background: hsla(210, 66%, 11%, 1);
+  background: url(../public/images/backgroundmobile.png) no-repeat;
+  background-size: cover;
   font-family: var(--general-font);
+  scroll-behavior: smooth;
 }
 
 .container {
+  width: 100%;
   max-width: 1600px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 60em) {
   body {
-    background-position: center;
   }
 }
 
@@ -60,9 +66,32 @@ a {
 h1 {
   color: var(--header-text-color);
   font-family: var(--header-font);
-  margin: 1rem 0;
-  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  font-weight: bold;
+  font-size: clamp(4.5rem, 20vw, 7rem);
+  line-height: 125%;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 400;
+  max-width: 6ch;
+}
+
+h2 {
+  color: var(--header-text-color);
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 125%;
+  margin: 0.5em 0;
+}
+
+h3 {
+  color: var(--header-text-color);
+  font-family: var(--header-font);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.Card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(35px);
+  border-radius: 10px;
 }

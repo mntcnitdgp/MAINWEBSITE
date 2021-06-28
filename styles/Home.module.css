@@ -1,5 +1,49 @@
-.container {
-    min-height: fit-content;
-    display: flex;
-    flex-direction: column;
+.Home {
+  min-height: 100vh;
+}
+
+.HomeHeroContainer {
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 4em;
+}
+
+.HeroHeader {
+  position: relative;
+  user-select: none;
+}
+
+.HeroHeaderSlide {
+  position: absolute;
+  top: 1.15em;
+  left: -100px;
+  right: 50%;
+  height: 8px;
+  background: #73e3a0;
+}
+
+.Illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 40%;
+  z-index: -1;
+}
+
+.HomeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.HomeCardInfo {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(251, 245, 244, 0.8);
 }
