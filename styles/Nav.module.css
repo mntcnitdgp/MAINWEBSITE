@@ -1,5 +1,10 @@
+/* Top bar starts */
 .TopBar {
   height: 4rem;
+  z-index: 99;
+  position: relative;
+  width: 100%;
+  left: 0;
 }
 
 .TopBarContainer {
@@ -8,6 +13,26 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+}
+
+.TopBarMenu {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 0;
+  cursor: pointer;
+}
+.HamBurgerIcon {
+  width: 30px;
+}
+
+.HamBurger {
+  width: 30px;
+  height: 2px;
+}
+
+.HamBurger2 {
+  width: 20px;
 }
 
 .TopBarLinks {
@@ -19,34 +44,18 @@
   align-items: center;
 }
 
-.TopBarMenu {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  padding-right: 0;
-  cursor: pointer;
-  color: hsla(100, 100%, 100%, 0.75);
-}
+/* Top Bar ends */
 
+/* Side bar starts */
 .NavMenu {
   list-style: none;
   position: fixed;
-  top: 4rem;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 9;
-  transform: translateY(-200%);
-  opacity: 0;
-  transition: all 450ms ease-in-out;
-  transform-origin: top;
-  background: hsla(249, 21%, 12%, 0.5);
-}
-
-.NavMenuActive {
-  transform: translateY(0);
-  opacity: 1;
-  backdrop-filter: blur(100px);
+  background: hsla(9, 47%, 97%, 1);
 }
 
 .NavMenuContainer {
@@ -54,17 +63,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: clamp(2rem, 10vh, 3.5rem);
+  counter-reset: a;
+}
+
+.NavItems {
+  padding-left: 1.5rem;
 }
 
 .NavLinks {
-  font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(2.5rem, 10vw, 3.5rem);
   text-transform: uppercase;
-  background: hsla(0, 0%, 100%, 0.1);
-  border-radius: 26px;
-  padding: 1.5em 4rem;
+  position: relative;
+  color: hsla(209, 67%, 11%, 1);
+  user-select: none;
   cursor: pointer;
+}
+
+.NavLinks::before {
+  counter-increment: a;
+  content: "0" counter(a);
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  left: -3px;
+  top: -2em;
 }
 
 @media screen and (min-width: 900px) {
@@ -86,6 +111,7 @@
     display: grid;
     place-items: center;
     font-size: 1rem;
+    color: white;
   }
 
   .NavLinks:hover {

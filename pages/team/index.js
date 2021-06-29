@@ -1,7 +1,6 @@
 import { year4 } from "../../data/team/year4";
 import { year3 } from "../../data/team/year3";
 import { year2 } from "../../data/team/year2";
-import { year1 } from "../../data/team/year1";
 
 import Head from "next/head";
 import TeamCard from "../../components/TeamCard";
@@ -25,7 +24,7 @@ const Team = () => {
         pageAnimate: {
           opacity: 1,
           transition: {
-            duration: 1,
+            duration: 0.3,
           },
         },
       }}
@@ -39,67 +38,15 @@ const Team = () => {
 
       <div className={styles.Team}>
         <div className={`container ${styles.TeamContainer}`}>
-          <div className={styles.YearSwitch}>
-            <span
-              className={
-                year == 4
-                  ? `${styles.Year} ${styles.YearActive}`
-                  : `${styles.Year}`
-              }
-              onClick={() => {
-                setYear(4);
-                setMemberList(year4);
-                setyearHead("Our Ultimate Heroes");
-              }}
-            >
-              Fourth Year
-            </span>
-            <span
-              className={
-                year == 3
-                  ? `${styles.Year}  ${styles.YearActive}`
-                  : `${styles.Year}`
-              }
-              onClick={() => {
-                setYear(3);
-                setMemberList(year3);
-                setyearHead("Year3");
-              }}
-            >
-              Third Year
-            </span>
-            <span
-              className={
-                year == 2
-                  ? `${styles.Year} ${styles.YearActive}`
-                  : `${styles.Year}`
-              }
-              onClick={() => {
-                setYear(2);
-                setMemberList(year2);
-                setyearHead("Year2");
-              }}
-            >
-              Second Year
-            </span>
-            <span
-              className={
-                year == 1
-                  ? `${styles.Year}  ${styles.YearActive}`
-                  : `${styles.Year}`
-              }
-              onClick={() => {
-                setYear(1);
-                setMemberList(year1);
-                setyearHead("Year1");
-              }}
-            >
-              First Year
-            </span>
-          </div>
-          <h1 className={`${styles.TeamHeader} font-header color-header-text`}>
+          <YearSwitch />
+          <motion.h2
+            className={`${styles.TeamHeader} font-header color-header-text`}
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
             {yearHead}
-          </h1>
+          </motion.h2>
           {console.log(memberList)}
           <div className={styles.TeamList}>
             {memberList.map((member) => {
@@ -113,7 +60,6 @@ const Team = () => {
                   instagram={member.insta}
                   linkedin={member.link}
                   github={member.git}
-                  twitter={member.twit}
                 />
               );
             })}
@@ -122,16 +68,56 @@ const Team = () => {
       </div>
     </motion.div>
   );
-};
 
-function TeamList() {
-  return (
-    <>
-      <h1 className={`${styles.TeamHeader} font-header color-header-text`}>
-        {yearHead}
-      </h1>
-    </>
-  );
-}
+  function YearSwitch() {
+    return (
+      <motion.div
+        className={styles.YearSwitch}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
+        <span
+          className={
+            year == 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(4);
+            setMemberList(year4);
+            setyearHead("Our Ultimate Heroes");
+          }}
+        >
+          Fourth Year
+        </span>
+        <span
+          className={
+            year == 3
+              ? `${styles.Year}  ${styles.YearActive}`
+              : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(3);
+            setMemberList(year3);
+            setyearHead("To be Ultimate Heroes");
+          }}
+        >
+          Third Year
+        </span>
+        <span
+          className={
+            year == 2 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(2);
+            setMemberList(year2);
+            setyearHead("A long time left to be Heroes");
+          }}
+        >
+          Second Year
+        </span>
+      </motion.div>
+    );
+  }
+};
 
 export default Team;
