@@ -55,7 +55,7 @@
   right: 0;
   left: 0;
   z-index: 9;
-  background: hsla(9, 47%, 97%, 1);
+  background: var(--text-light-color);
 }
 
 .NavMenuContainer {
@@ -75,7 +75,7 @@
   font-size: clamp(2.5rem, 10vw, 3.5rem);
   text-transform: uppercase;
   position: relative;
-  color: hsla(209, 67%, 11%, 1);
+  color: var(--text-dark-color);
   user-select: none;
   cursor: pointer;
 }

@@ -2,6 +2,11 @@ import FeatherIcon from "feather-icons-react";
 import styles from "../styles/footer.module.css";
 import Link from "next/link";
 
+import FacebookLogo from "./Logos/FacebookLogo";
+import InstagramLogo from "./Logos/InstagramLogo";
+import LinkedinLogo from "./Logos/LinkedinLogo";
+import PhoneLogo from "./Logos/PhoneLogo";
+import MailLogo from "./Logos/MailLogo";
 const Footer = () => {
   return (
     <footer className={styles.Footer}>
@@ -14,13 +19,8 @@ const Footer = () => {
               href="https://www.facebook.com/mathsntechclub/"
               target="_blank"
             >
-              <FeatherIcon
-                icon="facebook"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
-              />
-              @mathsntechclub
+              <FacebookLogo color="hsla(10, 50%, 97%, 1)" />
+              <span className={styles.FooterFilledLink}>mathsntechclub</span>
             </a>
 
             <a
@@ -28,13 +28,8 @@ const Footer = () => {
               href="https://www.instagram.com/mntc.nitd/"
               target="_blank"
             >
-              <FeatherIcon
-                icon="instagram"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
-              />
-              @mathsntechclub
+              <InstagramLogo color="hsla(10, 50%, 97%, 1)" />
+              <span className={styles.FooterFilledLink}>mntc.nitd</span>
             </a>
 
             <a
@@ -42,13 +37,8 @@ const Footer = () => {
               href="https://www.linkedin.com/company/maths-n-tech-club-nit-durgapur/"
               target="_blank"
             >
-              <FeatherIcon
-                icon="linkedin"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
-              />
-              @mathsntechclub
+              <LinkedinLogo color="hsla(10, 50%, 97%, 1)" />
+              <span className={styles.FooterFilledLink}>mathsntechclub</span>
             </a>
           </div>
         </div>
@@ -61,13 +51,8 @@ const Footer = () => {
               href="tel:+918906051932"
               target="_blank"
             >
-              <FeatherIcon
-                icon="phone"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
-              />
-              +91 89060-51932
+              <PhoneLogo color="hsla(10, 50%, 97%, 1)" />
+              <span className={styles.FooterFilledLink}>+91 89060-51932</span>
             </a>
 
             <a
@@ -75,13 +60,10 @@ const Footer = () => {
               href="mailto:anurag2sarkar@gmail.com"
               target="_blank"
             >
-              <FeatherIcon
-                icon="mail"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
-              />
-              mathsntechclub.nitd@gmail.com
+              <MailLogo color="hsla(10, 50%, 97%, 1)" />
+              <span className={styles.FooterFilledLink}>
+                mathsntechclub.nitd@gmail.com
+              </span>
             </a>
           </div>
         </div>
@@ -89,18 +71,18 @@ const Footer = () => {
         <div className={styles.FooterNav}>
           <h4 className={styles.FooterHeader}>Visit Our Other Pages</h4>
           <div className={styles.FooterLinksItems}>
-            <Link href="/events" className={styles.FooterLinks}>
-              <a href="" className={styles.FooterLinks}>
+            <Link href="/events" className={styles.FooterFilledLinks}>
+              <a href="" className={styles.FooterFilledLink}>
                 Events
               </a>
             </Link>
-            <Link href="/team">
-              <a href="" className={styles.FooterLinks}>
+            <Link href="/team" className={styles.FooterFilledLinks}>
+              <a href="" className={styles.FooterFilledLink}>
                 Our Team
               </a>
             </Link>
-            <Link href="/about" className={styles.FooterLinks}>
-              <a href="" className={styles.FooterLinks}>
+            <Link href="/about" className={styles.FooterFilledLinks}>
+              <a href="" className={styles.FooterFilledLink}>
                 About Us
               </a>
             </Link>
