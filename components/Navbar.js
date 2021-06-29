@@ -65,18 +65,18 @@ const Navbar = () => {
 
   function HamBurger({ clicked }) {
     const variantBurger1 = {
-      no: { y: 0, rotate: 0, background: "hsla(9, 47%, 97%, 1)" },
-      yes: { y: 9, rotate: 45, background: "hsla(209, 67%, 11%, 1)" },
+      no: { y: 0, rotate: 0, background: "var(--text-light-color)" },
+      yes: { y: 9, rotate: 45, background: "var(--text-dark-color)" },
     };
 
     const variantBurger2 = {
-      no: { y: 7, x: 0, scale: 1, background: "hsla(9, 47%, 97%, 1)" },
-      yes: { y: 7, x: -10, scale: 0, background: "hsla(209, 67%, 11%, 1)" },
+      no: { y: 7, x: 0, scale: 1, background: "var(--text-light-color)" },
+      yes: { y: 7, x: -10, scale: 0, background: "var(--text-dark-color)" },
     };
 
     const variantBurger3 = {
-      no: { y: 14, rotate: 0, background: "hsla(9, 47%, 97%, 1)" },
-      yes: { y: 5, rotate: -45, background: "hsla(209, 67%, 11%, 1)" },
+      no: { y: 14, rotate: 0, background: "var(--text-light-color)" },
+      yes: { y: 5, rotate: -45, background: "var(--text-dark-color)" },
     };
     return (
       <motion.div className={styles.HamBurgerIcon}>

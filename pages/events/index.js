@@ -48,20 +48,19 @@ export default function Events() {
     const { id, name, image, desc, startDate, endDate, link } = props.details;
     const date = startDate == endDate ? startDate : `${startDate} - ${endDate}`;
     return (
-      <div className={styles.EventCard}>
-        {console.log(props)}
-        <div className={styles.EventPosterContainer}>
-          <Image src={image} alt={name} src={image} layout="fill"></Image>
-        </div>
+      <Link href={`/events/${name}?` + `index=${id}`}>
+        <div className={styles.EventCard}>
+          <div className={styles.EventPosterContainer}>
+            <Image src={image} alt={name} src={image} layout="fill"></Image>
+          </div>
 
-        <div className={styles.EventDetails}>
-          <h3 className={styles.DetailsName}>{name}</h3>
-          <p className={styles.DetailsDate}>{date}</p>
-          <Link href={`/events/${name}?` + `index=${id}`}>
-            <p>Know More</p>
-          </Link>
+          <div className={styles.EventDetails}>
+            <h3 className={styles.DetailsName}>{name}</h3>
+            <p className={styles.DetailsDate}>{date}</p>
+            <a className={styles.DetailsMore}>Know More</a>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
 }
