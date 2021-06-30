@@ -8,7 +8,7 @@
   --text-lighter-color: hsla(202, 94%, 97%, 0.8);
   /* --card-bg: hsl(231, 80%, 58%); */
   --card-bg: hsla(231, 100%, 100%, 0.1);
-  --accent-color: rgb(55, 172, 240);
+  --accent-color: hsl(202, 86%, 58%);
 }
 
 * {
