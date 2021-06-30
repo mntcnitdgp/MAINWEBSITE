@@ -1,4 +1,4 @@
-const relativePath = "/images/event images/";
+const relativePath = "";
 export const events = [
   {
     id: 1,
