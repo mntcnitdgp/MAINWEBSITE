@@ -1,9 +1,8 @@
 .Footer {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 25px 25px 0px 0px;
   padding: 3rem 0;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .FooterContainer {
@@ -20,12 +19,6 @@
   gap: 1rem;
 }
 
-.FooterHeader {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--text-light-color);
-}
-
 .FooterSocialItems,
 .FooterContactItems,
 .FooterLinksItems {
@@ -36,6 +29,7 @@
 
 .FooterLinksItems {
   gap: 1rem;
+  padding: 1rem;
 }
 
 .FooterFilledLinks {
@@ -45,10 +39,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  /* padding: 1rem; */
 }
 
 .FooterFilledLink {
-  color: var(--text-lighter-color);
+  color: var(--text-light-color);
   position: relative;
 }
 
@@ -59,7 +54,7 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: currentColor;
+  background-color: var(--accent-color);
   transform: scaleX(0);
   transition: transform 100ms ease-in-out;
 }
@@ -69,10 +64,6 @@
 }
 .FooterCopyright {
   font-weight: 500;
-}
-
-.FooterLinks {
-  text-decoration: underline;
 }
 
 .FooterCopyright {

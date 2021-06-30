@@ -17,15 +17,14 @@ const Navbar = () => {
         <div className={`container ${styles.TopBarContainer}`}>
           <div className={styles.TopBarLogo}>
             <motion.svg
-              className={styles.FooterInfoIcon}
               width="100"
               height="32.79"
               viewBox="0 0 290 96"
               xmlns="http://www.w3.org/2000/svg"
               animate={{
-                fill: clicked
-                  ? "hsla(209, 67%, 11%, 1)"
-                  : "hsla(9, 47%, 97%, 1)",
+                fill: !clicked
+                  ? "hsla(202, 94%, 97%, 1)"
+                  : "hsla(0, 0%, 5%, 1)",
               }}
               transition={{ delay: 0.2 }}
             >

@@ -5,7 +5,7 @@ import { year2 } from "../../data/team/year2";
 import Head from "next/head";
 import TeamCard from "../../components/TeamCard";
 import styles from "../../styles/Team.module.css";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const Team = () => {
@@ -20,15 +20,14 @@ const Team = () => {
       variants={{
         pageInitial: {
           opacity: 0,
+          x: 200,
         },
         pageAnimate: {
           opacity: 1,
-          transition: {
-            duration: 0.3,
-          },
+          x: 0,
         },
       }}
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 0, x: -500 }}
     >
       <Head>
         <title>MNTC | Meet the team</title>
@@ -39,16 +38,22 @@ const Team = () => {
       <div className={styles.Team}>
         <div className={`container ${styles.TeamContainer}`}>
           <YearSwitch />
+
           <motion.h2
-            className={`${styles.TeamHeader} font-header color-header-text`}
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
+            className={styles.TeamHeader}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
           >
             {yearHead}
           </motion.h2>
-          {console.log(memberList)}
-          <div className={styles.TeamList}>
+
+          <motion.div
+            className={styles.TeamList}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
             {memberList.map((member) => {
               return (
                 <TeamCard
@@ -63,7 +68,7 @@ const Team = () => {
                 />
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>
@@ -73,7 +78,6 @@ const Team = () => {
     return (
       <motion.div
         className={styles.YearSwitch}
-        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >

@@ -2,6 +2,7 @@
   min-height: 100vh;
 }
 
+/* hero start */
 .HomeHeroContainer {
   height: calc(100vh - 4rem);
   display: flex;
@@ -22,7 +23,8 @@
   left: -100px;
   right: 50%;
   height: 8px;
-  background: #73e3a0;
+  /* background: #73e3a0; */
+  background: var(--accent-color);
 }
 
 .Illustration {
@@ -34,15 +36,73 @@
   z-index: -1;
 }
 
-.HomeCard {
+/* hero end */
+
+/* about start */
+.HomeAbout,
+.HomeTeam {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
-.HomeCardInfo {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
+.HomeAboutLink,
+.HomeTeamLink {
+  align-self: flex-end;
+  color: var(--text-dark-color);
+  background-color: var(--accent-color);
+  padding: 0.4rem 1rem;
+  border-radius: 70px;
+}
+/* about end */
+
+/* team start */
+.HomeTeam {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+.HomeTeamCardContainer {
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.HomeTeamCardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.HomeTeamCard {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(5px);
+  min-width: 250px;
+  border-radius: 25px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.TeamCardImage {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.TeamCardImage img {
+  border-radius: 50%;
+}
+
+.TeamCardPosition {
+  padding: 0.3rem 0.9rem;
+  background: var(--card-bg);
   color: var(--text-lighter-color);
+  border-radius: 35px;
+  font-size: 0.9rem;
 }

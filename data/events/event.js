@@ -1,8 +1,8 @@
-const relativePath = "/../public/images/event images/";
+const relativePath = "";
 export const events = [
   {
     id: 1,
-    name: "TechOrbis2.0",
+    name: "Tech Orbis 2.0",
     image: `${relativePath}techorbis2.jpeg`,
     desc: `Hey everyone!
         Maths N Tech Club is back with the newest version of our Global tour event- TechOrbis 2.0.

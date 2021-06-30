@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import styles from "/home/karamsahoo/Desktop/mntc-website/styles/Notfound.module.css";
+import styles from "../styles/Home.module.css";
 
 const notFound = () => {
   return (
