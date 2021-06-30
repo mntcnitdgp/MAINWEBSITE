@@ -1,4 +1,4 @@
-const relativePath = "/public/images/memberimages/first yr/";
+const relativePath = "/images/memberimages/first yr/";
 export const year3 = [
   {
     id: 1,
