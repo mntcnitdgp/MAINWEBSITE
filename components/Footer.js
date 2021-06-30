@@ -12,15 +12,17 @@ const Footer = () => {
     <footer className={styles.Footer}>
       <div className={`${styles.FooterContainer} container`}>
         <div className={styles.FooterSocial}>
-          <h4 className={styles.FooterHeader}>Our Social Links</h4>
+          <h3 className={styles.FooterHeader}>Our Social Links</h3>
           <div className={styles.FooterSocialItems}>
             <a
               className={styles.FooterFilledLinks}
               href="https://www.facebook.com/mathsntechclub/"
               target="_blank"
             >
-              <FacebookLogo color="hsla(10, 50%, 97%, 1)" />
-              <span className={styles.FooterFilledLink}>mathsntechclub</span>
+              <FacebookLogo color="hsla(202, 94%, 97%, 1)" />
+              <span className={`${styles.FooterFilledLink}`}>
+                mathsntechclub
+              </span>
             </a>
 
             <a
@@ -28,7 +30,7 @@ const Footer = () => {
               href="https://www.instagram.com/mntc.nitd/"
               target="_blank"
             >
-              <InstagramLogo color="hsla(10, 50%, 97%, 1)" />
+              <InstagramLogo color="hsla(202, 94%, 97%, 1)" />
               <span className={styles.FooterFilledLink}>mntc.nitd</span>
             </a>
 
@@ -37,21 +39,21 @@ const Footer = () => {
               href="https://www.linkedin.com/company/maths-n-tech-club-nit-durgapur/"
               target="_blank"
             >
-              <LinkedinLogo color="hsla(10, 50%, 97%, 1)" />
+              <LinkedinLogo color="hsla(202, 94%, 97%, 1)" />
               <span className={styles.FooterFilledLink}>mathsntechclub</span>
             </a>
           </div>
         </div>
 
         <div className={styles.FooterContact}>
-          <h4 className={styles.FooterHeader}>Contact Us On</h4>
+          <h3 className={styles.FooterHeader}>Contact Us On</h3>
           <div className={styles.FooterContactItems}>
             <a
               className={styles.FooterFilledLinks}
               href="tel:+918906051932"
               target="_blank"
             >
-              <PhoneLogo color="hsla(10, 50%, 97%, 1)" />
+              <PhoneLogo color="hsla(202, 94%, 97%, 1)" />
               <span className={styles.FooterFilledLink}>+91 89060-51932</span>
             </a>
 
@@ -60,7 +62,7 @@ const Footer = () => {
               href="mailto:anurag2sarkar@gmail.com"
               target="_blank"
             >
-              <MailLogo color="hsla(10, 50%, 97%, 1)" />
+              <MailLogo color="hsla(202, 94%, 97%, 1)" />
               <span className={styles.FooterFilledLink}>
                 mathsntechclub.nitd@gmail.com
               </span>
@@ -69,7 +71,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.FooterNav}>
-          <h4 className={styles.FooterHeader}>Visit Our Other Pages</h4>
+          <h3 className={styles.FooterHeader}>Visit Our Other Pages</h3>
           <div className={styles.FooterLinksItems}>
             <Link href="/events" className={styles.FooterFilledLinks}>
               <a href="" className={styles.FooterFilledLink}>
