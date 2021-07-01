@@ -9,11 +9,9 @@ export default function About() {
       variants={{
         pageInitial: {
           opacity: 0,
-          x: 200,
         },
         pageAnimate: {
           opacity: 1,
-          x: 0,
         },
       }}
       exit={{ opacity: 0, x: -500 }}
