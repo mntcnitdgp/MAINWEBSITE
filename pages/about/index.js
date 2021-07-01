@@ -9,12 +9,14 @@ export default function About() {
       variants={{
         pageInitial: {
           opacity: 0,
+          y: -200,
         },
         pageAnimate: {
           opacity: 1,
+          y: 0,
         },
       }}
-      exit={{ opacity: 0, x: -500 }}
+      exit={{ opacity: 0, y: 200 }}
     >
       <Head>
         <title>MNTC | About Us</title>

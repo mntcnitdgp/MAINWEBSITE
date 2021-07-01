@@ -1,11 +1,31 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/Nav.module.css";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useViewportScroll,
+  useTransform,
+  useAnimation,
+} from "framer-motion";
 import SideBar from "./SideBar";
-
 const Navbar = () => {
+  const animation = useAnimation();
+  const { scrollYProgress } = useViewportScroll();
+  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    yRange.onChange((v) => {
+      clicked
+        ? animation.start({ backgroundColor: "hsla(0, 0%, 5%, 0)" })
+        : v
+        ? animation.start({ backgroundColor: "hsla(0, 0%, 5%, 1)" })
+        : animation.start({ backgroundColor: "hsla(0, 0%, 5%, 0)" });
+    });
+  }, [yRange, clicked]);
+
+  useEffect(() => {});
   return (
     <>
       <motion.div
@@ -14,7 +34,11 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <div className={`container ${styles.TopBarContainer}`}>
+        <motion.div
+          className={`container ${styles.TopBarContainer}`}
+          initial={{ backgroundColor: "hsla(0, 0%, 5%, 0)" }}
+          animate={animation}
+        >
           <div className={styles.TopBarLogo}>
             <motion.svg
               width="100"
@@ -34,7 +58,12 @@ const Navbar = () => {
 
           <div
             className={styles.TopBarMenu}
-            onClick={() => setClicked((clicked) => !clicked)}
+            onClick={() => {
+              setClicked((clicked) => !clicked);
+              if (!clicked) {
+                animation.start({ backgroundColor: "hsla(0, 0%, 5%, 0)" });
+              }
+            }}
           >
             <HamBurger clicked={clicked} />
           </div>
@@ -56,7 +85,7 @@ const Navbar = () => {
               <Link href="/events">Events</Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
       <SideBar clicked={clicked} setClicked={setClicked} />
     </>

@@ -15,14 +15,14 @@ export default function Events() {
       variants={{
         pageInitial: {
           opacity: 0,
-          x: 200,
+          y: -200,
         },
         pageAnimate: {
           opacity: 1,
-          x: 0,
+          y: 0,
         },
       }}
-      exit={{ opacity: 0, x: -500 }}
+      exit={{ opacity: 0 }}
     >
       <Head>
         <title>MNTC | Events</title>

@@ -21,11 +21,10 @@ export default function Home() {
           opacity: 1,
           transition: {
             duration: 0.6,
-            when: "beforeChildren",
           },
         },
       }}
-      exit={{ x: -400 }}
+      exit={{ opacity: 0 }}
     >
       <Head>
         <title>MNTC | NIT Durgapur</title>

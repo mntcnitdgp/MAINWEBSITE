@@ -2,9 +2,10 @@
 .TopBar {
   height: 4rem;
   z-index: 99;
-  position: relative;
+  position: fixed;
   width: 100%;
   left: 0;
+  top: 0;
 }
 
 .TopBarContainer {
@@ -18,12 +19,14 @@
 .TopBarMenu {
   display: flex;
   align-items: center;
+  justify-items: center;
   padding: 1rem;
   padding-right: 0;
   cursor: pointer;
 }
 .HamBurgerIcon {
   width: 30px;
+  height: 17px;
 }
 
 .HamBurger {
