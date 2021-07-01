@@ -51,8 +51,8 @@
   list-style: none;
   position: fixed;
   top: 0;
-  bottom: 150px;
-  margin-bottom: 150px;
+  bottom: -150px;
+  padding-bottom: 150px;
   right: 0;
   left: 0;
   z-index: 9;
