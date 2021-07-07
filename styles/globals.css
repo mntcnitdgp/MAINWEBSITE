@@ -7,7 +7,7 @@
   --text-light-color: hsla(202, 94%, 97%, 1);
   --text-lighter-color: hsla(202, 94%, 97%, 0.8);
   /* --card-bg: hsl(231, 80%, 58%); */
-  --card-bg: hsla(231, 100%, 100%, 0.1);
+  --card-bg: hsla(0, 0%, 96%, 0.2);
   --accent-color: hsl(202, 86%, 58%);
 }
 
@@ -29,9 +29,9 @@ body::before {
   height: 300px;
   width: 300px;
   position: fixed;
-  background-color: #4784d4;
+  background-color: #0084ff;
   z-index: -10;
-  top: -100px;
+  top: -150px;
   left: -100px;
   opacity: 0.4;
   border-radius: 100%;
@@ -40,13 +40,13 @@ body::before {
 
 body::after {
   content: "";
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: fixed;
-  background-color: #4784d4;
+  background-color: #7700ff;
   z-index: -10;
-  bottom: -100px;
-  right: -100px;
+  bottom: -70px;
+  right: -70px;
   opacity: 0.4;
   filter: blur(90px);
 }
@@ -67,7 +67,7 @@ h1 {
   color: var(--text-light-color);
   font-family: var(--header-font);
   font-weight: bold;
-  font-size: clamp(4.5rem, 20vw, 7rem);
+  font-size: clamp(4.5rem, 22vw, 7rem);
   line-height: 125%;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -82,6 +82,7 @@ h2 {
   font-size: 45px;
   line-height: 125%;
   margin: 0.5em 0;
+  position: relative;
 }
 
 h3 {
@@ -127,4 +128,12 @@ p {
   font-weight: 400;
   line-height: 170%;
   color: var(--text-lighter-color);
+}
+
+.control-arrow {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
 }

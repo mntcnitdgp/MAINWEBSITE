@@ -1,11 +1,17 @@
 .EventCard {
-  background: var(--card-bg);
-  border-radius: 25px;
+  /* background: var(--card-bg); */
+  background: linear-gradient(
+    98.41deg,
+    rgba(255, 255, 255, 0.175) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 30px;
   padding: clamp(5px, 5vw, 2rem);
   display: flex;
   gap: 1rem;
   align-items: center;
   cursor: pointer;
+  border: solid 1px var(--card-bg);
 }
 
 .EventList {
@@ -16,8 +22,8 @@
 
 .EventPosterContainer {
   position: relative;
-  height: clamp(100px, 30vw, 200px);
-  width: clamp(100px, 30vw, 200px);
+  height: clamp(100px, 35vw, 200px);
+  width: clamp(100px, 35vw, 200px);
 }
 
 .EventPosterContainer img {

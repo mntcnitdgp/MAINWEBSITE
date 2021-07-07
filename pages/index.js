@@ -6,6 +6,8 @@ import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
 import { reviews } from "../data/reviews";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
   return (
@@ -37,6 +39,7 @@ export default function Home() {
         <About />
         <Team />
         <Events />
+        <Reviews />
       </div>
     </motion.div>
   );
@@ -65,7 +68,7 @@ function Hero() {
             width: 0,
           }}
           animate={{
-            width: "auto",
+            width: "60%",
           }}
           transition={{
             delay: 0.3,
@@ -132,9 +135,21 @@ function Reviews() {
   return (
     <div className={styles.HomeReviews}>
       <h2 className={styles.HomeReviewsHead}>What Others Have to Say</h2>
-      <div className={styles.ReviewsContainer}>
-        <div className={styles.Reviews}></div>
-      </div>
+      <Carousel
+        className={styles.ReviewsContainer}
+        autoPlay={true}
+        interval={8000}
+        infiniteLoop={true}
+      >
+        {reviews.map((review) => {
+          return (
+            <div className={styles.Reviews}>
+              <h3 className={styles.ReviewsContent}>{review.content}</h3>
+              <p className={styles.ReviewsWriter}>-{review.writer}</p>
+            </div>
+          );
+        })}
+      </Carousel>
     </div>
   );
 }
