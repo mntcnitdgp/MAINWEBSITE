@@ -89,7 +89,7 @@ h1 .colored {
 }
 
 h1::before {
-  content: url("../images/svg/Vector.svg"); /*Change this on deploy*/
+  content: url("../public/images/svg/Vector.svg"); /*Change this on deploy*/
   position: absolute;
   top: 0;
   left: -1rem;
