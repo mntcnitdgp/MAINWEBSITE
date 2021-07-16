@@ -26,7 +26,6 @@ export default function Events() {
           y: 0,
         },
       }}
-      exit={{ opacity: 0, y: 300 }}
     >
       {event && (
         <AnimatePresence>
@@ -43,24 +42,32 @@ export default function Events() {
                 {event.name}
               </h2>
             </Link>
-            <div className={styles.EventFullPosterContainer}>
-              <Image src={event.image} layout="fill" />
+
+            <div className={styles.EventContainer}>
+              <div className={styles.EventFullPosterContainer}>
+                <Image src={event.image} layout="fill" />
+              </div>
+
+              <div className={styles.EventDetails}>
+                {event.startDate == event.endDate ? (
+                  <p className={styles.EventFullDate}>{event.startDate}</p>
+                ) : (
+                  <p
+                    className={styles.EventFullDate}
+                  >{`${event.startDate} - ${event.endDate}`}</p>
+                )}
+                <p className={styles.EventFullDesc}>{event.desc}</p>
+
+                {event.link && (
+                  <a
+                    href={event.link}
+                    className={`solid ${styles.EventFullLink}`}
+                  >
+                    Go to event
+                  </a>
+                )}
+              </div>
             </div>
-
-            {event.startDate == event.endDate ? (
-              <p className={styles.EventFullDate}>{event.startDate}</p>
-            ) : (
-              <p
-                className={styles.EventFullDate}
-              >{`${event.startDate} - ${event.endDate}`}</p>
-            )}
-            <p className={styles.EventFullDesc}>{event.desc}</p>
-
-            {event.link && (
-              <a href={event.link} className={`solid ${styles.EventFullLink}`}>
-                Go to event
-              </a>
-            )}
           </div>
         </AnimatePresence>
       )}
@@ -76,6 +83,7 @@ function ArrowLeft() {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={styles.ArrowLeft}
     >
       <path
         d="M12 19L5 12L12 5"

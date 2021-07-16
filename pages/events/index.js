@@ -22,7 +22,6 @@ export default function Events() {
           y: 0,
         },
       }}
-      exit={{ opacity: 0 }}
     >
       <Head>
         <title>MNTC | Events</title>
@@ -34,6 +33,7 @@ export default function Events() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          className={styles.EventsHeader}
         >
           Events round the calendar
         </motion.h2>

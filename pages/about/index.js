@@ -16,7 +16,6 @@ export default function About() {
           y: 0,
         },
       }}
-      exit={{ opacity: 0, y: 200 }}
     >
       <Head>
         <title>MNTC | About Us</title>

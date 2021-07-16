@@ -1,4 +1,4 @@
-const relativePath = "";
+const relativePath = "/images/member images/year 2/"; //Change this on deploy
 export const year3 = [
   {
     id: 1,
