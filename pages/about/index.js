@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import styles from "../../styles/About.module.css";
+import Image from "next/image";
+
 export default function About() {
   return (
     <motion.div
@@ -9,14 +11,13 @@ export default function About() {
       variants={{
         pageInitial: {
           opacity: 0,
-          x: 200,
+          y: -200,
         },
         pageAnimate: {
           opacity: 1,
-          x: 0,
+          y: 0,
         },
       }}
-      exit={{ opacity: 0, x: -500 }}
     >
       <Head>
         <title>MNTC | About Us</title>
@@ -29,44 +30,42 @@ export default function About() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          className={styles.AboutHeader}
         >
           About Us
         </motion.h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          vulputate bibendum nisi vel hendrerit. Nam vel dictum enim. Aliquam et
-          ante sagittis, pharetra lacus vel, aliquet metus. Vivamus felis massa,
-          blandit a dolor eget, porta aliquet orci. Quisque ac maximus orci.
-          Integer eu bibendum dui. Nam varius scelerisque dolor id imperdiet.
-          Cras augue neque, euismod a purus sit amet, hendrerit venenatis augue.
-          Nullam ut velit placerat, pellentesque diam ut, consequat erat. Duis
-          consequat odio at molestie consectetur. Vivamus accumsan nunc non
-          augue imperdiet suscipit. Interdum et malesuada fames ac ante ipsum
-          primis in faucibus. Vestibulum ante ipsum primis in faucibus orci
-          luctus et ultrices posuere cubilia curae;
-        </p>
-        <p>
-          Nullam eu semper mauris. Sed vel interdum lacus. Sed euismod euismod
-          purus lacinia egestas. Phasellus vehicula in erat et ultrices. Vivamus
-          ultricies, augue vel posuere volutpat, erat ligula sagittis elit, id
-          aliquam ligula purus cursus odio. Vivamus in tortor eu dolor tempor
-          sodales sed eu odio. Maecenas aliquet magna sed vehicula molestie.
-          Vestibulum pharetra ex sed fermentum iaculis. Duis id ante nec tortor
-          semper pellentesque. Vivamus eleifend sapien ut suscipit finibus.
-          Donec a neque non felis consectetur posuere. Suspendisse congue
-          maximus tellus at tempus. Curabitur sed urna iaculis, sollicitudin
-          nisi non, mattis nunc. Ut venenatis dapibus mi eget consectetur. Cras
-          id ipsum dapibus, luctus lacus sed, varius augue. Duis eget leo
-          scelerisque tortor volutpat lacinia sed at ipsum.
-        </p>
-        <p>
-          Ut blandit est non risus laoreet elementum. Suspendisse potenti.
-          Nullam consectetur, libero et pretium maximus, ligula massa ornare
-          turpis, interdum iaculis tellus ipsum in lacus. Maecenas dignissim
-          felis quis euismod mattis. Maecenas feugiat mauris non pulvinar
-          congue. Etiam ut quam eget dui sollicitudin porttitor. Quisque at ante
-          sodales odio euismod placerat ornare pellentesque felis.
-        </p>
+
+        <div className={styles.AboutInfo}>
+          <div className={styles.AboutInfoPara}>
+            <p className={styles.AboutInfoPara1}>
+              We, Maths N Tech Club are the official knowledge club of National
+              Institute of Technology, Durgapur. Back in 2004, when the Regional
+              Engineering College Durgapur got the status of an Institute of
+              National Importance and was renamed as the National Institute of
+              Technology Durgapur, Maths N Tech Club was formed.
+            </p>
+            <p>
+              Our club was set up with the aim of creating a platform that helps
+              in stimulating passion for mathematics and interest in the
+              technology of today’s world. At Maths N Tech Club, we understand
+              the importance of analytical reasoning and rational thinking.
+              Hence, we organise a plethora of events throughout the year that
+              aims at reinvigorating the seemingly dormant passion for
+              mathematics and the thirst for knowledge about today’s technology.
+            </p>
+            <p>
+              It is our continuous goal to try our best to deliver knowledge
+              about recent technical enhancements through the various workshops
+              that we conduct around the year. Our attempts also aim to kindle
+              analytical reasoning and logical aptitude in the brain though
+              various fun events and experiences.
+            </p>
+          </div>
+
+          <div className={styles.AboutInfoSide}>
+            <img src="/images/about.jpg" className={styles.AboutInfoImage} />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

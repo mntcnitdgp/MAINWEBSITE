@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
+import HomeSVG from "../components/HomeSVG";
 import { reviews } from "../data/reviews";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+const relativePath = "/images/svg/"; //Change this on deploy
 
 export default function Home() {
   return (
@@ -21,11 +26,10 @@ export default function Home() {
           opacity: 1,
           transition: {
             duration: 0.6,
-            when: "beforeChildren",
           },
         },
       }}
-      exit={{ x: -400 }}
+      // exit={{ opacity: 0 }}
     >
       <Head>
         <title>MNTC | NIT Durgapur</title>
@@ -38,6 +42,7 @@ export default function Home() {
         <About />
         <Team />
         <Events />
+        <Reviews />
       </div>
     </motion.div>
   );
@@ -46,34 +51,31 @@ export default function Home() {
 function Hero() {
   return (
     <div className={styles.HomeHeroContainer}>
-      <motion.h1
-        className={styles.HeroHeader}
-        initial={{
-          y: -100,
-        }}
-        animate={{
-          y: 0,
-        }}
-        transition={{
-          duration: 0.4,
-          ease: "backInOut",
-        }}
-      >
-        Maths N Tech Club
-        <motion.div
-          className={styles.HeroHeaderSlide}
+      <div className={styles.HeroHeaderContainer}>
+        <motion.h1
+          className={styles.HeroHeader}
           initial={{
-            width: 0,
+            y: -100,
           }}
           animate={{
-            width: "auto",
+            y: 0,
           }}
           transition={{
-            delay: 0.3,
+            duration: 0.4,
             ease: "backInOut",
           }}
-        ></motion.div>
-      </motion.h1>
+        >
+          <span className="colored">Maths</span> N Tech Club
+        </motion.h1>
+      </div>
+
+      <motion.div className={styles.HeroSide}>
+        <Image
+          src={`${relativePath}maths.svg`}
+          layout="fill"
+          className={styles.HeroSideImage}
+        />
+      </motion.div>
     </div>
   );
 }
@@ -81,20 +83,27 @@ function Hero() {
 function About() {
   return (
     <div className={styles.HomeAbout}>
-      <h2 className={styles.HomeAboutHead}>Get to Know Us</h2>
-      <p className={styles.HomeAboutInfo}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-        volutpat mauris id nisi, ridiculus in lacus sit. Venenatis curabitur
-        massa pulvinar consequat elit. Id sit blandit nunc nullam quis. Nascetur
-        mi tempor faucibus mollis dolor ipsum purus dolor. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Porttitor volutpat mauris id nisi,
-        ridiculus in lacus sit. Venenatis curabitur massa pulvinar consequat
-        elit. Id sit blandit nunc nullam quis. Nascetur mi tempor faucibus
-        mollis dolor ipsum purus dolor.
-      </p>
-      <Link href="/about">
-        <a className={`solid ${styles.HomeTeamLink}`}>Get to Know More {">"}</a>
-      </Link>
+      <div className={styles.HomeAboutContainer}>
+        <h2 className={styles.HomeAboutHead}>Who are we?</h2>
+        <p className={styles.HomeAboutInfo}>
+          We are the official knowledge club of National Institute of
+          Technology, Durgapur. Established in 2004, the aim of our club is to
+          create a platform that encourages one to stimulate their love and
+          passion for mathematics in this world of technology. It is our goal to
+          fabricate the perfect balance of Maths and Technology by hosting
+          various events, webinars and workshops that inspire one to explore new
+          fields and innovations.
+        </p>
+        <Link href="/about">
+          <a className={`text ${styles.HomeAboutLink}`}>
+            Get to Know More {">"}
+          </a>
+        </Link>
+      </div>
+
+      <div className={styles.HomeAboutImage}>
+        <Image src={`${relativePath}about.svg`} layout="fill" />
+      </div>
     </div>
   );
 }
@@ -102,29 +111,46 @@ function About() {
 function Team() {
   return (
     <div className={styles.HomeTeam}>
-      <h2 className={styles.HomeTeamHead}>Meet Our Team</h2>
-      <p className={styles.HomeTeamInfo}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-        volutpat mauris id nisi, ridiculus in lacus sit. Venenatis curabitur
-        massa pulvinar consequat elit. Id sit blandit nunc nullam quis. Nascetur
-        mi tempor faucibus mollis dolor ipsum purus dolor. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Porttitor volutpat mauris id nisi,
-        ridiculus in lacus sit. Venenatis curabitur massa pulvinar consequat
-        elit. Id sit blandit nunc nullam quis. Nascetur mi tempor faucibus
-        mollis dolor ipsum purus dolor.
-      </p>
-      <Link href="/team">
-        <a className={`solid ${styles.HomeAboutLink}`}>Meet Our Team {">"}</a>
-      </Link>
+      <div className={styles.HomeAboutImage}>
+        <Image src={`${relativePath}team.svg`} layout="fill" />
+      </div>
+
+      <div className={styles.HomeTeamContainer}>
+        <h2 className={styles.HomeTeamHead}>Meet Our Team</h2>
+
+        <p className={styles.HomeTeamInfo}>
+          <span className={styles.HomeTeamInfoHead}>
+            'Together Everyone Achieves More'
+          </span>
+          Be it the smallest achievements or the largest accomplishments, it
+          requires the support and dedication of every member of the team. All
+          our endeavours are nothing but a display of the united attempts of our
+          zestful squad. Meet the MNTC family, the dynamic gang behind it all.
+        </p>
+        <Link href="/team">
+          <a className={`text ${styles.HomeAboutLink}`}>Meet Our Team {">"}</a>
+        </Link>
+      </div>
     </div>
   );
 }
 
 function Events() {
   return (
-    <div className={styles.HomeAbout}>
-      <h2 className={styles.HomeAboutHead}>Upcoming Event</h2>
-      <EventCard details={events[0]} />
+    <div className={styles.HomeEvents}>
+      <div className={styles.HomeEventsContainer}>
+        <h2 className={styles.HomeEventsHead}>Upcoming Event</h2>
+        <EventCard details={events[0]} />
+        <Link href="/events">
+          <a className={`text ${styles.HomeAboutLink}`}>
+            Check Out All Events {">"}
+          </a>
+        </Link>
+      </div>
+
+      <div className={styles.HomeAboutImage}>
+        <Image src={`${relativePath}events.svg`} layout="fill" />
+      </div>
     </div>
   );
 }
@@ -132,10 +158,25 @@ function Events() {
 function Reviews() {
   return (
     <div className={styles.HomeReviews}>
-      <h2 className={styles.HomeReviewsHead}>What Others Have to Say</h2>
-      <div className={styles.ReviewsContainer}>
-        <div className={styles.Reviews}></div>
-      </div>
+      <h2 className={styles.HomeReviewsHead}>What Others Have to Say...</h2>
+      <Carousel
+        className={styles.ReviewsContainer}
+        autoPlay={true}
+        interval={8000}
+        showThumbs={false}
+        infiniteLoop={true}
+        showArrows={false}
+        showStatus={false}
+      >
+        {reviews.map((review) => {
+          return (
+            <div className={styles.Reviews}>
+              <h3 className={styles.ReviewsContent}>{review.content}</h3>
+              <p className={styles.ReviewsWriter}> - {review.writer}</p>
+            </div>
+          );
+        })}
+      </Carousel>
     </div>
   );
 }

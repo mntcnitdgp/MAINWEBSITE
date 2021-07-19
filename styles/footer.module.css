@@ -1,5 +1,6 @@
+/* Footer Starts  */
 .Footer {
-  background: rgba(0, 0, 0, 0.4);
+  background-color: hsl(270, 6%, 2%);
   border-radius: 25px 25px 0px 0px;
   padding: 3rem 0;
   margin-top: 3rem;
@@ -11,6 +12,7 @@
   gap: 2rem;
 }
 
+/* Sections of links starts */
 .FooterSocial,
 .FooterContact,
 .FooterNav {
@@ -26,7 +28,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
+/* Sections of links ends */
 
+/* Individual link items starts */
 .FooterLinksItems {
   gap: 1rem;
   padding: 1rem;
@@ -39,29 +43,33 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  /* padding: 1rem; */
 }
 
 .FooterFilledLink {
   color: var(--text-light-color);
   position: relative;
+  transition: all 100ms ease-in-out;
 }
 
 .FooterFilledLink::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--accent-color);
+  background-color: currentColor;
   transform: scaleX(0);
-  transition: transform 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
+
 .FooterFilledLink:hover::after,
 .FooterFilledLink:focus::after {
   transform: scaleX(1);
 }
+/* Individual link items ends */
+
+/* Copyright starts */
 .FooterCopyright {
   font-weight: 500;
 }
@@ -72,10 +80,20 @@
   text-align: center;
   color: var(--text-light-color);
 }
+/* Copyright ends */
 
-@media (min-width: 900px) {
+/* Responsive PC */
+@media (min-width: 768px) {
   .Footer {
     border-radius: 0;
+  }
+
+  .FooterSocial,
+  .FooterContact,
+  .FooterNav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .FooterContainer {
@@ -87,6 +105,7 @@
   .FooterContactItems,
   .FooterLinksItems {
     flex: 1;
+    gap: 1.5rem;
   }
 
   .FooterFilledLinks {

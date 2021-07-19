@@ -1,42 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
   --header-font: "Poppins", sans-serif;
   --general-font: "Poppins", sans-serif;
 
   --text-dark-color: hsla(0, 0%, 5%, 1);
-  --text-light-color: hsla(202, 94%, 97%, 1);
-  --text-lighter-color: hsla(202, 94%, 97%, 0.8);
-  /* --card-bg: hsl(231, 80%, 58%); */
-  --card-bg: hsla(231, 100%, 100%, 0.1);
-  --accent-color: hsl(202, 86%, 58%);
+  --text-light-color: hsla(0, 0%, 100%, 0.85);
+  --text-lighter-color: hsla(0, 0%, 100%, 0.7);
+  --card-bg: linear-gradient(
+    98.41deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  --accent-color-blue: hsl(191, 80%, 50%);
+  --accent-color-green: hsl(169, 83%, 41%);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--general-text-color);
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  width: 100vw;
-  height: 110vh;
-  background: hsla(0, 0%, 5%, 1);
-  overflow-x: hidden;
-  /* background: url(../public/images/backgroundmobile.png); */
-  background-size: cover;
+  padding-top: 4rem;
+  /* background: hsla(0, 0%, 10%, 1); */
+  background-color: hsl(270, 6%, 7%);
   font-family: var(--general-font);
 }
 
-body::before {
+/* body::before {
   content: "";
   height: 300px;
   width: 300px;
   position: fixed;
-  background-color: #4784d4;
+  background-color: #0084ff;
   z-index: -10;
-  top: -100px;
+  top: -150px;
   left: -100px;
   opacity: 0.4;
   border-radius: 100%;
@@ -45,15 +45,21 @@ body::before {
 
 body::after {
   content: "";
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: fixed;
-  background-color: #4784d4;
+  background-color: #7700ff;
   z-index: -10;
-  bottom: -100px;
-  right: -100px;
+  bottom: -70px;
+  right: -70px;
   opacity: 0.4;
   filter: blur(90px);
+} */
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -61,11 +67,6 @@ body::after {
   max-width: 1600px;
   margin: auto;
   padding: 0 15px;
-}
-
-@media screen and (max-width: 60em) {
-  body {
-  }
 }
 
 a {
@@ -76,29 +77,41 @@ a {
 h1 {
   color: var(--text-light-color);
   font-family: var(--header-font);
-  font-weight: bold;
-  font-size: clamp(4.5rem, 20vw, 7rem);
-  line-height: 125%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(4.5rem, 10vw, 8.5rem);
+  line-height: 120%;
   max-width: 6ch;
-  transform: translateY(-10%);
+  position: relative;
+}
+
+h1 .colored {
+  color: var(--accent-color-blue);
+}
+@media screen and (min-width: 768px) {
+  h1::before {
+    content: url("/images/svg/Vector.svg"); /*Change this on deploy*/
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    opacity: 0.7;
+  }
 }
 
 h2 {
   color: var(--text-light-color);
   font-family: var(--header-font);
   font-weight: 600;
-  font-size: 45px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 125%;
-  margin: 0.5em 0;
+  position: relative;
 }
 
 h3 {
   color: var(--text-light-color);
   font-family: var(--header-font);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
+  line-height: 100%;
 }
 
 a.text {
@@ -112,29 +125,64 @@ a.text::after {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: var(--accent-color);
+  background-color: currentColor;
   transform: scaleX(0);
   transition: transform 100ms ease-in-out;
 }
-a.text::after,
-a.text::after {
+
+a.text:hover::after,
+a.text:hover::after {
   transform: scaleX(1);
 }
 
 a.solid {
   color: var(--text-dark-color);
-  background-color: var(--accent-color);
+  background: var(--accent-color-blue);
   padding: 0.4rem 1rem;
-  border-radius: 70px;
-  transition: transform 150ms ease-in-out;
+  border-radius: 15px;
+  transition: all 250ms ease-in-out;
 }
 
 a.solid:hover {
-  transform: scale(1.05);
+  background: var(--text-light-color);
 }
 
 p {
   font-weight: 400;
-  line-height: 170%;
+  line-height: 175%;
   color: var(--text-lighter-color);
+}
+
+/* Desktop Changes start here*/
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: clamp(6.5rem, 10vw, 9rem);
+  }
+
+  h2 {
+    font-size: clamp(3rem, 7vw, 4.2rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+  p {
+    /* font-size: 1.2rem; */
+  }
+}
+
+.carousel {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-dots {
+  position: static !important;
+  order: 2;
+  text-align: unset !important;
+}
+
+.slide {
+  text-align: unset !important;
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "../styles/Nav.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 
-function SideBar({ clicked, setClicked }) {
+function SideBar({ clicked, setClicked, page, setPage }) {
   const variantSideBar = {
     initial: { x: 2000 },
     final: { x: 0 },
@@ -20,7 +20,7 @@ function SideBar({ clicked, setClicked }) {
           initial="initial"
           animate="final"
           exit="initial"
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4 }}
         >
           <div className={`${styles.NavMenuContainer} container`}>
             <motion.li
@@ -28,7 +28,10 @@ function SideBar({ clicked, setClicked }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
-              onClick={() => setClicked(!clicked)}
+              onClick={() => {
+                setClicked(!clicked);
+                setPage("home");
+              }}
             >
               <Link href="/">
                 <h2 className={styles.NavLinks}>Home</h2>
@@ -40,7 +43,10 @@ function SideBar({ clicked, setClicked }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
-              onClick={() => setClicked(!clicked)}
+              onClick={() => {
+                setClicked(!clicked);
+                setPage("team");
+              }}
             >
               <Link href="/team">
                 <h2 className={styles.NavLinks}>Our Team</h2>
@@ -52,7 +58,10 @@ function SideBar({ clicked, setClicked }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
-              onClick={() => setClicked(!clicked)}
+              onClick={() => {
+                setClicked(!clicked);
+                setPage("events");
+              }}
             >
               <Link href="/events">
                 <h2 className={styles.NavLinks}>Events</h2>
@@ -64,7 +73,10 @@ function SideBar({ clicked, setClicked }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
-              onClick={() => setClicked(!clicked)}
+              onClick={() => {
+                setClicked(!clicked);
+                setPage("about");
+              }}
             >
               <Link href="/about">
                 <h2 className={styles.NavLinks}>About Us</h2>

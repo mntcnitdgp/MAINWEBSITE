@@ -1,4 +1,4 @@
-const relativePath = "";
+const relativePath = "/images/event images/"; //Change this on deploy
 export const events = [
   {
     id: 1,
@@ -14,6 +14,8 @@ export const events = [
         Date - 30th May 2021
         Time- 6 pm onwards
         Register yourselves at https://techorbis2-21d6e.web.app/`,
+    smallDesc: `Maths N Tech Club is back with the newest version of our Global tour event- TechOrbis 2.0.
+        Technology is spread all over the world and so are our clues.`,
     startDate: "May 30 2021",
     endDate: "May 30 2021",
     link: `https://techorbis2-21d6e.web.app/`,
@@ -39,6 +41,9 @@ export const events = [
     	Register at:
 		Class 9-10:https://dare2compete.com/.../ankshala-2021-class-9-10...
 		Class 11-12:https://dare2compete.com/.../ankshala-2021-class-11-12...`,
+    smallDesc: `Is the adrenaline rush whilst solving reasoning problems, mind-boggling equations and seemingly insurmountable sequences and series the reason why math excites you more than the other subjects?
+    	Do you aspire to crack exams like JEE, IMO, NTSE, KVPY, ISI etc.?
+	    Aptitude is definitely your forte.`,
     startDate: "May 18 2021",
     endDate: "May 18 2021",
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
@@ -53,6 +58,8 @@ export const events = [
         Time- 9:00 PM
         Subsequent dates will be announced soon. Stay tuned!
         P.S. - The event is open to all and not just NITDGP'ians.`,
+    smallDesc: `Maths N Tech Club is here with yet another edition of EVENTually, an annual online picture-connect event where you are required to unscramble the word symbolised by a set of images with the help of hints to steer your thinking process.
+        A Three-day event with a plethora of categories encompassing food, movies, music, TV series, sports, science and technology`,
     startDate: "January 1 2021",
     endDate: "January 1 2021",
   },

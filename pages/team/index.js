@@ -20,14 +20,13 @@ const Team = () => {
       variants={{
         pageInitial: {
           opacity: 0,
-          x: 200,
+          y: -200,
         },
         pageAnimate: {
           opacity: 1,
-          x: 0,
+          y: 0,
         },
       }}
-      exit={{ opacity: 0, x: -500 }}
     >
       <Head>
         <title>MNTC | Meet the team</title>
@@ -35,41 +34,38 @@ const Team = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.Team}>
-        <div className={`container ${styles.TeamContainer}`}>
-          <YearSwitch />
+      <div className={`container`}>
+        <YearSwitch />
+        <motion.h2
+          className={styles.TeamHeader}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          {yearHead}
+        </motion.h2>
 
-          <motion.h2
-            className={styles.TeamHeader}
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            {yearHead}
-          </motion.h2>
-
-          <motion.div
-            className={styles.TeamList}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            {memberList.map((member) => {
-              return (
-                <TeamCard
-                  key={member.id}
-                  name={member.name}
-                  avatar={member.avatar}
-                  position={member.position}
-                  facebook={member.fb}
-                  instagram={member.insta}
-                  linkedin={member.link}
-                  github={member.git}
-                />
-              );
-            })}
-          </motion.div>
-        </div>
+        <motion.div
+          className={styles.TeamList}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          {memberList.map((member) => {
+            return (
+              <TeamCard
+                key={member.id}
+                name={member.name}
+                avatar={member.avatar}
+                position={member.position}
+                facebook={member.fb}
+                instagram={member.insta}
+                linkedin={member.link}
+                github={member.git}
+              />
+            );
+          })}
+        </motion.div>
       </div>
     </motion.div>
   );

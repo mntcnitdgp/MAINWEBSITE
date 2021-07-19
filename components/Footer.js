@@ -19,8 +19,8 @@ const Footer = () => {
               href="https://www.facebook.com/mathsntechclub/"
               target="_blank"
             >
-              <FacebookLogo color="hsla(202, 94%, 97%, 1)" />
-              <span className={`${styles.FooterFilledLink}`}>
+              <FacebookLogo color="hsla(0, 0%, 100%, 0.7)" />
+              <span className={`text ${styles.FooterFilledLink}`}>
                 mathsntechclub
               </span>
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://www.instagram.com/mntc.nitd/"
               target="_blank"
             >
-              <InstagramLogo color="hsla(202, 94%, 97%, 1)" />
+              <InstagramLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>mntc.nitd</span>
             </a>
 
@@ -39,7 +39,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/maths-n-tech-club-nit-durgapur/"
               target="_blank"
             >
-              <LinkedinLogo color="hsla(202, 94%, 97%, 1)" />
+              <LinkedinLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>mathsntechclub</span>
             </a>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
               href="tel:+918906051932"
               target="_blank"
             >
-              <PhoneLogo color="hsla(202, 94%, 97%, 1)" />
+              <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>+91 89060-51932</span>
             </a>
 
@@ -62,7 +62,7 @@ const Footer = () => {
               href="mailto:anurag2sarkar@gmail.com"
               target="_blank"
             >
-              <MailLogo color="hsla(202, 94%, 97%, 1)" />
+              <MailLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
                 mathsntechclub.nitd@gmail.com
               </span>

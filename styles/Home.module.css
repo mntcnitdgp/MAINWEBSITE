@@ -2,14 +2,19 @@
   min-height: 100vh;
 }
 
-/* hero start */
+/* Hero start */
 .HomeHeroContainer {
   height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: cover;
-  margin-bottom: 4em;
+}
+
+/* Header */
+
+.HeroHeaderContainer {
+  display: flex;
+  align-items: center;
 }
 
 .HeroHeader {
@@ -17,92 +22,230 @@
   user-select: none;
 }
 
-.HeroHeaderSlide {
-  position: absolute;
-  top: 1.15em;
-  left: -100px;
-  right: 50%;
-  height: 8px;
-  /* background: #73e3a0; */
-  background: var(--accent-color);
+/* Responsive phone*/
+@media screen and (max-width: 768px) {
+  /* illustration */
+  .HomeHeroContainer {
+    margin-bottom: 10rem;
+  }
+  .HeroSide div {
+    position: static !important;
+    height: 100%;
+  }
+
+  .HeroSide {
+    width: 100%;
+    height: 60%;
+  }
+
+  .HeroSideImage {
+    position: static !important;
+  }
 }
 
-.Illustration {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 40%;
-  z-index: -1;
-}
+/* Responsive PC */
+@media screen and (min-width: 768px) {
+  .HomeHeroContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .HeroSide div {
+    position: static !important;
+    height: 100%;
+  }
+  .HeroSide {
+    width: 50%;
+    height: 80%;
+  }
+
+  .HeroSideImage {
+    position: static !important;
+  }
+}
 /* hero end */
 
-/* about start */
+/* Home Cards start */
 .HomeAbout,
-.HomeTeam {
+.HomeTeam,
+.HomeEvents,
+.HomeReviews {
+  padding: 7.5rem 0;
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
+  justify-content: space-between;
+}
+
+.HomeAboutContainer,
+.HomeTeamContainer,
+.HomeEventsContainer {
+  /* width: 1%; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Home Card header */
+.HomeAboutHead,
+.HomeTeamHead,
+.HomeEventsHead,
+.HomeReviewsHead {
+  position: relative;
+}
+
+/* .HomeAboutHead::after,
+.HomeTeamHead::after,
+.HomeEventsHead::after,
+.HomeReviewsHead::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  width: 8ch;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--accent-color-blue);
+} */
+
+.HomeTeamInfoHead {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--accent-color-blue);
+}
+
+.HomeAboutInfo,
+.HomeTeamInfo {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.HomeAboutInfo::before,
+.HomeTeamInfo::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent-color-blue);
+}
+
+.HomeAboutImage {
+  order: -1;
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
 
 .HomeAboutLink,
-.HomeTeamLink {
-  align-self: flex-end;
-  color: var(--text-dark-color);
-  background-color: var(--accent-color);
-  padding: 0.4rem 1rem;
-  border-radius: 70px;
+.HomeTeamLink,
+.HomeEventsLink {
+  align-self: flex-start;
+  font-weight: 600;
+  color: var(--accent-color-green);
 }
-/* about end */
 
-/* team start */
-.HomeTeam {
+.HomeAboutLink::after,
+.HomeTeamLink::after,
+.HomeEventsLink::after {
+  height: 3px !important;
+  transition: transform 200ms ease-in-out !important;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .HomeAbout,
+  .HomeTeam,
+  .HomeEvents,
+  .HomeReviews {
+    padding: 12.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .HomeAboutContainer,
+  .HomeTeamContainer,
+  .HomeEventsContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .HomeAboutHead::after,
+  .HomeTeamHead::after,
+  .HomeEventsHead::after,
+  .HomeReviewsHead::after {
+    height: 5px;
+  }
+
+  .HomeAboutLink,
+  .HomeTeamLink,
+  .HomeEventsLink {
+    font-size: 1.2rem;
+  }
+  .HomeAboutImage {
+    position: relative;
+    order: unset;
+    width: 50%;
+  }
+}
+/* Cards end */
+
+/* Reviews Start */
+
+.HomeReviews {
+  gap: 2rem;
+}
+
+.ReviewsContainer {
+  /* width: 70%; */
+  overflow-x: hidden;
   display: flex;
-  flex-direction: column;
-  margin: 3rem 0;
-}
-
-.HomeTeamCardContainer {
-  padding: 1rem 1rem 1rem 0;
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.HomeTeamCardContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.HomeTeamCard {
-  background-color: var(--card-bg);
-  backdrop-filter: blur(5px);
-  min-width: 250px;
-  border-radius: 25px;
-  padding: 1.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
-.TeamCardImage {
-  position: relative;
-  width: 150px;
-  height: 150px;
+.Reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.TeamCardImage img {
-  border-radius: 50%;
+.ReviewsContent {
+  color: var(--accent-color-green);
+  font-size: clamp(1.45rem, 5vw, 2rem);
+  padding: 1rem 0;
 }
 
-.TeamCardPosition {
-  padding: 0.3rem 0.9rem;
-  background: var(--card-bg);
-  color: var(--text-lighter-color);
-  border-radius: 35px;
-  font-size: 0.9rem;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+.ReviewsContent::before {
+  content: "“";
+  font-family: "PT Sans";
+  font-size: 2em;
+  display: inline;
 }
+
+.ReviewsWriter {
+  color: var(--text-light-color);
+}
+@media screen and (min-width: 768px) {
+  .HomeReviews .HomeReviewsHead {
+    width: 6ch;
+  }
+
+  .ReviewsContainer {
+    width: 70%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .Reviews {
+    gap: 2rem;
+  }
+}
+/* Reviews End */

@@ -1,4 +1,4 @@
-const relativePath = "";
+const relativePath = "/images/member images/year 2/"; //Change this on deploy
 export const year2 = [
   {
     id: 1,
@@ -107,12 +107,12 @@ export const year2 = [
     insta: "http://instagram.com/rkt2600i",
     link: "https://www.linkedin.com/in/rishikesh-tiwari-23848220a",
   },
-  {
-    id: 14,
-    name: "Khushi",
-    avatar: `${relativePath}khushi.jpg`,
-    fb: "https://www.facebook.com/khushi.trivedi.127648",
-    insta: "https://instagram.com/khushie_2802",
-    link: "https://www.linkedin.com/in/khushi-trivedi-896754202",
-  },
+  // {
+  //   id: 14,
+  //   name: "Khushi",
+  //   avatar: `${relativePath}khushi.jpg`,
+  //   fb: "https://www.facebook.com/khushi.trivedi.127648",
+  //   insta: "https://instagram.com/khushie_2802",
+  //   link: "https://www.linkedin.com/in/khushi-trivedi-896754202",
+  // },
 ];

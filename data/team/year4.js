@@ -1,27 +1,33 @@
-const relativePath = "";
+const relativePath = "/images/member images/year 2/"; //Change this on deploy
 export const year4 = [
   {
     id: 1,
     name: "Anto Savio",
     position: "President",
-    insta: "https://www.instagram.com/a2_n_u_r_a_g/",
-    link: "www.linkedin.com/in/anurag-2-sarkar",
-    git: "https://github.com/a2nurag",
+    link: "https://www.linkedin.com/in/anto-prathik-savio-a29158154",
+    fb: "https://www.facebook.com/p.antoprathiksavio",
   },
   {
     id: 2,
     name: "Snehit",
     position: "Vice President",
+    link: "https://www.linkedin.com/in/snehit-mishra-64b391165/",
   },
   {
     id: 3,
-    name: "Sharbashish",
+    name: "Sharbashis",
     position: "General Secretary",
+    insta: "https://www.instagram.com/dundermufflin_09/",
+    link: " https://www.linkedin.com/in/sharbashisdas/",
+    fb: "https://www.facebook.com/sharbashis09/",
   },
   {
     id: 4,
     name: "Ankan",
     position: "Treasurer",
+    insta: "https://www.instagram.com/a_n_k_a_n_02/",
+    link: "https://www.linkedin.com/in/ankanchakraborty02/",
+    fb: "https://www.facebook.com/ankan.chakraborty.02/",
   },
   {
     id: 5,
@@ -37,21 +43,32 @@ export const year4 = [
     id: 7,
     name: "Piyush",
     position: "Sponsorship Head",
+    insta: "https://www.instagram.com/piyush.__.dwivedi/",
+    fb: "https://www.facebook.com/piyushkumar.dwivedi.336",
   },
   {
     id: 8,
     name: "Sayantan",
     position: "Technical Head",
+    insta: "https://www.instagram.com/raj_maity_047/",
+    link: "https://www.linkedin.com/in/sayantan-maity-047",
+    fb: "https://www.facebook.com/raj.maity.311",
   },
   {
     id: 9,
     name: "Shubhankar",
     position: "Graphics Head",
+    insta: "https://instagram.com/subhankardatta973",
+    link: "https://www.linkedin.com/in/subhankar-datta-909120207",
+    fb: "https://www.facebook.com/subhankar.datta.750",
   },
   {
     id: 10,
     name: "Bighnesh",
     position: "Multimedia Head",
+    insta: "https://www.instagram.com/bighnesh__mohanty/",
+    link: "https://www.linkedin.com/in/bighnesh-mohanty-255b04215/",
+    fb: "https://www.facebook.com/bighnesh.mohanty.37",
   },
   {
     id: 11,
@@ -62,11 +79,17 @@ export const year4 = [
     id: 12,
     name: "Avirup",
     position: "Logistics Head",
+    insta: "https://www.instagram.com/the_crytogenic_psysico/",
+    link: "https://www.linkedin.com/in/avirup-mazumder-601000181",
+    git: "https://github.com/AvirupMazumder",
+    fb: "https://www.facebook.com/avirup.mazumder",
   },
   {
     id: 13,
     name: "Geeta",
     position: "Logistics Head",
+    fb: "https://www.facebook.com/profile.php?id=100061623151194",
+    link: "https://www.linkedin.com/in/gottapu-geeta-deepika-00a3461aa",
   },
   {
     id: 14,
@@ -87,5 +110,6 @@ export const year4 = [
     id: 17,
     name: "Ashwini",
     position: "Event Head",
+    tw: "https://twitter.com/Ashwini46447799?s=08",
   },
 ];

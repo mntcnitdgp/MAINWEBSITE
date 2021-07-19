@@ -16,14 +16,9 @@ function TeamCard({
   twitter,
 }) {
   return (
-    <div className={`Card ${styles.TeamCard}`}>
-      {position && (
-        <p className={`${styles.DetailsPosition} ${styles.PositionDesktop}`}>
-          {position}
-        </p>
-      )}
+    <div className={styles.TeamCard}>
       <div className={styles.TeamCardAvatarContainer}>
-        {avatar && <Image src={avatar} width="100" height="100" />}
+        {avatar && <Image src={avatar} layout="fill" alt={name} quality="10" />}
       </div>
 
       <div className={styles.TeamCardDetailsContainer}>
@@ -37,7 +32,7 @@ function TeamCard({
               href={facebook}
               target="_blank"
             >
-              <FacebookLogo color="hsla(10, 50%, 97%, 1)" />
+              <FacebookLogo color="hsla(0, 0%, 100%, 0.7)" />
             </a>
           )}
 
@@ -47,7 +42,7 @@ function TeamCard({
               href={instagram}
               target="_blank"
             >
-              <InstagramLogo color="hsla(10, 50%, 97%, 1)" />
+              <InstagramLogo color="hsla(0, 0%, 100%, 0.7)" />
             </a>
           )}
 
@@ -57,7 +52,7 @@ function TeamCard({
               href={linkedin}
               target="_blank"
             >
-              <LinkedinLogo color="hsla(10, 50%, 97%, 1)" />
+              <LinkedinLogo color="hsla(0, 0%, 100%, 0.7)" />
             </a>
           )}
 
@@ -71,7 +66,7 @@ function TeamCard({
                 icon="github"
                 size="24"
                 stroke="none"
-                fill="hsla(0, 0%, 100%, 0.75)"
+                fill="hsla(0, 0%, 100%, 0.7)"
               />
             </a>
           )}

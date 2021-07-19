@@ -15,14 +15,13 @@ export default function Events() {
       variants={{
         pageInitial: {
           opacity: 0,
-          x: 200,
+          y: -200,
         },
         pageAnimate: {
           opacity: 1,
-          x: 0,
+          y: 0,
         },
       }}
-      exit={{ opacity: 0, x: -500 }}
     >
       <Head>
         <title>MNTC | Events</title>
@@ -34,6 +33,7 @@ export default function Events() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          className={styles.EventsHeader}
         >
           Events round the calendar
         </motion.h2>
