@@ -1,8 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/Nav.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 function SideBar({ clicked, setClicked, page, setPage }) {
+  const router = useRouter();
+  page = router.pathname;
+
   const variantSideBar = {
     initial: { x: 2000 },
     final: { x: 0 },
@@ -28,10 +32,6 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
-              onClick={() => {
-                setClicked(!clicked);
-                setPage("home");
-              }}
             >
               <Link href="/">
                 <h2 className={styles.NavLinks}>Home</h2>
@@ -45,7 +45,6 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               className={styles.NavItems}
               onClick={() => {
                 setClicked(!clicked);
-                setPage("team");
               }}
             >
               <Link href="/team">
@@ -60,7 +59,6 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               className={styles.NavItems}
               onClick={() => {
                 setClicked(!clicked);
-                setPage("events");
               }}
             >
               <Link href="/events">
@@ -75,7 +73,6 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               className={styles.NavItems}
               onClick={() => {
                 setClicked(!clicked);
-                setPage("about");
               }}
             >
               <Link href="/about">

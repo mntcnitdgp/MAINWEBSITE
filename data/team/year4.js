@@ -1,4 +1,4 @@
-const relativePath = "/images/member images/year 2/"; //Change this on deploy
+const relativePath = "/images/member images/year 4/"; //Change this on deploy
 export const year4 = [
   {
     id: 1,
@@ -33,6 +33,8 @@ export const year4 = [
     id: 5,
     name: "Ankita",
     position: "Convenor",
+    fb: "https://www.facebook.com/ankita.bhattacharya.161214 ",
+    insta: "https://instagram.com/bhattacharya_anki?utm_medium=copy_link",
   },
   {
     id: 6,
@@ -74,6 +76,8 @@ export const year4 = [
     id: 11,
     name: "Risabh",
     position: "Creative Head",
+    fb: "https://www.facebook.com/risabh.udgata",
+    insta: "https://instagram.com/risabh_udgata",
   },
   {
     id: 12,
@@ -95,11 +99,16 @@ export const year4 = [
     id: 14,
     name: "Rabin",
     position: "RnD Head",
+    fb: "https://www.facebook.com/profile.php?id=100033457952581",
+    insta: "https://instagram.com/warrior_2093?utm_medium=copy_link",
+    link: "https://www.linkedin.com/in/rabin-mondal-67127b1a3",
   },
   {
     id: 15,
     name: "Harshit",
     position: "Workshop Head",
+    fb: "https://www.facebook.com/harshit.shrinet.1",
+    insta: "https://instagram.com/harshit_shrinet",
   },
   {
     id: 16,
