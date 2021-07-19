@@ -71,7 +71,7 @@ function Hero() {
 
       <motion.div className={styles.HeroSide}>
         <Image
-          src={`${relativePath}/maths.svg`}
+          src={`${relativePath}maths.svg`}
           layout="fill"
           className={styles.HeroSideImage}
         />
@@ -84,16 +84,15 @@ function About() {
   return (
     <div className={styles.HomeAbout}>
       <div className={styles.HomeAboutContainer}>
-        <h2 className={styles.HomeAboutHead}>Get to Know Us</h2>
+        <h2 className={styles.HomeAboutHead}>Who are we?</h2>
         <p className={styles.HomeAboutInfo}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-          volutpat mauris id nisi, ridiculus in lacus sit. Venenatis curabitur
-          massa pulvinar consequat elit. Id sit blandit nunc nullam quis.
-          Nascetur mi tempor faucibus mollis dolor ipsum purus dolor. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Porttitor volutpat
-          mauris id nisi, ridiculus in lacus sit. Venenatis curabitur massa
-          pulvinar consequat elit. Id sit blandit nunc nullam quis. Nascetur mi
-          tempor faucibus mollis dolor ipsum purus dolor.
+          We are the official knowledge club of National Institute of
+          Technology, Durgapur. Established in 2004, the aim of our club is to
+          create a platform that encourages one to stimulate their love and
+          passion for mathematics in this world of technology. It is our goal to
+          fabricate the perfect balance of Maths and Technology by hosting
+          various events, webinars and workshops that inspire one to explore new
+          fields and innovations.
         </p>
         <Link href="/about">
           <a className={`text ${styles.HomeAboutLink}`}>
@@ -103,7 +102,7 @@ function About() {
       </div>
 
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}/about.svg`} layout="fill" />
+        <Image src={`${relativePath}about.svg`} layout="fill" />
       </div>
     </div>
   );
@@ -113,20 +112,20 @@ function Team() {
   return (
     <div className={styles.HomeTeam}>
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}/team.svg`} layout="fill" />
+        <Image src={`${relativePath}team.svg`} layout="fill" />
       </div>
 
       <div className={styles.HomeTeamContainer}>
         <h2 className={styles.HomeTeamHead}>Meet Our Team</h2>
+
         <p className={styles.HomeTeamInfo}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-          volutpat mauris id nisi, ridiculus in lacus sit. Venenatis curabitur
-          massa pulvinar consequat elit. Id sit blandit nunc nullam quis.
-          Nascetur mi tempor faucibus mollis dolor ipsum purus dolor. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Porttitor volutpat
-          mauris id nisi, ridiculus in lacus sit. Venenatis curabitur massa
-          pulvinar consequat elit. Id sit blandit nunc nullam quis. Nascetur mi
-          tempor faucibus mollis dolor ipsum purus dolor.
+          <span className={styles.HomeTeamInfoHead}>
+            'Together Everyone Achieves More'
+          </span>
+          Be it the smallest achievements or the largest accomplishments, it
+          requires the support and dedication of every member of the team. All
+          our endeavours are nothing but a display of the united attempts of our
+          zestful squad. Meet the MNTC family, the dynamic gang behind it all.
         </p>
         <Link href="/team">
           <a className={`text ${styles.HomeAboutLink}`}>Meet Our Team {">"}</a>
@@ -150,7 +149,7 @@ function Events() {
       </div>
 
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}/about.svg`} layout="fill" />
+        <Image src={`${relativePath}events.svg`} layout="fill" />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function TeamCard({
   return (
     <div className={styles.TeamCard}>
       <div className={styles.TeamCardAvatarContainer}>
-        {avatar && <Image src={avatar} layout="fill" />}
+        {avatar && <Image src={avatar} layout="fill" alt={name} quality="10" />}
       </div>
 
       <div className={styles.TeamCardDetailsContainer}>

@@ -20,10 +20,10 @@ const Navbar = () => {
   useEffect(() => {
     yRange.onChange((v) => {
       clicked
-        ? animation.start({ backgroundColor: "hsla(0, 0%, 5%, 0)" })
+        ? animation.start({ backgroundColor: "hsla(270, 6%, 7%, 0)" })
         : v
-        ? animation.start({ backgroundColor: "hsla(0, 0%, 5%, 1)" })
-        : animation.start({ backgroundColor: "hsla(0, 0%, 5%, 0)" });
+        ? animation.start({ backgroundColor: "hsla(270, 6%, 7%, 1)" })
+        : animation.start({ backgroundColor: "hsla(270, 6%, 7%, 0)" });
     });
   }, [yRange, clicked]);
 
@@ -37,7 +37,7 @@ const Navbar = () => {
       >
         <motion.div
           className={`container ${styles.TopBarContainer}`}
-          initial={{ backgroundColor: "hsla(0, 0%, 5%, 0)" }}
+          initial={{ backgroundColor: "hsla(270, 6%, 7%, 0)" }}
           animate={animation}
         >
           <div className={styles.TopBarLogo}>
@@ -49,8 +49,8 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 animate={{
                   fill: !clicked
-                    ? "hsla(202, 94%, 97%, 1)"
-                    : "hsla(0, 0%, 5%, 1)",
+                    ? "var(--text-lighter-color)"
+                    : "var(--text-light-color)",
                 }}
                 transition={{ delay: 0.2 }}
               >
@@ -136,24 +136,24 @@ const Navbar = () => {
           <div className={styles.TopBarSpacer}></div>
         </motion.div>
       </motion.div>
-      <SideBar clicked={clicked} setClicked={setClicked} />
+      <SideBar clicked={clicked} setClicked={setClicked} setPage={setPage} />
     </>
   );
 
   function HamBurger({ clicked }) {
     const variantBurger1 = {
-      no: { y: 0, rotate: 0, background: "var(--text-light-color)" },
-      yes: { y: 9, rotate: 45, background: "var(--text-dark-color)" },
+      no: { y: 0, rotate: 0, background: "var(--text-lighter-color)" },
+      yes: { y: 9, rotate: 45, background: "var(--text-light-color)" },
     };
 
     const variantBurger2 = {
-      no: { y: 7, x: 0, scale: 1, background: "var(--text-light-color)" },
-      yes: { y: 7, x: -10, scale: 0, background: "var(--text-dark-color)" },
+      no: { y: 7, x: 0, scale: 1, background: "var(--text-lighter-color)" },
+      yes: { y: 7, x: -10, scale: 0, background: "var(--text-light-color)" },
     };
 
     const variantBurger3 = {
-      no: { y: 14, rotate: 0, background: "var(--text-light-color)" },
-      yes: { y: 5, rotate: -45, background: "var(--text-dark-color)" },
+      no: { y: 14, rotate: 0, background: "var(--text-lighter-color)" },
+      yes: { y: 5, rotate: -45, background: "var(--text-light-color)" },
     };
     return (
       <motion.div className={styles.HamBurgerIcon}>
