@@ -12,7 +12,7 @@ export const year2 = [
 
   {
     id: 2,
-    name: "Swornali",
+    name: "Swarnali",
     avatar: `${relativePath}swarnali.jpeg`,
     position: "Event Manager, Content Writer",
     fb: "https://www.facebook.com/swarnali.saha.1088",

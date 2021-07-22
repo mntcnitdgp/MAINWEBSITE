@@ -32,6 +32,9 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               initial="initial"
               animate={clicked ? "final" : "initial"}
               className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
             >
               <Link href="/">
                 <h2 className={styles.NavLinks}>Home</h2>
