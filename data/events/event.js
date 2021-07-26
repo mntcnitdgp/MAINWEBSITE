@@ -80,4 +80,35 @@ PERKS OF PARTICIPATING IN THE NASA SPACE APPS CHALLENGE:
     startDate: "Sept 08, 2019",
     endDate: "Sept 09, 2019",
 },
+{
+	id:5,
+	name:"Tech Charades",
+	desc:`
+	“The whole art of war consists of guessing at what is on the other side of the hill."
+	Huh?
+	What are we talking about right?!
+	Remember those lockdown days where all out time would be spent playing scribble and wondering how much more time would be wasted like this? Well, guess what? It was not all in vain! It's finally time to put all those guessing skills to test, as this Aarohan, Team Aavishkar brings to you a whole new pattern- Tech Charades!
+	Decipher the scribblings and win interesting prizes.`,
+	smallDesc:`The increasing usability and application of CATIA in the industry has led to an increase in demand for CATIA designers. The two recent versions of CATIA that is CATIA V5 & V6 are now renowned as the world’s leading design product suite.Keeping this in mind, Aarohan, by Team Aavishkar, NIT Durgapur brings to you ‘CATIA V5 Workshop’ to introduce you to intricate concepts and in depth knowledge of designing from scratch which will make you a valuable asset to any organisation.`,
+	startDate: "April 03, 2021",
+	endDate:"April 04, 2021",
+},
+{
+	id:6,
+	name:"CATIA Workshop",
+	desc:`The increasing usability and application of CATIA in the industry has led to an increase in demand for CATIA designers. Propelled by the diligent and religious system developers at Dassault Systèmes’ who regularly keep track of the requirements, suggestions, feedbacks and complaints from their customers, the two recent versions of CATIA that is CATIA V5 & V6 are now renowned as the world’s leading design product suite. 
+	Keeping this in mind, Aarohan, by Team Aavishkar, NIT Durgapur brings to you ‘CATIA V5 Workshop’ where you will be trained by Ms. Manisha Karmakar to help you get better acquainted with CATIA V5. With more than 2 years of industrial experience and 3+ years of teaching experience, she’ll help you glide through the sessions seamlessly. 
+	Get introduced to intricate concepts and in depth knowledge of designing from scratch which will make you a valuable asset to any organisation. At the end of the 2 day Workshop, every participant will get a Certificate of Completion.`,
+	smallDesc:`Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
+	startDate: "April 02, 2021",
+	endDate:"April 03, 2021",
+},	
+{
+	id:7,
+	name:"Kryptic",
+	desc:`Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
+	smallDesc:`Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
+	startDate: "April 02, 2021",
+	endDate:"April 03, 2021",
+},
 ];
