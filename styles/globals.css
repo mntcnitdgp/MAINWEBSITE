@@ -103,12 +103,13 @@ h1 {
 h1 .colored {
   color: var(--accent-color-blue);
 }
+
 @media screen and (min-width: 768px) {
   h1::before {
     content: url("/images/svg/Vector.svg"); /*Change this on deploy*/
     position: absolute;
     top: 0;
-    left: -1rem;
+    left: -0.7rem;
     opacity: 0.7;
   }
 }
@@ -182,8 +183,12 @@ p {
   h3 {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
   }
-  p {
-    /* font-size: 1.2rem; */
+
+  .container {
+    width: 100%;
+    max-width: 1650px;
+    margin: auto;
+    padding: 0 clamp(40px, 3vw, 70px);
   }
 }
 

@@ -34,7 +34,7 @@ export default function Home() {
       <Head>
         <title>MNTC | NIT Durgapur</title>
         <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container ${styles.Home}`}>
@@ -96,7 +96,7 @@ function About() {
         </p>
         <Link href="/about">
           <a className={`text ${styles.HomeAboutLink}`}>
-            Get to Know More {">"}
+            Know More About Us {">"}
           </a>
         </Link>
       </div>

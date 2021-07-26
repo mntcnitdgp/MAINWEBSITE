@@ -31,7 +31,7 @@ const Team = () => {
       <Head>
         <title>MNTC | Meet the team</title>
         <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container`}>
@@ -84,7 +84,7 @@ const Team = () => {
           onClick={() => {
             setYear(4);
             setMemberList(year4);
-            setyearHead("Our Ultimate Heroes");
+            setyearHead("Our Fabulous Final years");
           }}
         >
           Fourth Year
@@ -98,7 +98,7 @@ const Team = () => {
           onClick={() => {
             setYear(3);
             setMemberList(year3);
-            setyearHead("To be Ultimate Heroes");
+            setyearHead("Our Terrific Third years");
           }}
         >
           Third Year
@@ -110,7 +110,7 @@ const Team = () => {
           onClick={() => {
             setYear(2);
             setMemberList(year2);
-            setyearHead("A long time left to be Heroes");
+            setyearHead("Our Super Second Years");
           }}
         >
           Second Year

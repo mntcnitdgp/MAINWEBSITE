@@ -32,6 +32,7 @@ function EventCard(props) {
           <p className={styles.DetailsDate}>{date}</p>
           <p className={styles.DetailsDesc}>
             {smallDesc}
+            {console.log(name + " " + smallDesc.length)}
             <Link href={`/events/${name}?` + `index=${id}`}>
               <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
             </Link>
