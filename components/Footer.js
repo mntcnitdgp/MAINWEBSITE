@@ -1,4 +1,3 @@
-import FeatherIcon from "feather-icons-react";
 import styles from "../styles/footer.module.css";
 import Link from "next/link";
 

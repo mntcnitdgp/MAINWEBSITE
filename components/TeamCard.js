@@ -1,7 +1,5 @@
 import styles from "../styles/Team.module.css";
-import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
-
 import FacebookLogo from "./Logos/FacebookLogo";
 import InstagramLogo from "./Logos/InstagramLogo";
 import LinkedinLogo from "./Logos/LinkedinLogo";
@@ -62,12 +60,12 @@ function TeamCard({
               href={github}
               target="_blank"
             >
-              <FeatherIcon
+              {/* <FeatherIcon
                 icon="github"
                 size="24"
                 stroke="none"
                 fill="hsla(0, 0%, 100%, 0.7)"
-              />
+              /> */}
             </a>
           )}
         </div>
