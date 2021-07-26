@@ -29,7 +29,7 @@ body {
   font-family: var(--general-font);
 }
 
-/* body::before {
+body::before {
   content: "";
   height: 300px;
   width: 300px;
@@ -54,11 +54,27 @@ body::after {
   right: -70px;
   opacity: 0.4;
   filter: blur(90px);
-} */
+}
 
 @media screen and (min-width: 768px) {
   body {
     padding-top: 0;
+  }
+
+  body::before {
+    height: 500px;
+    width: 500px;
+    top: -350px;
+    left: -200px;
+    opacity: 0.2;
+  }
+
+  body::after {
+    height: 400px;
+    width: 400px;
+    bottom: -150px;
+    right: -150px;
+    opacity: 0.2;
   }
 }
 

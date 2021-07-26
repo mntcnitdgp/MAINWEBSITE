@@ -9,14 +9,16 @@ import {
   useAnimation,
 } from "framer-motion";
 import SideBar from "./SideBar";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  // console.log(key);
+  const router = useRouter();
   const animation = useAnimation();
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const [clicked, setClicked] = useState(false);
-  const [page, setPage] = useState("home");
-
+  const page = router.pathname;
   useEffect(() => {
     yRange.onChange((v) => {
       clicked
@@ -75,13 +77,10 @@ const Navbar = () => {
             <Link href="/">
               <a
                 className={
-                  page === "home"
+                  page === "/"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
-                onClick={() => {
-                  setPage("home");
-                }}
               >
                 Home
               </a>
@@ -90,13 +89,10 @@ const Navbar = () => {
             <Link href="/team">
               <a
                 className={
-                  page === "team"
+                  page === "/team"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
-                onClick={() => {
-                  setPage("team");
-                }}
               >
                 Our Team
               </a>
@@ -105,13 +101,10 @@ const Navbar = () => {
             <Link href="/events">
               <a
                 className={
-                  page === "events"
+                  page === "/events"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
-                onClick={() => {
-                  setPage("events");
-                }}
               >
                 Events
               </a>
@@ -120,13 +113,10 @@ const Navbar = () => {
             <Link href="/about">
               <a
                 className={
-                  page === "about"
+                  page === "/about"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
-                onClick={() => {
-                  setPage("about");
-                }}
               >
                 About Us
               </a>
@@ -136,7 +126,7 @@ const Navbar = () => {
           <div className={styles.TopBarSpacer}></div>
         </motion.div>
       </motion.div>
-      <SideBar clicked={clicked} setClicked={setClicked} setPage={setPage} />
+      <SideBar clicked={clicked} setClicked={setClicked} />
     </>
   );
 
