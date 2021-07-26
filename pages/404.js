@@ -1,19 +1,24 @@
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Notfound.module.css";
 
 const notFound = () => {
   return (
-    <>
-      <div className={styles.container}>
-        <h1>Not Found</h1>
-        <p>
-          Go back to the{" "}
-          <Link href="/">
-            <a>Home Page</a>
-          </Link>
-        </p>
+    <div className={styles.NotFound}>
+      <div className={`${styles.ErrorContainer} container`}>
+        <div className={styles.ErrorCode}>
+          <img src="/images/svg/404.svg" />
+        </div>
+        <h2 class={styles.ErrorText}>
+          The page you requested is not available
+        </h2>
+
+        <Link href="/">
+          <a className={`${styles.ErrorButton} solid`}>
+            Get back to the Home Page
+          </a>
+        </Link>
       </div>
-    </>
+    </div>
   );
 };
 
