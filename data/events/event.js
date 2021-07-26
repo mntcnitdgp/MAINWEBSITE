@@ -63,4 +63,21 @@ export const events = [
     startDate: "January 1 2021",
     endDate: "January 1 2021",
   },
+{
+	id: 4,
+    name: "NASA Space Apps Challenge",
+ 
+    desc: ` Maths N Tech Club, NIT Durgapur was no less delighted than honoured to bring to all an opportunity of this magnitude for the first time in Durgapur. 
+    The first round was in the form of a HACKATHON where students from colleges in and around Durgapur would be competing. Top three teams were nominated from this round who then participated in the national centralized hackathon of all qualifiers. 
+    The winners of this hackathon got the marvellous opportunity to be nominated to NASA, where they got the chance to attempt to work on the NASA space app accelerator.
+
+PERKS OF PARTICIPATING IN THE NASA SPACE APPS CHALLENGE:
+*The first 30 teams under each registration category were entitled to a discount on the registration fees on behalf of Maths N Tech Club.
+**All participants were awarded participation certificates from NASA. Winners at the college level received a Winner’s certificate.
+***The domains for HACKATHON included Painting, Model Making, IoT, robotics, Machine Learning.`,
+    smallDesc: `Does the name NASA give you goosebumps? Ever been stirred with the idea of being felicitated at NASA? This event was the perfect opportunity for all those whose answers to these questions are yes!
+    The starting step of the roadmap for the opportunity to work on the NASA space app accelerator, this hackathon allowed you to dream your greatest dreams.`,
+    startDate: "Sept 08, 2019",
+    endDate: "Sept 09, 2019",
+},
 ];
