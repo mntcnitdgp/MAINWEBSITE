@@ -34,7 +34,7 @@ export default function Home() {
       <Head>
         <title>MNTC | NIT Durgapur</title>
         <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container ${styles.Home}`}>

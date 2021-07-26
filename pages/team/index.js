@@ -31,7 +31,7 @@ const Team = () => {
       <Head>
         <title>MNTC | Meet the team</title>
         <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container`}>
