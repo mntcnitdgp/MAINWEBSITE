@@ -96,7 +96,7 @@ function About() {
         </p>
         <Link href="/about">
           <a className={`text ${styles.HomeAboutLink}`}>
-            Get to Know More {">"}
+            Know More About Us {">"}
           </a>
         </Link>
       </div>

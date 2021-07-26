@@ -185,6 +185,13 @@ p {
   p {
     /* font-size: 1.2rem; */
   }
+
+  .container {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 clamp(30px, 2vw, 50px);
+  }
 }
 
 .carousel {
