@@ -191,19 +191,3 @@ p {
     padding: 0 clamp(40px, 3vw, 70px);
   }
 }
-
-.carousel {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-}
-
-.control-dots {
-  position: static !important;
-  order: 2;
-  text-align: unset !important;
-}
-
-.slide {
-  text-align: unset !important;
-}

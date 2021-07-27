@@ -7,8 +7,11 @@ import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
 import HomeSVG from "../components/HomeSVG";
 import { reviews } from "../data/reviews";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const relativePath = "/images/svg/"; //Change this on deploy
 
@@ -156,23 +159,52 @@ function Events() {
 }
 
 function Reviews() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 700 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 700, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+      // partialVisibilityGutter: 20,
+      // gap: 10,
+    },
+  };
   return (
     <div className={styles.HomeReviews}>
       <h2 className={styles.HomeReviewsHead}>What Others Have to Say...</h2>
       <Carousel
+        swipeable={true}
         className={styles.ReviewsContainer}
+        draggable={false}
+        responsive={responsive}
+        infinite={true}
         autoPlay={true}
-        interval={8000}
-        showThumbs={false}
-        infiniteLoop={true}
-        showArrows={false}
-        showStatus={false}
+        autoPlaySpeed={4000}
+        customTransition="all .5s ease"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        infinite={true}
+        // partialVisible="true"
+        sliderClass="react-multi-carousel-track"
+        additionalTransfrom={0}
       >
         {reviews.map((review) => {
           return (
-            <div className={styles.Reviews}>
-              <h3 className={styles.ReviewsContent}>{review.content}</h3>
-              <p className={styles.ReviewsWriter}> - {review.writer}</p>
+            <div style={{ padding: "1rem" }}>
+              <div className={styles.Reviews}>
+                <h3 className={styles.ReviewsContent}>{review.content}</h3>
+                <p className={styles.ReviewsWriter}> - {review.writer}</p>
+              </div>
             </div>
           );
         })}
