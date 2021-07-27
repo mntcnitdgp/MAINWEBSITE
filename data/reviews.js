@@ -26,4 +26,9 @@ export const reviews = [
     content: "MNTC is *an adjective to describe MNTC*",
     writer: "Lorem Ipsum - Web Developer's Dream",
   },
+  {
+    id: 7,
+    content: "Commit karna hai net aaja be",
+    writer: "Lorem Ipsum - Web Developer's Dream",
+  },
 ];
