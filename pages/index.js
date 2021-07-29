@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
-import HomeSVG from "../components/HomeSVG";
+// import HomeSVG from "../components/HomeSVG";
 import { reviews } from "../data/reviews";
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -32,7 +32,6 @@ export default function Home() {
           },
         },
       }}
-      // exit={{ opacity: 0 }}
     >
       <Head>
         <title>MNTC | NIT Durgapur</title>
@@ -192,7 +191,7 @@ function Reviews() {
         customTransition="all .5s ease"
         transitionDuration={500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "container ${smobile"]}
         infinite={true}
         // partialVisible="true"
         sliderClass="react-multi-carousel-track"
