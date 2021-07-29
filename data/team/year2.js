@@ -96,7 +96,7 @@ export const year2 = [
   {
     id: 11,
     name: "Ayushi",
-    avatar: `${relativePath}ayushi.png`,
+    avatar: `${relativePath}ayushi.jpeg`,
     position: "Graphics Designer",
     fb: "https://www.facebook.com/ayushi.meena.50702",
     insta: "https://www.instagram.com/ayushiii._.12/",
