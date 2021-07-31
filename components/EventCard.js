@@ -24,7 +24,13 @@ function EventCard(props) {
 
       <div className={styles.EventCardPC}>
         <div className={styles.EventPosterContainer}>
-          <Image src={image} alt={name} src={image} layout="fill"></Image>
+          <Image
+            src={image}
+            alt={name}
+            src={image}
+            layout="fill"
+            placeholder="blur"
+          ></Image>
         </div>
 
         <div className={styles.EventDetails}>

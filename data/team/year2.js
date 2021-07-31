@@ -60,7 +60,7 @@ export const year2 = [
   {
     id: 7,
     name: "Niraj",
-    avatar: `${relativePath}niraj.jpg`,
+    avatar: `${relativePath}niraj.jpeg`,
     position: "Event Manger, Web Developer",
     fb: "https://www.facebook.com/profile.php?id=100060964428339",
     insta: "https://www.instagram.com/niraj_raj13/",
@@ -105,7 +105,7 @@ export const year2 = [
   {
     id: 12,
     name: "Debjit",
-    avatar: `${relativePath}debjit.jpg`,
+    avatar: `${relativePath}debjit.jpeg`,
     position: "Event Manager",
     fb: "https://m.facebook.com/profile.php?id=100026349304600",
     insta: "https://www.instagram.com/deb_jit_03_/",

@@ -193,10 +193,11 @@ p {
 
 .react-multiple-carousel__arrow--right {
   right: 0 !important;
-  background: var(--card-bg) !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  /* color: black !important; */
 }
 
 .react-multiple-carousel__arrow--left {
   left: 0 !important;
-  background: var(--card-bg) !important;
+  background: rgba(255, 255, 255, 0.3) !important;
 }
