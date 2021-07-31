@@ -27,6 +27,8 @@
 
 .EventPosterContainer {
   position: relative;
+  min-height: 100px;
+  min-width: 100px;
   height: clamp(100px, 35vw, 150px);
   width: clamp(100px, 35vw, 150px);
 }
