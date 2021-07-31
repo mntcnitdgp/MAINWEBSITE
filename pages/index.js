@@ -190,7 +190,7 @@ function Reviews() {
         customTransition="all .5s ease"
         transitionDuration={500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "container ${smobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
         infinite={true}
         // partialVisible="true"
         sliderClass="react-multi-carousel-track"
