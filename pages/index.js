@@ -162,7 +162,7 @@ function Reviews() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 2, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 700 },
@@ -173,10 +173,9 @@ function Reviews() {
       breakpoint: { max: 700, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      // partialVisibilityGutter: 20,
-      // gap: 10,
     },
   };
+
   return (
     <div className={styles.HomeReviews}>
       <h2 className={styles.HomeReviewsHead}>What Others Have to Say...</h2>
@@ -199,7 +198,7 @@ function Reviews() {
       >
         {reviews.map((review) => {
           return (
-            <div style={{ padding: "1rem" }}>
+            <div className={styles.ReviewsOuterContainer}>
               <div className={styles.Reviews}>
                 <h3 className={styles.ReviewsContent}>{review.content}</h3>
                 <p className={styles.ReviewsWriter}> - {review.writer}</p>

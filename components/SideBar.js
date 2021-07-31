@@ -50,8 +50,8 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 setClicked(!clicked);
               }}
             >
-              <Link href="/team">
-                <h2 className={styles.NavLinks}>Our Team</h2>
+              <Link href="/about">
+                <h2 className={styles.NavLinks}>About Us</h2>
               </Link>
             </motion.li>
 
@@ -78,8 +78,8 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 setClicked(!clicked);
               }}
             >
-              <Link href="/about">
-                <h2 className={styles.NavLinks}>About Us</h2>
+              <Link href="/team">
+                <h2 className={styles.NavLinks}>Our Team</h2>
               </Link>
             </motion.li>
           </div>

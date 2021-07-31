@@ -110,7 +110,6 @@ h1 .colored {
     position: absolute;
     top: 0;
     left: -0.7rem;
-    opacity: 0.7;
   }
 }
 
@@ -190,4 +189,14 @@ p {
     margin: auto;
     padding: 0 clamp(40px, 3vw, 70px);
   }
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+  background: var(--card-bg) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+  background: var(--card-bg) !important;
 }

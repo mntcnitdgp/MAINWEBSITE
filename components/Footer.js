@@ -89,9 +89,12 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+        {/* <hr /> */}
       </div>
-      <div className={styles.FooterCopyright}>
-        © All rights reserved by MNTC
+      <div className="container">
+        <div className={styles.FooterCopyright}>
+          © All rights reserved by MNTC
+        </div>
       </div>
     </footer>
   );

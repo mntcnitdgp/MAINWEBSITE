@@ -203,6 +203,9 @@
   display: flex;
   flex-direction: column;
 }
+.ReviewsOuterContainer {
+  padding: 0 5px;
+}
 
 .Reviews {
   display: flex;
@@ -217,6 +220,8 @@
 .ReviewsContent {
   color: var(--accent-color-green);
   font-size: clamp(1.45rem, 5vw, 2rem);
+  line-height: 150%;
+  display: flex;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
@@ -225,10 +230,18 @@
   content: "“";
   font-family: "PT Sans";
   font-size: 2em;
-  display: inline;
+  display: block;
+  width: min-content;
+  height: 100%;
 }
 
 .ReviewsWriter {
   color: var(--text-light-color);
+  padding-left: 1rem;
 }
-/* Reviews End */
+
+@media screen and (min-width: 768px) {
+  .ReviewsOuterContainer {
+    padding: 0 1rem;
+  }
+} /* Reviews End */

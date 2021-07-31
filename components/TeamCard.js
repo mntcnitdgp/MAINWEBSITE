@@ -3,6 +3,8 @@ import Image from "next/image";
 import FacebookLogo from "./Logos/FacebookLogo";
 import InstagramLogo from "./Logos/InstagramLogo";
 import LinkedinLogo from "./Logos/LinkedinLogo";
+import GithubLogo from "./Logos/GithubLogo";
+
 function TeamCard({
   name,
   avatar,
@@ -60,12 +62,7 @@ function TeamCard({
               href={github}
               target="_blank"
             >
-              {/* <FeatherIcon
-                icon="github"
-                size="24"
-                stroke="none"
-                fill="hsla(0, 0%, 100%, 0.7)"
-              /> */}
+              <GithubLogo color="hsla(0, 0%, 100%, 0.7)" />
             </a>
           )}
         </div>
