@@ -113,4 +113,44 @@ The starting step of the roadmap for the opportunity to work on the NASA space a
     startDate: "April 02, 2021",
     endDate: "April 03, 2021",
   },
+  {
+    id:8,
+    name:"Matrix",
+    desc:`This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
+Bring out the Mathematician in you, gather your teams, expand your territories in this perfect amalgamation of traditional board games and old school maths and emerge together as the strongest force in this exhilarating event  Matrix!`,
+smallDesc:`This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic: MATRIX,the perfect amalgamation of traditional board games and old school maths!!!`,
+     startDate:"April 01, 2021",
+     endDate:"April 02, 2021",
+},
+{
+    id: 9,
+    name: "Knock Knock",
+    desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
+Well we’ve got you covered.
+With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy when you crave for that serene bliss of solving the unsolvable.
+
+Given below are a few simple rules that need to be adhered to:
+1. It is a 2 Day event.
+2. Total time allotted will be 60 minutes for each day.
+3. A total of 15 questions to be answered .
+4. +3 for every correct answer and -1 for every incorrect answer.
+5. All questions have to be attempted compulsorily.
+6. Time is an integral factor. Participants answering first will be given preference in the Leaderboard.
+7. This event is EXCLUSIVELY for first years.
+
+So dear freshers, what are you waiting for? Solve as many questions as you can in the least time possible and experience the thrill of seeing your name at the very top!`,
+    smallDesc: `Are you a Math-aholic?
+Do brainstorming problem statements,mind-boggling  permutations and  seemingly impossible-to-crack codes excite you?
+With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy when you crave for that serene bliss of solving the unsolvable.`,
+    startDate: "April 02, 2021",
+    endDate: "April 03, 2021",
+  },
+	{
+    id: 10,
+    name: "Brain darts",
+    desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
+    smallDesc: `Just like a vector, the magnitude is not the only thing that matters in Brain Darts .As you witness your scores run riot, just by a correct sense of direction!!!Miss and see yourself fall behind on the leaderboad. Hit and you’ll see yourself reach the pinnacle!!!And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
+    startDate: "April 01, 2021",
+    endDate: "April 02, 2021",
+  },
 ];
