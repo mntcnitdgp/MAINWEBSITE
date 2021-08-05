@@ -30,6 +30,7 @@ function EventCard(props) {
             src={image}
             layout="fill"
             placeholder="blur"
+            priority={true}
           ></Image>
         </div>
 

@@ -18,7 +18,16 @@ function TeamCard({
   return (
     <div className={styles.TeamCard}>
       <div className={styles.TeamCardAvatarContainer}>
-        {avatar && <Image src={avatar} layout="fill" alt={name} quality="10" />}
+        {avatar && (
+          <Image
+            src={avatar}
+            layout="fill"
+            alt={name}
+            quality="10"
+            placeholder="blur"
+            priority={true}
+          />
+        )}
       </div>
 
       <div className={styles.TeamCardDetailsContainer}>
