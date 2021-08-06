@@ -3,7 +3,7 @@ export const year3 = [
   {
     id: 1,
     name: "Karam",
-    position: "Web Developer",
+    position: "Web Developer, Graphics Designer",
     avatar: `${relativePath}karam.jpg`,
     insta: "https://www.instagram.com/a_cosmic_teen/",
     link: "https://www.linkedin.com/in/karamkumarsahoo/",
