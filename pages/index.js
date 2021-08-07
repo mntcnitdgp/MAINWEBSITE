@@ -34,9 +34,10 @@ export default function Home() {
         <title>MNTC | NIT Durgapur</title>
         <meta
           name="description"
-          content="Maths N Tech Club (MNTC), NIT Durgapur"
+          content="Maths N Tech Club (MNTC), NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur. The aim of our club is to create a platform that encourages one to stimulate their love and passion for mathematics in this world of technology"
         />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="msvalidate.01" content="4C7FB6C4BE81377F848B237469F2906E" />
       </Head>
 
       <div className={`container ${styles.Home}`}>

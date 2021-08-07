@@ -31,7 +31,10 @@ export default function Events() {
         <AnimatePresence>
           <Head>
             <title>MNTC | {event.name}</title>
-            <meta name="description" content="Blah Blah Blah" />
+            <meta
+              name="description"
+              content={` Maths N Tech Club , NIT Durgapur. ${smallDesc}`}
+            />
             <link rel="icon" href="/favicon.svg" />
           </Head>
 
