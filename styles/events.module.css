@@ -51,7 +51,7 @@
 }
 
 /* Responsive */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .EventPosterContainer {
     min-height: 175px;
     min-width: 175px;
@@ -82,7 +82,7 @@
     align-items: center;
     gap: 2rem;
     border: none;
-    background-color: hsl(270, 6%, 12%);
+    background: var(--card-bg);
   }
 
   .DetailsMore {

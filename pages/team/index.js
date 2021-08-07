@@ -30,7 +30,10 @@ const Team = () => {
     >
       <Head>
         <title>MNTC | Meet the team</title>
-        <meta name="description" content="Blah Blah Blah" />
+        <meta
+          name="description"
+          content="Team, Maths and Tech Club (MNTC) NIT Durgapur"
+        />
         <link rel="icon" href="/favicon.svg" />
       </Head>
 

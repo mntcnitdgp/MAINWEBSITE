@@ -85,7 +85,7 @@
 /* Copyright ends */
 
 /* Responsive PC */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .Footer {
     border-radius: 0;
   }

@@ -21,7 +21,10 @@ export default function About() {
     >
       <Head>
         <title>MNTC | About Us</title>
-        <meta name="description" content="Blah Blah Blah" />
+        <meta
+          name="description"
+          content="About Us, Maths N Tech Club (MNTC), NIT Durgapur"
+        />
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
@@ -63,7 +66,11 @@ export default function About() {
           </div>
 
           <div className={styles.AboutInfoSide}>
-            <img src="/images/about.jpg" className={styles.AboutInfoImage} />
+            <img
+              src="/images/about.jpg"
+              className={styles.AboutInfoImage}
+              alt="About Us Illustration"
+            />
           </div>
         </div>
       </div>

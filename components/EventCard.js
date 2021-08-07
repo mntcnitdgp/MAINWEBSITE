@@ -31,7 +31,7 @@ function EventCard(props) {
             layout="fill"
             placeholder="blur"
             priority={true}
-          ></Image>
+          />
         </div>
 
         <div className={styles.EventDetails}>

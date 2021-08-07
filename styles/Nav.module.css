@@ -23,7 +23,7 @@
 }
 
 /* Responsive Phone */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .TopBarSpacer {
     display: none;
   }
@@ -102,7 +102,7 @@
 }
 
 /* Responsive PC */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .TopBar {
     height: 4rem;
     position: static;
@@ -145,6 +145,7 @@
     list-style: none;
     gap: 2rem;
     flex: 1;
+    min-width: 500px;
   }
 
   .NavLinks {

@@ -25,7 +25,10 @@ export default function Events() {
     >
       <Head>
         <title>MNTC | Events</title>
-        <meta name="description" content="Blah Blah Blah" />
+        <meta
+          name="description"
+          content="Events, Maths N Tech Club (MNTC), NIT Durgapur"
+        />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className={`container`}>

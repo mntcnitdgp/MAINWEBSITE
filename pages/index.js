@@ -5,15 +5,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
-// import HomeSVG from "../components/HomeSVG";
 import { reviews } from "../data/reviews";
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const relativePath = "/images/svg/"; //Change this on deploy
+const relativePath = "/images/svg/";
 
 export default function Home() {
   return (
@@ -35,7 +32,10 @@ export default function Home() {
     >
       <Head>
         <title>MNTC | NIT Durgapur</title>
-        <meta name="description" content="Blah Blah Blah" />
+        <meta
+          name="description"
+          content="Maths N Tech Club (MNTC), NIT Durgapur"
+        />
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
@@ -76,6 +76,7 @@ function Hero() {
           src={`${relativePath}maths.svg`}
           layout="fill"
           className={styles.HeroSideImage}
+          alt="MNTC Home Page Illustration"
         />
       </motion.div>
     </div>
@@ -104,7 +105,11 @@ function About() {
       </div>
 
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}about.svg`} layout="fill" />
+        <Image
+          src={`${relativePath}about.svg`}
+          layout="fill"
+          alt="MNTC About Us Illustration"
+        />
       </div>
     </div>
   );
@@ -114,7 +119,11 @@ function Team() {
   return (
     <div className={styles.HomeTeam}>
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}team.svg`} layout="fill" />
+        <Image
+          src={`${relativePath}team.svg`}
+          layout="fill"
+          alt="MNTC Team Illustration"
+        />
       </div>
 
       <div className={styles.HomeTeamContainer}>
@@ -151,7 +160,11 @@ function Events() {
       </div>
 
       <div className={styles.HomeAboutImage}>
-        <Image src={`${relativePath}events.svg`} layout="fill" />
+        <Image
+          src={`${relativePath}events.svg`}
+          layout="fill"
+          alt="MNTC Events Illustration"
+        />
       </div>
     </div>
   );
@@ -162,12 +175,12 @@ function Reviews() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 700 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
     mobile: {
       breakpoint: { max: 700, min: 0 },
@@ -192,7 +205,6 @@ function Reviews() {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         infinite={true}
-        // partialVisible="true"
         sliderClass="react-multi-carousel-track"
         additionalTransfrom={0}
       >
