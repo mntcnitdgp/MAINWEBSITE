@@ -102,6 +102,7 @@ export const year3 = [
   {
     id: 12,
     name: "Siddharth",
+    position: "Event Manager",
     insta: "https://www.instagram.com/_wake_up_sid._/",
     avatar: `${relativePath}siddharth.jpg`,
     link: "https://www.linkedin.com/in/siddharth-tripathi-8299861aa",
@@ -112,7 +113,7 @@ export const year3 = [
     name: "Abhishek",
     position: "Event Manager",
     insta: "https://www.instagram.com/abhiking54/",
-    avatar: `${relativePath}abhishek.jpg`,
+    avatar: `${relativePath}abhishek.jpeg`,
     link: "https://www.linkedin.com/in/abhishek-rout-3b01ab1b5",
     fb: "https://www.facebook.com/profile.php?id=100010224999683",
   },
