@@ -34,8 +34,6 @@ const Team = () => {
           name="description"
           content="Maths N Tech Club, NIT Durgapur. Be it the smallest achievements or the largest accomplishments, "
         />
-        <meta http-equiv="content-language" content="en" />
-        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container`}>

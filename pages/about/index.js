@@ -25,8 +25,6 @@ export default function About() {
           name="description"
           content="Maths N Tech Club, NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur."
         />
-        <meta http-equiv="content-language" content="en" />
-        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className={`container ${styles.About}`}>

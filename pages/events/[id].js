@@ -35,8 +35,7 @@ export default function Events() {
               name="description"
               content={` Maths N Tech Club , NIT Durgapur`}
             />
-            <link rel="icon" href="/favicon.svg" />
-            <meta http-equiv="content-language" content="en" />
+            <meta name="robots" content="noindex" />
           </Head>
 
           <div className={`container ${styles.EventFullContainer}`}>
