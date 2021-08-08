@@ -40,14 +40,14 @@ const Team = () => {
 
       <div className={`container`}>
         <YearSwitch />
-        <motion.h2
-          className={styles.TeamHeader}
+        <motion.h1
+          className={`${styles.TeamHeader} secondary`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
           {yearHead}
-        </motion.h2>
+        </motion.h1>
 
         <motion.div
           className={styles.TeamList}

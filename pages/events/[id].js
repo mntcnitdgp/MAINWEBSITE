@@ -41,10 +41,10 @@ export default function Events() {
 
           <div className={`container ${styles.EventFullContainer}`}>
             <Link href="/events">
-              <h2 className={styles.EventFullHeader}>
+              <h1 className={`${styles.EventFullHeader} secondary`}>
                 <ArrowLeft />
                 {event.name}
-              </h2>
+              </h1>
             </Link>
 
             <div className={styles.EventContainer}>

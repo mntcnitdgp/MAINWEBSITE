@@ -30,14 +30,14 @@ export default function Events() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className={`container`}>
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className={styles.EventsHeader}
+          className={`${styles.EventsHeader} secondary`}
         >
           Events round the calendar
-        </motion.h2>
+        </motion.h1>
         <div className={styles.EventList}>
           {events.map((event) => {
             return <EventCard key={event.id} details={event} />;

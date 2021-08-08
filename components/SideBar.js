@@ -37,7 +37,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/">
-                <h2 className={styles.NavLinks}>Home</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>Home</h2>
               </Link>
             </motion.li>
 
@@ -51,7 +51,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/about">
-                <h2 className={styles.NavLinks}>About Us</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>About Us</h2>
               </Link>
             </motion.li>
 
@@ -65,7 +65,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/events">
-                <h2 className={styles.NavLinks}>Events</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>Events</h2>
               </Link>
             </motion.li>
 
@@ -79,7 +79,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/team">
-                <h2 className={styles.NavLinks}>Our Team</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>Our Team</h2>
               </Link>
             </motion.li>
           </div>
