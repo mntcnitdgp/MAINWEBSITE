@@ -32,8 +32,9 @@ const Team = () => {
         <title>MNTC | Meet the team</title>
         <meta
           name="description"
-          content="Maths N Tech Club, NIT Durgapur. Be it the smallest achievements or the largest accomplishments, it requires the support and dedication of every member of the team. All our endeavours are nothing but a display of the united attempts of our zestful squad. Meet the MNTC family, the dynamic gang behind it all"
+          content="Maths N Tech Club, NIT Durgapur. Be it the smallest achievements or the largest accomplishments, "
         />
+        <meta http-equiv="content-language" content="en" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
 

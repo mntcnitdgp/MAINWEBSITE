@@ -33,9 +33,10 @@ export default function Events() {
             <title>MNTC | {event.name}</title>
             <meta
               name="description"
-              content={` Maths N Tech Club , NIT Durgapur. ${smallDesc}`}
+              content={` Maths N Tech Club , NIT Durgapur`}
             />
             <link rel="icon" href="/favicon.svg" />
+            <meta http-equiv="content-language" content="en" />
           </Head>
 
           <div className={`container ${styles.EventFullContainer}`}>

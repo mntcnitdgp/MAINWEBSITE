@@ -23,7 +23,7 @@ export default function About() {
         <title>MNTC | About Us</title>
         <meta
           name="description"
-          content="Maths N Tech Club, NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur. The aim of our club is to create a platform that encourages one to stimulate their love and passion for mathematics in this world of technology"
+          content="Maths N Tech Club, NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur."
         />
         <link rel="icon" href="/favicon.svg" />
       </Head>

@@ -25,6 +25,7 @@ export default function Events() {
     >
       <Head>
         <title>MNTC | Events</title>
+        <meta http-equiv="content-language" content="en" />
         <meta name="description" content="Maths N Tech Club, NIT Durgapur. " />
         <link rel="icon" href="/favicon.svg" />
       </Head>
