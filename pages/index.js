@@ -39,6 +39,10 @@ export default function Home() {
         <meta http-equiv="content-language" content="en" />
         <link rel="icon" href="/favicon.svg" />
         <meta name="msvalidate.01" content="4C7FB6C4BE81377F848B237469F2906E" />
+        <meta
+          name="google-site-verification"
+          content="3q8deL961hB6FrHYYUHYPlpCi_PRJsawYAZGY1JEDTs"
+        />
       </Head>
 
       <div className={`container ${styles.Home}`}>
