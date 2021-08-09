@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Nav.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -82,6 +83,16 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 <h2 className={`${styles.NavLinks} secondary`}>Our Team</h2>
               </Link>
             </motion.li>
+          </div>
+
+          <div className={styles.NitdgpLogo}>
+            <Image
+              src="/images/nitdgp.png"
+              width="100"
+              height="100"
+              quality="15"
+              alt="NIT Durgapur Logo"
+            />
           </div>
         </motion.nav>
       )}
