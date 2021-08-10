@@ -24,7 +24,6 @@
 
 body {
   padding-top: 4rem;
-  /* background: hsla(0, 0%, 10%, 1); */
   background-color: hsl(270, 6%, 7%);
   font-family: var(--general-font);
 }
@@ -90,7 +89,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1.primary {
   color: var(--text-light-color);
   font-family: var(--header-font);
   font-weight: 600;
@@ -100,21 +99,20 @@ h1 {
   position: relative;
 }
 
-h1 .colored {
+h1.primary .colored {
   color: var(--accent-color-blue);
 }
 
 @media screen and (min-width: 768px) {
-  h1::before {
+  h1.primary::before {
     content: url("/images/svg/Vector.svg"); /*Change this on deploy*/
     position: absolute;
     top: 0;
     left: -0.7rem;
-    opacity: 0.7;
   }
 }
 
-h2 {
+.secondary {
   color: var(--text-light-color);
   font-family: var(--header-font);
   font-weight: 600;
@@ -170,13 +168,19 @@ p {
   color: var(--text-lighter-color);
 }
 
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+}
+
 /* Desktop Changes start here*/
 @media screen and (min-width: 768px) {
-  h1 {
+  h1.primary {
     font-size: clamp(6.5rem, 10vw, 9rem);
   }
 
-  h2 {
+  .secondary {
     font-size: clamp(3rem, 7vw, 4.2rem);
   }
 
@@ -192,18 +196,13 @@ p {
   }
 }
 
-.carousel {
-  all: unset;
-  display: flex;
-  flex-direction: column;
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  /* color: black !important; */
 }
 
-.control-dots {
-  position: static !important;
-  order: 2;
-  text-align: unset !important;
-}
-
-.slide {
-  text-align: unset !important;
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+  background: rgba(255, 255, 255, 0.3) !important;
 }

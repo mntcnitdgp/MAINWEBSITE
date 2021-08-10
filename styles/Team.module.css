@@ -84,7 +84,7 @@
 }
 
 /* Responsive */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .TeamList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -96,7 +96,6 @@
     padding: 2rem;
     gap: 2rem;
     border: none;
-    background: hsl(270, 6%, 12%);
   }
 
   .TeamCardAvatarContainer {

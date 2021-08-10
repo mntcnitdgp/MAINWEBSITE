@@ -12,7 +12,6 @@ import SideBar from "./SideBar";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-  // console.log(key);
   const router = useRouter();
   const animation = useAnimation();
   const { scrollYProgress } = useViewportScroll();
@@ -87,15 +86,15 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/team">
+            <Link href="/about">
               <a
                 className={
-                  page === "/team"
+                  page === "/about"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
               >
-                Our Team
+                About Us
               </a>
             </Link>
 
@@ -111,15 +110,15 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/about">
+            <Link href="/team">
               <a
                 className={
-                  page === "/about"
+                  page === "/team"
                     ? `${styles.NavLinks} ${styles.NavLinksActive}`
                     : `${styles.NavLinks}`
                 }
               >
-                About Us
+                Our Team
               </a>
             </Link>
           </div>

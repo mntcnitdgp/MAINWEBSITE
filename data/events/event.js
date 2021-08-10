@@ -14,8 +14,10 @@ export const events = [
         Date - 30th May 2021
         Time- 6 pm onwards
         Register yourselves at https://techorbis2-21d6e.web.app/`,
+
     smallDesc: `Maths N Tech Club is back with the newest version of our Global tour event- TechOrbis 2.0.
         Technology is spread all over the world and so are our clues.`,
+
     startDate: "May 30 2021",
     endDate: "May 30 2021",
     link: `https://techorbis2-21d6e.web.app/`,
@@ -41,9 +43,11 @@ export const events = [
     	Register at:
 		Class 9-10:https://dare2compete.com/.../ankshala-2021-class-9-10...
 		Class 11-12:https://dare2compete.com/.../ankshala-2021-class-11-12...`,
+
     smallDesc: `Is the adrenaline rush whilst solving reasoning problems, mind-boggling equations and seemingly insurmountable sequences and series the reason why math excites you more than the other subjects?
     	Do you aspire to crack exams like JEE, IMO, NTSE, KVPY, ISI etc.?
 	    Aptitude is definitely your forte.`,
+
     startDate: "May 18 2021",
     endDate: "May 18 2021",
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
@@ -70,12 +74,14 @@ export const events = [
     desc: ` Maths N Tech Club, NIT Durgapur was no less delighted than honoured to bring to all an opportunity of this magnitude for the first time in Durgapur. 
     The first round was in the form of a HACKATHON where students from colleges in and around Durgapur would be competing. Top three teams were nominated from this round who then participated in the national centralized hackathon of all qualifiers. 
     The winners of this hackathon got the marvellous opportunity to be nominated to NASA, where they got the chance to attempt to work on the NASA space app accelerator.
-PERKS OF PARTICIPATING IN THE NASA SPACE APPS CHALLENGE:
-*The first 30 teams under each registration category were entitled to a discount on the registration fees on behalf of Maths N Tech Club.
-**All participants were awarded participation certificates from NASA. Winners at the college level received a Winner’s certificate.
-***The domains for HACKATHON included Painting, Model Making, IoT, robotics, Machine Learning.`,
+    PERKS OF PARTICIPATING IN THE NASA SPACE APPS CHALLENGE:
+    *The first 30 teams under each registration category were entitled to a discount on the registration fees on behalf of Maths N Tech Club.
+    **All participants were awarded participation certificates from NASA. Winners at the college level received a Winner’s certificate.
+    ***The domains for HACKATHON included Painting, Model Making, IoT, robotics, Machine Learning.`,
+
     smallDesc: `Does the name NASA give you goosebumps? Ever been stirred with the idea of being felicitated at NASA? This event was the perfect opportunity for all those whose answers are yes!
-The starting step of the roadmap for the opportunity to work on the NASA space app accelerator, this hackathon allowed you to dream your greatest dreams.`,
+    The starting step of the roadmap for the opportunity to work on the NASA space app accelerator, this hackathon allowed you to dream your greatest dreams.`,
+
     startDate: "Sept 08, 2019",
     endDate: "Sept 09, 2019",
   },
@@ -114,17 +120,19 @@ The starting step of the roadmap for the opportunity to work on the NASA space a
     endDate: "April 03, 2021",
   },
   {
-    id:8,
-    name:"Matrix",
-    desc:`This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
+    id: 8,
+    name: "Matrix",
+    image: `${relativePath}matrix.jpeg`,
+    desc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
 Bring out the Mathematician in you, gather your teams, expand your territories in this perfect amalgamation of traditional board games and old school maths and emerge together as the strongest force in this exhilarating event  Matrix!`,
-smallDesc:`This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic: MATRIX,the perfect amalgamation of traditional board games and old school maths!!!`,
-     startDate:"April 01, 2021",
-     endDate:"April 02, 2021",
-},
-{
+    smallDesc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic: MATRIX,the perfect amalgamation of traditional board games and old school maths!!!`,
+    startDate: "April 01, 2021",
+    endDate: "April 02, 2021",
+  },
+  {
     id: 9,
     name: "Knock Knock",
+    image: `${relativePath}knock.jpeg`,
     desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
 Well we’ve got you covered.
 With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy when you crave for that serene bliss of solving the unsolvable.
@@ -145,11 +153,32 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     startDate: "April 02, 2021",
     endDate: "April 03, 2021",
   },
-	{
+  {
     id: 10,
     name: "Brain darts",
+    image: `${relativePath}brain.jpeg`,
     desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
     smallDesc: `Just like a vector, the magnitude is not the only thing that matters in Brain Darts .As you witness your scores run riot, just by a correct sense of direction!!!Miss and see yourself fall behind on the leaderboad. Hit and you’ll see yourself reach the pinnacle!!!And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
+    startDate: "April 01, 2021",
+    endDate: "April 02, 2021",
+  },
+  {
+    id: 11,
+    name: "Terrorist takedown",
+    image: `${relativePath}terrorist.jpeg`,
+    desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
+    smallDesc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! As you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries,never let your guard down as one wrong step and you might as well fall into the Dragon's breath!Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
+    startDate: "April 03, 2021",
+    endDate: "April 03, 2021",
+  },
+  {
+    id: 12,
+    name: "Darwinia",
+    image: `${relativePath}darwinia.jpeg`,
+    desc: `Have you ever thought of playing football online rather than going to the field? And, we’re definitely not talking about PES or FIFA. Sounds intriguing and interesting right? This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.
+Keep moving till you reach the goal and stand a chance to win exciting prizes!`,
+    smallDesc: `Have you ever thought of playing football online rather than going to the field?,
+This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.`,
     startDate: "April 01, 2021",
     endDate: "April 02, 2021",
   },

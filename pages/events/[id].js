@@ -31,16 +31,19 @@ export default function Events() {
         <AnimatePresence>
           <Head>
             <title>MNTC | {event.name}</title>
-            <meta name="description" content="Blah Blah Blah" />
-            <link rel="icon" href="/favicon.svg" />
+            <meta
+              name="description"
+              content={` Maths N Tech Club , NIT Durgapur`}
+            />
+            <meta name="robots" content="noindex" />
           </Head>
 
           <div className={`container ${styles.EventFullContainer}`}>
             <Link href="/events">
-              <h2 className={styles.EventFullHeader}>
+              <h1 className={`${styles.EventFullHeader} secondary`}>
                 <ArrowLeft />
                 {event.name}
-              </h2>
+              </h1>
             </Link>
 
             <div className={styles.EventContainer}>

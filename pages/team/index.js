@@ -30,20 +30,22 @@ const Team = () => {
     >
       <Head>
         <title>MNTC | Meet the team</title>
-        <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.svg" />
+        <meta
+          name="description"
+          content="Maths N Tech Club, NIT Durgapur. Be it the smallest achievements or the largest accomplishments, "
+        />
       </Head>
 
       <div className={`container`}>
         <YearSwitch />
-        <motion.h2
-          className={styles.TeamHeader}
+        <motion.h1
+          className={`${styles.TeamHeader} secondary`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
           {yearHead}
-        </motion.h2>
+        </motion.h1>
 
         <motion.div
           className={styles.TeamList}

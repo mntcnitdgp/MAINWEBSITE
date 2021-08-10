@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Nav.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -37,35 +38,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/">
-                <h2 className={styles.NavLinks}>Home</h2>
-              </Link>
-            </motion.li>
-
-            <motion.li
-              variants={variantLinks}
-              initial="initial"
-              animate={clicked ? "final" : "initial"}
-              className={styles.NavItems}
-              onClick={() => {
-                setClicked(!clicked);
-              }}
-            >
-              <Link href="/team">
-                <h2 className={styles.NavLinks}>Our Team</h2>
-              </Link>
-            </motion.li>
-
-            <motion.li
-              variants={variantLinks}
-              initial="initial"
-              animate={clicked ? "final" : "initial"}
-              className={styles.NavItems}
-              onClick={() => {
-                setClicked(!clicked);
-              }}
-            >
-              <Link href="/events">
-                <h2 className={styles.NavLinks}>Events</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>Home</h2>
               </Link>
             </motion.li>
 
@@ -79,9 +52,47 @@ function SideBar({ clicked, setClicked, page, setPage }) {
               }}
             >
               <Link href="/about">
-                <h2 className={styles.NavLinks}>About Us</h2>
+                <h2 className={`${styles.NavLinks} secondary`}>About Us</h2>
               </Link>
             </motion.li>
+
+            <motion.li
+              variants={variantLinks}
+              initial="initial"
+              animate={clicked ? "final" : "initial"}
+              className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
+            >
+              <Link href="/events">
+                <h2 className={`${styles.NavLinks} secondary`}>Events</h2>
+              </Link>
+            </motion.li>
+
+            <motion.li
+              variants={variantLinks}
+              initial="initial"
+              animate={clicked ? "final" : "initial"}
+              className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
+            >
+              <Link href="/team">
+                <h2 className={`${styles.NavLinks} secondary`}>Our Team</h2>
+              </Link>
+            </motion.li>
+          </div>
+
+          <div className={styles.NitdgpLogo}>
+            <Image
+              src="/images/nitdgp.png"
+              width="100"
+              height="100"
+              quality="15"
+              alt="NIT Durgapur Logo"
+            />
           </div>
         </motion.nav>
       )}

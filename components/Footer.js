@@ -1,4 +1,3 @@
-import FeatherIcon from "feather-icons-react";
 import styles from "../styles/footer.module.css";
 import Link from "next/link";
 
@@ -74,25 +73,21 @@ const Footer = () => {
           <h3 className={styles.FooterHeader}>Visit Our Other Pages</h3>
           <div className={styles.FooterLinksItems}>
             <Link href="/events" className={styles.FooterFilledLinks}>
-              <a href="" className={styles.FooterFilledLink}>
-                Events
-              </a>
+              <a className={styles.FooterFilledLink}>Events</a>
             </Link>
             <Link href="/team" className={styles.FooterFilledLinks}>
-              <a href="" className={styles.FooterFilledLink}>
-                Our Team
-              </a>
+              <a className={styles.FooterFilledLink}>Our Team</a>
             </Link>
             <Link href="/about" className={styles.FooterFilledLinks}>
-              <a href="" className={styles.FooterFilledLink}>
-                About Us
-              </a>
+              <a className={styles.FooterFilledLink}>About Us</a>
             </Link>
           </div>
         </div>
       </div>
-      <div className={styles.FooterCopyright}>
-        © All rights reserved by MNTC
+      <div className="container">
+        <div className={styles.FooterCopyright}>
+          © All rights reserved by MNTC
+        </div>
       </div>
     </footer>
   );

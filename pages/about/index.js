@@ -21,19 +21,21 @@ export default function About() {
     >
       <Head>
         <title>MNTC | About Us</title>
-        <meta name="description" content="Blah Blah Blah" />
-        <link rel="icon" href="/favicon.svg" />
+        <meta
+          name="description"
+          content="Maths N Tech Club, NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur."
+        />
       </Head>
 
       <div className={`container ${styles.About}`}>
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className={styles.AboutHeader}
+          className={`${styles.AboutHeader} secondary`}
         >
           About Us
-        </motion.h2>
+        </motion.h1>
 
         <div className={styles.AboutInfo}>
           <div className={styles.AboutInfoPara}>
@@ -63,7 +65,11 @@ export default function About() {
           </div>
 
           <div className={styles.AboutInfoSide}>
-            <img src="/images/about.jpg" className={styles.AboutInfoImage} />
+            <img
+              src="/images/about.jpg"
+              className={styles.AboutInfoImage}
+              alt="About Us Illustration"
+            />
           </div>
         </div>
       </div>
