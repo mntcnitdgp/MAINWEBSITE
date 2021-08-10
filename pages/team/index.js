@@ -11,7 +11,7 @@ import { useState } from "react";
 const Team = () => {
   const [year, setYear] = useState(4);
   const [memberList, setMemberList] = useState(year4);
-  const [yearHead, setyearHead] = useState("Our Ultimate heroes");
+  // const [yearHead, setyearHead] = useState("Our Ultimate heroes");
 
   return (
     <motion.div
@@ -38,14 +38,14 @@ const Team = () => {
 
       <div className={`container`}>
         <YearSwitch />
-        <motion.h1
+        {/* <motion.h1
           className={`${styles.TeamHeader} secondary`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
           {yearHead}
-        </motion.h1>
+        </motion.h1> */}
 
         <motion.div
           className={styles.TeamList}
@@ -86,7 +86,7 @@ const Team = () => {
           onClick={() => {
             setYear(4);
             setMemberList(year4);
-            setyearHead("Our Fabulous Final years");
+            // setyearHead("Our Fabulous Final years");
           }}
         >
           Fourth Year
@@ -100,7 +100,7 @@ const Team = () => {
           onClick={() => {
             setYear(3);
             setMemberList(year3);
-            setyearHead("Our Terrific Third years");
+            // setyearHead("Our Terrific Third years");
           }}
         >
           Third Year
@@ -112,7 +112,7 @@ const Team = () => {
           onClick={() => {
             setYear(2);
             setMemberList(year2);
-            setyearHead("Our Super Second Years");
+            // setyearHead("Our Super Second Years");
           }}
         >
           Second Year

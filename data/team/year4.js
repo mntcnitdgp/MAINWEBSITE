@@ -2,7 +2,7 @@ const relativePath = "/images/member images/year 4/"; //Change this on deploy
 export const year4 = [
   {
     id: 1,
-    name: "Anto Savio",
+    name: "Anto",
     position: "President",
     avatar: `${relativePath}anto.jpeg`,
     link: "https://www.linkedin.com/in/anto-prathik-savio-a29158154",
