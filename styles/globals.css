@@ -24,7 +24,6 @@
 
 body {
   padding-top: 4rem;
-  /* background: hsla(0, 0%, 10%, 1); */
   background-color: hsl(270, 6%, 7%);
   font-family: var(--general-font);
 }

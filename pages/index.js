@@ -37,10 +37,7 @@ export default function Home() {
           content="Maths N Tech Club (MNTC), NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur."
         />
         <meta name="msvalidate.01" content="4C7FB6C4BE81377F848B237469F2906E" />
-        <meta
-          name="google-site-verification"
-          content="3q8deL961hB6FrHYYUHYPlpCi_PRJsawYAZGY1JEDTs"
-        />
+        <link rel="canonical" href="https://mntcnitdgp.co.in" />
       </Head>
 
       <div className={`container ${styles.Home}`}>
