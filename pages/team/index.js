@@ -1,6 +1,7 @@
 import { year4 } from "../../data/team/year4";
 import { year3 } from "../../data/team/year3";
 import { year2 } from "../../data/team/year2";
+import { year0 } from "../../data/team/year0";
 
 import Head from "next/head";
 import TeamCard from "../../components/TeamCard";
@@ -11,7 +12,6 @@ import { useState } from "react";
 const Team = () => {
   const [year, setYear] = useState(4);
   const [memberList, setMemberList] = useState(year4);
-  // const [yearHead, setyearHead] = useState("Our Ultimate heroes");
 
   return (
     <motion.div
@@ -38,14 +38,6 @@ const Team = () => {
 
       <div className={`container`}>
         <YearSwitch />
-        {/* <motion.h1
-          className={`${styles.TeamHeader} secondary`}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          {yearHead}
-        </motion.h1> */}
 
         <motion.div
           className={styles.TeamList}
@@ -81,12 +73,23 @@ const Team = () => {
       >
         <span
           className={
+            year == 0 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(0);
+            setMemberList(year0);
+          }}
+        >
+          Faculty Advisors
+        </span>
+
+        <span
+          className={
             year == 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
             setYear(4);
             setMemberList(year4);
-            // setyearHead("Our Fabulous Final years");
           }}
         >
           Fourth Year
@@ -100,7 +103,6 @@ const Team = () => {
           onClick={() => {
             setYear(3);
             setMemberList(year3);
-            // setyearHead("Our Terrific Third years");
           }}
         >
           Third Year
@@ -112,7 +114,6 @@ const Team = () => {
           onClick={() => {
             setYear(2);
             setMemberList(year2);
-            // setyearHead("Our Super Second Years");
           }}
         >
           Second Year

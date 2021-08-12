@@ -74,6 +74,7 @@ export const year4 = [
     id: 10,
     name: "Bighnesh",
     position: "Multimedia Head",
+    avatar: `${relativePath}bighnesh.jpeg`,
     insta: "https://www.instagram.com/bighnesh__mohanty/",
     link: "https://www.linkedin.com/in/bighnesh-mohanty-255b04215/",
     fb: "https://www.facebook.com/bighnesh.mohanty.37",
