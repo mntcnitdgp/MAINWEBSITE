@@ -4,7 +4,7 @@ export const year3 = [
     id: 1,
     name: "Karam",
     position: "Web Developer, Graphics Designer",
-    avatar: `${relativePath}karam.jpg`,
+    avatar: `${relativePath}karam.jpeg`,
     insta: "https://www.instagram.com/a_cosmic_teen/",
     link: "https://www.linkedin.com/in/karamkumarsahoo/",
     fb: "https://www.facebook.com/KaramKumarSahoo/",

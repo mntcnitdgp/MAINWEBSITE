@@ -19,24 +19,23 @@ export const year2 = [
     insta: "https://instagram.com/swarnaliiii_",
     link: "https://www.linkedin.com/in/swarnali-saha-499a6420a",
   },
-
   {
     id: 3,
+    name: "Debjit",
+    avatar: `${relativePath}debjit.jpeg`,
+    position: "Event Manager",
+    fb: "https://m.facebook.com/profile.php?id=100026349304600",
+    insta: "https://www.instagram.com/deb_jit_03_/",
+    link: "https://www.linkedin.com/in/debjit-maji-51a623202",
+  },
+  {
+    id: 4,
     name: "Jay",
     avatar: `${relativePath}jay.jpeg`,
     position: "Web Developer, Event Manager",
     fb: "https://www.facebook.com/profile.php?id=100015113418530",
     insta: "https://www.instagram.com/im_mr.jay_015/",
     link: "https://www.linkedin.com/in/jay-gupta-0697321a5",
-  },
-  {
-    id: 4,
-    name: "Devansh",
-    avatar: `${relativePath}devansh.jpeg`,
-    position: "Content Writer",
-    fb: "https://www.facebook.com/DevanshsinghpatelDSP",
-    insta: "https://instagram.com/albatraozz_8",
-    link: "https://www.linkedin.com/in/devansh-patel-147585174",
   },
 
   {
@@ -68,6 +67,15 @@ export const year2 = [
   },
   {
     id: 8,
+    name: "Devansh",
+    avatar: `${relativePath}devansh.jpeg`,
+    position: "Content Writer",
+    fb: "https://www.facebook.com/DevanshsinghpatelDSP",
+    insta: "https://instagram.com/albatraozz_8",
+    link: "https://www.linkedin.com/in/devansh-patel-147585174",
+  },
+  {
+    id: 9,
     name: "Prativa",
     avatar: `${relativePath}prativa.jpg`,
     position: "Content Writer, Event Manager",
@@ -76,7 +84,7 @@ export const year2 = [
     link: "https://www.linkedin.com/in/prativa-sahu-900072210",
   },
   {
-    id: 9,
+    id: 10,
     name: "Suraj",
     avatar: `${relativePath}suraj.jpeg`,
     position: "Event Manager",
@@ -85,7 +93,7 @@ export const year2 = [
     link: "",
   },
   {
-    id: 10,
+    id: 11,
     name: "Shobhit",
     avatar: `${relativePath}shobhit.jpg`,
     position: "Graphics Designer",
@@ -94,7 +102,7 @@ export const year2 = [
     link: "https://www.linkedin.com/in/shobhit-katiyar-2885a2204",
   },
   {
-    id: 11,
+    id: 12,
     name: "Ayushi",
     avatar: `${relativePath}ayushi.jpeg`,
     position: "Graphics Designer, Event Manager",
@@ -102,15 +110,7 @@ export const year2 = [
     insta: "https://www.instagram.com/ayushiii._.12/",
     link: "https://www.linkedin.com/in/ayushi-meena-404739209",
   },
-  {
-    id: 12,
-    name: "Debjit",
-    avatar: `${relativePath}debjit.jpeg`,
-    position: "Event Manager",
-    fb: "https://m.facebook.com/profile.php?id=100026349304600",
-    insta: "https://www.instagram.com/deb_jit_03_/",
-    link: "https://www.linkedin.com/in/debjit-maji-51a623202",
-  },
+
   {
     id: 13,
     name: "Rishikesh",
