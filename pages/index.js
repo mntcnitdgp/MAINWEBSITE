@@ -6,7 +6,6 @@ import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
 import { reviews } from "../data/reviews";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -148,10 +147,15 @@ function Team() {
 }
 
 function Events() {
+  const today = new Date();
+  const eventDate = new Date(events[0].startDate);
+
   return (
     <div className={styles.HomeEvents}>
       <div className={styles.HomeEventsContainer}>
-        <h2 className={`${styles.HomeEventsHead} secondary`}>Upcoming Event</h2>
+        <h2 className={`${styles.HomeEventsHead} secondary`}>
+          {today >= eventDate ? "Our Recent" : "Upcoming"} Event
+        </h2>
         <EventCard details={events[0]} />
         <Link href="/events">
           <a className={`text ${styles.HomeAboutLink}`}>
