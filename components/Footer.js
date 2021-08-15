@@ -71,12 +71,12 @@ const Footer = () => {
 
             <a
               className={styles.FooterFilledLinks}
-              href="mailto:anurag2sarkar@gmail.com"
+              href="mailto:mntcnitd@gmail.com"
               target="_blank"
             >
               <MailLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                mathsntechclub.nitd@gmail.com
+                mntcnitd@gmail.com
               </span>
             </a>
           </div>
