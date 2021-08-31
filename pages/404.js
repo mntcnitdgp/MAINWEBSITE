@@ -8,9 +8,9 @@ const notFound = () => {
         <div className={styles.ErrorCode}>
           <img src="/images/svg/404.svg" />
         </div>
-        <h2 class={styles.ErrorText}>
+        <h1 class={styles.ErrorText}>
           The page you requested is not available
-        </h2>
+        </h1>
 
         <Link href="/">
           <a className={`${styles.ErrorButton} solid`}>

@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+User-agent: *
+Disallow: /events/
+
+Sitemap: https://mntcnitdgp.co.in/sitemap.xml

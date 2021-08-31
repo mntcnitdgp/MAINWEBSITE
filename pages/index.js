@@ -6,7 +6,6 @@ import Link from "next/link";
 import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
 import { reviews } from "../data/reviews";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -34,9 +33,10 @@ export default function Home() {
         <title>MNTC | NIT Durgapur</title>
         <meta
           name="description"
-          content="Maths N Tech Club (MNTC), NIT Durgapur"
+          content="Maths N Tech Club (MNTC), NIT Durgapur. We are the official knowledge club of National Institute of Technology, Durgapur."
         />
-        <link rel="icon" href="/favicon.svg" />
+        <meta name="msvalidate.01" content="4C7FB6C4BE81377F848B237469F2906E" />
+        <link rel="canonical" href="https://mntcnitdgp.co.in" />
       </Head>
 
       <div className={`container ${styles.Home}`}>
@@ -55,7 +55,7 @@ function Hero() {
     <div className={styles.HomeHeroContainer}>
       <div className={styles.HeroHeaderContainer}>
         <motion.h1
-          className={styles.HeroHeader}
+          className={`${styles.HeroHeader} primary`}
           initial={{
             y: -100,
           }}
@@ -87,7 +87,7 @@ function About() {
   return (
     <div className={styles.HomeAbout}>
       <div className={styles.HomeAboutContainer}>
-        <h2 className={styles.HomeAboutHead}>Who are we?</h2>
+        <h2 className={`${styles.HomeAboutHead} secondary`}>Who are we?</h2>
         <p className={styles.HomeAboutInfo}>
           We are the official knowledge club of National Institute of
           Technology, Durgapur. Established in 2004, the aim of our club is to
@@ -127,7 +127,7 @@ function Team() {
       </div>
 
       <div className={styles.HomeTeamContainer}>
-        <h2 className={styles.HomeTeamHead}>Meet Our Team</h2>
+        <h2 className={`${styles.HomeTeamHead} secondary`}>Meet Our Team</h2>
 
         <p className={styles.HomeTeamInfo}>
           <span className={styles.HomeTeamInfoHead}>
@@ -147,10 +147,15 @@ function Team() {
 }
 
 function Events() {
+  const today = new Date();
+  const eventDate = new Date(events[0].startDate);
+
   return (
     <div className={styles.HomeEvents}>
       <div className={styles.HomeEventsContainer}>
-        <h2 className={styles.HomeEventsHead}>Upcoming Event</h2>
+        <h2 className={`${styles.HomeEventsHead} secondary`}>
+          {today >= eventDate ? "Our Recent" : "Upcoming"} Event
+        </h2>
         <EventCard details={events[0]} />
         <Link href="/events">
           <a className={`text ${styles.HomeAboutLink}`}>
@@ -191,7 +196,9 @@ function Reviews() {
 
   return (
     <div className={styles.HomeReviews}>
-      <h2 className={styles.HomeReviewsHead}>What Others Have to Say...</h2>
+      <h2 className={`${styles.HomeReviewsHead} secondary`}>
+        What Others Have to Say...
+      </h2>
       <Carousel
         swipeable={true}
         className={styles.ReviewsContainer}
