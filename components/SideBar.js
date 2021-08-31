@@ -88,8 +88,8 @@ function SideBar({ clicked, setClicked, page, setPage }) {
           <div className={styles.NitdgpLogo}>
             <Image
               src="/images/nitdgp.png"
-              width="100"
-              height="100"
+              width="70"
+              height="70"
               quality="15"
               alt="NIT Durgapur Logo"
             />
