@@ -121,6 +121,18 @@ const Navbar = () => {
                 Our Team
               </a>
             </Link>
+
+            <Link href="/anveshan">
+              <a
+                className={
+                  page === "/anveshan"
+                    ? `${styles.NavLinks} ${styles.NavLinksActive}`
+                    : `${styles.NavLinks}`
+                }
+              >
+                Anveshan
+              </a>
+            </Link>
           </div>
 
           <div className={styles.TopBarSpacer}></div>
