@@ -1,8 +1,15 @@
 import Head from "next/head";
 import styles from "../../styles/Anveshan.module.css";
 import img from "next/image";
+import { useEffect } from "react";
 
 const Anveshan = () => {
+  useEffect(() => {
+    window.innerWidth < 900
+      ? window.scrollBy({ top: 50 })
+      : window.scrollBy({});
+  }, []);
+
   return (
     <div>
       <Head>
@@ -39,7 +46,10 @@ const Anveshan = () => {
               rhoncus, in netus mi.
             </p>
 
-            <a className={`${styles.AnveshanDownloadBtn} solid`}>
+            <a
+              className={`${styles.AnveshanDownloadBtn} solid`}
+              href="./anveshan21.pdf"
+            >
               Download it now!
             </a>
           </div>
