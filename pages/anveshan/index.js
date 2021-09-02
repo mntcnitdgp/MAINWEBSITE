@@ -11,7 +11,20 @@ const Anveshan = () => {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      initial="pageInitial"
+      animate="pageAnimate"
+      variants={{
+        pageInitial: {
+          opacity: 0,
+          y: -200,
+        },
+        pageAnimate: {
+          opacity: 1,
+          y: 0,
+        },
+      }}
+    >
       <Head>
         <title>MNTC | Anveshan 2021</title>
         <meta
@@ -26,9 +39,14 @@ const Anveshan = () => {
         </div>
         <main className={styles.AnveshanMain}>
           <div className={styles.AnveshanMainSubContainer}>
-            <h1 className={`${styles.AnveshanHeader} secondary`}>
+            <motion.h1
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className={`${styles.AnveshanHeader} secondary`}
+            >
               Anveshan 2021
-            </h1>
+            </motion.h1>
 
             <h3 className={styles.AnveshanSubHeader}>
               The official Tech Magazine of NIT Durgapur
@@ -69,7 +87,7 @@ const Anveshan = () => {
           </div>
         </side>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

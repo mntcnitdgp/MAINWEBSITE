@@ -55,6 +55,7 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 <h2 className={`${styles.NavLinks} secondary`}>About Us</h2>
               </Link>
             </motion.li>
+
             <motion.li
               variants={variantLinks}
               initial="initial"
@@ -68,35 +69,35 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 <h2 className={`${styles.NavLinks} secondary`}>Anveshan</h2>
               </Link>
             </motion.li>
+
+            <motion.li
+              variants={variantLinks}
+              initial="initial"
+              animate={clicked ? "final" : "initial"}
+              className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
+            >
+              <Link href="/events">
+                <h2 className={`${styles.NavLinks} secondary`}>Events</h2>
+              </Link>
+            </motion.li>
+
+            <motion.li
+              variants={variantLinks}
+              initial="initial"
+              animate={clicked ? "final" : "initial"}
+              className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
+            >
+              <Link href="/team">
+                <h2 className={`${styles.NavLinks} secondary`}>Our Team</h2>
+              </Link>
+            </motion.li>
           </div>
-
-          <motion.li
-            variants={variantLinks}
-            initial="initial"
-            animate={clicked ? "final" : "initial"}
-            className={styles.NavItems}
-            onClick={() => {
-              setClicked(!clicked);
-            }}
-          >
-            <Link href="/events">
-              <h2 className={`${styles.NavLinks} secondary`}>Events</h2>
-            </Link>
-          </motion.li>
-
-          <motion.li
-            variants={variantLinks}
-            initial="initial"
-            animate={clicked ? "final" : "initial"}
-            className={styles.NavItems}
-            onClick={() => {
-              setClicked(!clicked);
-            }}
-          >
-            <Link href="/team">
-              <h2 className={`${styles.NavLinks} secondary`}>Our Team</h2>
-            </Link>
-          </motion.li>
 
           <div className={styles.NitdgpLogo}>
             <Image
