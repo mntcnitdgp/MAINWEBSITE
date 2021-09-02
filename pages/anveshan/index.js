@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../../styles/Anveshan.module.css";
 import img from "next/image";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Anveshan = () => {
   useEffect(() => {
