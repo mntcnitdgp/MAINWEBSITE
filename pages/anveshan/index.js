@@ -27,23 +27,21 @@ const Anveshan = () => {
         <main className={styles.AnveshanMain}>
           <div className={styles.AnveshanMainSubContainer}>
             <h1 className={`${styles.AnveshanHeader} secondary`}>
-              Some Catchy Title!!!
+              Anveshan 2021
             </h1>
 
             <h3 className={styles.AnveshanSubHeader}>
-              Some Catchy Sub Headline
+              The official Tech Magazine of NIT Durgapur
             </h3>
             <p className={styles.AnveshanDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
-              et cras vulputate quis elementum malesuada sit quisque laoreet.
-              Sed nulla nisl ut eget viverra egestas vitae at. Mi nam aliquam,
-              vel ac. Amet quisque sed morbi quis senectus. A dignissim vivamus
-              vitae interdum consectetur nunc laoreet. Facilisis est velit
-              tempus nunc non turpis. Vivamus sit at eget netus maecenas
-              volutpat lacinia. Integer sit neque a, neque, diam turpis blandit
-              tempor, lacus. Volutpat ac bibendum odio nibh tincidunt egestas
-              risus, nunc eros. In eget integer risus integer. Adipiscing
-              rhoncus, in netus mi.
+              We are super excited to present to you the newest edition of
+              Anveshan – the official technical magazine of NIT Durgapur.
+              Replete with technical articles that are sure to blow up your
+              mind, innovations of your contemporaries that would make you feel
+              proud, and puzzles that would require your analytical skills at
+              their peak to solve them, Anveshan is definitely the ideal
+              magazine to provide a reprieve to you from your monotonous
+              lifestyle.
             </p>
 
             <a
