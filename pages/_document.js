@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-TY7544TP54"
+          />
           <link rel="icon" href="/favicon.svg" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         </Head>
