@@ -13,10 +13,10 @@ const Anveshan = () => {
   return (
     <div>
       <Head>
-        <title>MNTC | Meet the team</title>
+        <title>MNTC | Anveshan 2021</title>
         <meta
           name="description"
-          content="Maths N Tech Club, NIT Durgapur. Be it the smallest achievements or the largest accomplishments, "
+          content="Anveshan 2021-Maths N Tech Club, NIT Durgapur. The official Tech Magazine of NIT Durgapur"
         />
       </Head>
 
