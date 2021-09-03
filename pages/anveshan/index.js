@@ -50,17 +50,17 @@ const Anveshan = () => {
             </motion.h1>
 
             <h3 className={styles.AnveshanSubHeader}>
-              The official Tech Magazine of NIT Durgapur
+              The Official Tech Magazine of MNTC, NIT Durgapur
             </h3>
             <p className={styles.AnveshanDetails}>
-              We are super excited to present to you the newest edition of
-              Anveshan – the official technical magazine of NIT Durgapur.
-              Replete with technical articles that are sure to blow up your
-              mind, innovations of your contemporaries that would make you feel
-              proud, and puzzles that would require your analytical skills at
-              their peak to solve them, Anveshan is definitely the ideal
-              magazine to provide a reprieve to you from your monotonous
-              lifestyle.
+              We are stoked to present to you the newest edition of Anveshan –
+              the official tech magazine of Maths N Tech Club, NIT Durgapur.
+              Feeling tired of assignments and regular 9-6 classes? Replete with
+              technical articles that are sure to blow up your mind, innovations
+              of your contemporaries that would make you feel proud, and puzzles
+              that would require your analytical skills at their peak to solve
+              them, Anveshan is definitely the ideal magazine to provide a
+              reprieve to you from your monotonous lifestyle.
             </p>
 
             <a
