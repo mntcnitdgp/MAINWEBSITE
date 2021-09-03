@@ -65,6 +65,20 @@ function SideBar({ clicked, setClicked, page, setPage }) {
                 setClicked(!clicked);
               }}
             >
+              <Link href="/anveshan">
+                <h2 className={`${styles.NavLinks} secondary`}>Anveshan</h2>
+              </Link>
+            </motion.li>
+
+            <motion.li
+              variants={variantLinks}
+              initial="initial"
+              animate={clicked ? "final" : "initial"}
+              className={styles.NavItems}
+              onClick={() => {
+                setClicked(!clicked);
+              }}
+            >
               <Link href="/events">
                 <h2 className={`${styles.NavLinks} secondary`}>Events</h2>
               </Link>
