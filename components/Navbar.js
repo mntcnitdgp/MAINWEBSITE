@@ -98,6 +98,18 @@ const Navbar = () => {
               </a>
             </Link>
 
+            <Link href="/anveshan">
+              <a
+                className={
+                  page === "/anveshan"
+                    ? `${styles.NavLinks} ${styles.NavLinksActive}`
+                    : `${styles.NavLinks}`
+                }
+              >
+                Anveshan
+              </a>
+            </Link>
+
             <Link href="/events">
               <a
                 className={
