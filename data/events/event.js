@@ -1,6 +1,23 @@
 const relativePath = "/images/event images/"; //Change this on deploy
 export const events = [
   {
+    id: 13,
+    name: "Ideathon",
+    image: `${relativePath}ideathon.jpeg`,
+    desc: `Are you brimming with ideas to address the common real world problems and revolutionize the field of solutions?! Then, we bring to you the perfect opportunity to share your ideas with the world.
+If innovation is your forte, then Ideathon is what you wish for! We invite all developers, who dream big and aspire to innovate to participate in this new and innovative hackathon and showcase your best in front of our exemplary panel of judges.
+Where Ideas Make Excellence - as the tagline suggests, the challenges might be daunting, but your excellence is the key.
+The theme of Ideathon is “Contemporary Technologies based on Health.” Exciting prizes await all the participants! And as for the top 3, the best of the lot shall be reserved for them!!
+So what are you waiting for? Awaken your inner Bill Gates. Innovate. Aspire. Be crowned the winner of Ideathon.`,
+    smallDesc: `The perfect opportunity to share your ideas with the world.
+If innovation is your forte, then Ideathon is what you wish for! We invite all developers, who dream big and aspire to innovate to participate in this new and innovative hackathon and showcase your best in front of our exemplary panel of judges.`,
+
+    startDate: "September 19 2021",
+    endDate: "October 1 2021",
+    link: `https://ideathon.mntcnitdgp.co.in`,
+    openlink: `https://ideathon.mntcnitdgp.co.in`,
+  },
+  {
     id: 1,
     name: "Tech Orbis 2.0",
     image: `${relativePath}techorbis2.jpeg`,
