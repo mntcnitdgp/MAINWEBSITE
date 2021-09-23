@@ -14,7 +14,7 @@ export const year2 = [
     id: 2,
     name: "Swarnali",
     avatar: `${relativePath}swarnali.jpeg`,
-    position: "Event Manager, Content Writer",
+    position: "Content Writer, Meme Team Head",
     fb: "https://www.facebook.com/swarnali.saha.1088",
     insta: "https://instagram.com/swarnaliiii_",
     link: "https://www.linkedin.com/in/swarnali-saha-499a6420a",
