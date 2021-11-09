@@ -1,8 +1,23 @@
-const relativePath = "/images/event images/"; //Change this on deploy
+const relativePath = '/images/event images/' //Change this on deploy
 export const events = [
   {
     id: 1,
-    name: "Ideathon",
+    name: 'Breakout 1.0',
+    image: `${relativePath}breakout.jpeg`,
+    desc: `Hello All!
+We at the Maths N Tech Club are back with a brand new and exciting event for you all,"Breakout" ! 
+An evil group of mischievous riddlers has abducted all our participants and held them captive at a mansion sealed off with magic. Somehow a strange event known as Synchronicity happens, bestowing supernatural consciousness to the captives, of the possible ways out of the mansion. However, there are magical doors that will only let you pass through if you prove your wits. The doors grant you additional strength according to the level of questions you answer. But remember, in the end, only the mightiest, quickest, and the wittiest breakout!
+We welcome you to the first-ever edition of Breakout, where you put on your thinking caps and make that dash to victory.
+Gear up! Cause it's time to prove who's the champion of wit and might!`,
+    smallDesc: `Synchronicity has taken place. It's your only chance to break free. But remember, only one can make it through. Gear up for this escape room event with a subtle twist.`,
+
+    startDate: 'Nov 10 2021',
+    endDate: 'Nov 10 2021',
+    link: `https://breakout.mntcnitdgp.co.in`,
+  },
+  {
+    id: 2,
+    name: 'Ideathon',
     image: `${relativePath}ideathon.jpeg`,
     desc: `Are you brimming with ideas to address the common real world problems and revolutionize the field of solutions?! Then, we bring to you the perfect opportunity to share your ideas with the world.
 If innovation is your forte, then Ideathon is what you wish for! We invite all developers, who dream big and aspire to innovate to participate in this new and innovative hackathon and showcase your best in front of our exemplary panel of judges.
@@ -12,14 +27,14 @@ So what are you waiting for? Awaken your inner Bill Gates. Innovate. Aspire. Be 
     smallDesc: `The perfect opportunity to share your ideas with the world.
 If innovation is your forte, then Ideathon is what you wish for! We invite all developers, who dream big and aspire to innovate to participate in this new and innovative hackathon and showcase your best in front of our exemplary panel of judges.`,
 
-    startDate: "September 19 2021",
-    endDate: "October 1 2021",
+    startDate: 'September 19 2021',
+    endDate: 'October 1 2021',
     link: `https://ideathon.mntcnitdgp.co.in`,
     openlink: `https://ideathon.mntcnitdgp.co.in`,
   },
   {
-    id: 2,
-    name: "Tech Orbis 2.0",
+    id: 3,
+    name: 'Tech Orbis 2.0',
     image: `${relativePath}techorbis2.jpeg`,
     desc: `Hey everyone!
         Maths N Tech Club is back with the newest version of our Global tour event- TechOrbis 2.0.
@@ -35,13 +50,13 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     smallDesc: `Maths N Tech Club is back with the newest version of our Global tour event- TechOrbis 2.0.
         Technology is spread all over the world and so are our clues.`,
 
-    startDate: "May 30 2021",
-    endDate: "May 30 2021",
+    startDate: 'May 30 2021',
+    endDate: 'May 30 2021',
     link: `https://techorbis2-21d6e.web.app/`,
   },
   {
-    id: 3,
-    name: "Ankshala",
+    id: 4,
+    name: 'Ankshala',
     image: `${relativePath}ankshala.jpeg`,
     desc: `Hola Students!
     	Is the adrenaline rush whilst solving reasoning problems, mind-boggling equations and seemingly insurmountable sequences and series the reason why math excites you more than the other subjects?
@@ -65,13 +80,13 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     	Do you aspire to crack exams like JEE, IMO, NTSE, KVPY, ISI etc.?
 	    Aptitude is definitely your forte.`,
 
-    startDate: "May 18 2021",
-    endDate: "May 18 2021",
+    startDate: 'May 18 2021',
+    endDate: 'May 18 2021',
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
   },
   {
-    id: 4,
-    name: "EVENTually 3.0",
+    id: 5,
+    name: 'EVENTually 3.0',
     image: `${relativePath}eventually3.jpeg`,
     desc: `Whew! We are finally through 2020- completely uneventful but alarmingly energy sapping. The lethargy and mundanity has left us craving for an adrenaline rush. Well, Maths N Tech Club is here with yet another edition of EVENTually, an annual online picture-connect event where you are required to unscramble the word symbolised by a set of images with the help of hints to steer your thinking process.
         A Three-day event with a plethora of categories encompassing food, movies, music, TV series, sports, science and technology, we bet EVENTually 3.0 is going to be intense and addictive. Buckle up and electrify your grey cells; exciting prizes await you!
@@ -81,12 +96,12 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
         P.S. - The event is open to all and not just NITDGP'ians.`,
     smallDesc: `MNTC is here with yet another edition of EVENTually, an online picture-connect event where one is required to unscramble the word symbolized by a set of images with the help of hints to steer their thinking process.
     A three-day event that encompasses a plethora of categories.`,
-    startDate: "January 13 2021",
-    endDate: "January 16 2021",
+    startDate: 'January 13 2021',
+    endDate: 'January 16 2021',
   },
   {
-    id: 5,
-    name: "NASA Space Apps Challenge",
+    id: 6,
+    name: 'NASA Space Apps Challenge',
     image: `${relativePath}nasa.jpg`,
     desc: ` Maths N Tech Club, NIT Durgapur was no less delighted than honoured to bring to all an opportunity of this magnitude for the first time in Durgapur. 
     The first round was in the form of a HACKATHON where students from colleges in and around Durgapur would be competing. Top three teams were nominated from this round who then participated in the national centralized hackathon of all qualifiers. 
@@ -99,12 +114,12 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     smallDesc: `Does the name NASA give you goosebumps? Ever been stirred with the idea of being felicitated at NASA? This event was the perfect opportunity for all those whose answers are yes!
     The starting step of the roadmap for the opportunity to work on the NASA space app accelerator, this hackathon allowed you to dream your greatest dreams.`,
 
-    startDate: "Sept 08, 2019",
-    endDate: "Sept 09, 2019",
+    startDate: 'Sept 08, 2019',
+    endDate: 'Sept 09, 2019',
   },
   {
-    id: 6,
-    name: "Tech Charades",
+    id: 7,
+    name: 'Tech Charades',
     image: `${relativePath}tech.jpeg`,
     desc: `
 	“The whole art of war consists of guessing at what is on the other side of the hill."
@@ -113,42 +128,42 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
 	Remember those lockdown days where all out time would be spent playing scribble and wondering how much more time would be wasted like this? Well, guess what? It was not all in vain! It's finally time to put all those guessing skills to test, as this Aarohan, Team Aavishkar brings to you a whole new pattern- Tech Charades!
 	Decipher the scribblings and win interesting prizes.`,
     smallDesc: `Remember those lockdown days where all time would be spent playing skribbl and wondering how much more time would be wasted like this? Well, guess what? It was not all in vain! It was finally time to put all those guessing skills to test, as last Aarohan, MNTC, as a part of Team Aavishkar brought to all in a whole new pattern- Tech Charades!`,
-    startDate: "April 03, 2021",
-    endDate: "April 04, 2021",
+    startDate: 'April 03, 2021',
+    endDate: 'April 04, 2021',
   },
   {
-    id: 7,
-    name: "CATIA Workshop",
+    id: 8,
+    name: 'CATIA Workshop',
     image: `${relativePath}catia.jpeg`,
     desc: `The increasing usability and application of CATIA in the industry has led to an increase in demand for CATIA designers. Propelled by the diligent and religious system developers at Dassault Systèmes’ who regularly keep track of the requirements, suggestions, feedbacks and complaints from their customers, the two recent versions of CATIA that is CATIA V5 & V6 are now renowned as the world’s leading design product suite. 
 	Keeping this in mind, Aarohan, by Team Aavishkar, NIT Durgapur brings to you ‘CATIA V5 Workshop’ where you will be trained by Ms. Manisha Karmakar to help you get better acquainted with CATIA V5. With more than 2 years of industrial experience and 3+ years of teaching experience, she’ll help you glide through the sessions seamlessly. 
 	Get introduced to intricate concepts and in depth knowledge of designing from scratch which will make you a valuable asset to any organisation. At the end of the 2 day Workshop, every participant will get a Certificate of Completion.`,
     smallDesc: `The increasing applications of CATIA in the industry have led to an increased demand for designers. The two recent versions of CATIA V5 & V6 are now renowned as the world’s leading design product suite. Keeping this in mind, MNTC, as part of Team Aavishkar organized ‘CATIA V5 Workshop’ to introduce one to intricate concepts of CATIA designing.`,
-    startDate: "April 02, 2021",
-    endDate: "April 03, 2021",
-  },
-  {
-    id: 8,
-    name: "Kryptic",
-    image: `${relativePath}kryptic.jpeg`,
-    desc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
-    smallDesc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by bizarre ciphers? Last Aarohan, MNTC, as part of Team Aavishkar organized KRYPTIC, to put one's crypto-hungry soul to rest. Diving deeper into an enigmatic World of Cryptology and sailing through a trail of codes, one had to decipher them to climb up to the pinnacle!`,
-    startDate: "April 02, 2021",
-    endDate: "April 03, 2021",
+    startDate: 'April 02, 2021',
+    endDate: 'April 03, 2021',
   },
   {
     id: 9,
-    name: "Matrix",
+    name: 'Kryptic',
+    image: `${relativePath}kryptic.jpeg`,
+    desc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
+    smallDesc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by bizarre ciphers? Last Aarohan, MNTC, as part of Team Aavishkar organized KRYPTIC, to put one's crypto-hungry soul to rest. Diving deeper into an enigmatic World of Cryptology and sailing through a trail of codes, one had to decipher them to climb up to the pinnacle!`,
+    startDate: 'April 02, 2021',
+    endDate: 'April 03, 2021',
+  },
+  {
+    id: 10,
+    name: 'Matrix',
     image: `${relativePath}matrix.jpeg`,
     desc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
 Bring out the Mathematician in you, gather your teams, expand your territories in this perfect amalgamation of traditional board games and old school maths and emerge together as the strongest force in this exhilarating event  Matrix!`,
     smallDesc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic: MATRIX,the perfect amalgamation of traditional board games and old school maths!!!`,
-    startDate: "April 01, 2021",
-    endDate: "April 02, 2021",
+    startDate: 'April 01, 2021',
+    endDate: 'April 02, 2021',
   },
   {
-    id: 10,
-    name: "Knock Knock",
+    id: 11,
+    name: 'Knock Knock',
     image: `${relativePath}knock.jpeg`,
     desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
 Well we’ve got you covered.
@@ -167,36 +182,36 @@ So dear freshers, what are you waiting for? Solve as many questions as you can i
     smallDesc: `Are you a Math-aholic?
 Do brainstorming problem statements,mind-boggling  permutations and  seemingly impossible-to-crack codes excite you?
 With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy when you crave for that serene bliss of solving the unsolvable.`,
-    startDate: "April 02, 2021",
-    endDate: "April 03, 2021",
-  },
-  {
-    id: 11,
-    name: "Brain darts",
-    image: `${relativePath}brain.jpeg`,
-    desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
-    smallDesc: `Just like a vector, the magnitude is not the only thing that matters in Brain Darts .As you witness your scores run riot, just by a correct sense of direction!!!Miss and see yourself fall behind on the leaderboad. Hit and you’ll see yourself reach the pinnacle!!!And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
-    startDate: "April 01, 2021",
-    endDate: "April 02, 2021",
+    startDate: 'April 02, 2021',
+    endDate: 'April 03, 2021',
   },
   {
     id: 12,
-    name: "Terrorist takedown",
-    image: `${relativePath}terrorist.jpeg`,
-    desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
-    smallDesc: `Do you pose a keen desire to explore the unknown? We feel you, Master Snow. The Night’s Watch is definitely not your place. Last Aarohan, MNTC organized the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! As one reached out to the east of Essos and to the west of Westeros, each careful step unraveled a series of mysteries.`,
-    startDate: "April 03, 2021",
-    endDate: "April 03, 2021",
+    name: 'Brain darts',
+    image: `${relativePath}brain.jpeg`,
+    desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
+    smallDesc: `Just like a vector, the magnitude is not the only thing that matters in Brain Darts .As you witness your scores run riot, just by a correct sense of direction!!!Miss and see yourself fall behind on the leaderboad. Hit and you’ll see yourself reach the pinnacle!!!And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
+    startDate: 'April 01, 2021',
+    endDate: 'April 02, 2021',
   },
   {
     id: 13,
-    name: "Darwinia",
+    name: 'Terrorist takedown',
+    image: `${relativePath}terrorist.jpeg`,
+    desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
+    smallDesc: `Do you pose a keen desire to explore the unknown? We feel you, Master Snow. The Night’s Watch is definitely not your place. Last Aarohan, MNTC organized the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! As one reached out to the east of Essos and to the west of Westeros, each careful step unraveled a series of mysteries.`,
+    startDate: 'April 03, 2021',
+    endDate: 'April 03, 2021',
+  },
+  {
+    id: 14,
+    name: 'Darwinia',
     image: `${relativePath}darwinia.jpeg`,
     desc: `Have you ever thought of playing football online rather than going to the field? And, we’re definitely not talking about PES or FIFA. Sounds intriguing and interesting right? This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.
 Keep moving till you reach the goal and stand a chance to win exciting prizes!`,
     smallDesc: `Have you ever thought of playing football online rather than going to the field?,
 This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.`,
-    startDate: "April 01, 2021",
-    endDate: "April 02, 2021",
+    startDate: 'April 01, 2021',
+    endDate: 'April 02, 2021',
   },
-];
+]
