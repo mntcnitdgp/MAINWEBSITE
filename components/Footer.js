@@ -54,7 +54,7 @@ const Footer = () => {
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                99706-28425 (Anto)
+                90077-95158 (Abantika)
               </span>
             </a>
 
