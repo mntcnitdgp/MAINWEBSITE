@@ -22,8 +22,18 @@ export const year2 =
     git: "https://github.com/jalaj711",
   },
   
+  
   {
     id: 3,
+    name: "Ashmi",
+    avatar: `${relativePath}ashmi.jpeg`,
+    position: "Graphic designer",
+    fb: "https://www.facebook.com/profile.php?id=100075338811226",
+    insta: "https://instagram.com/imcrazyac?igshid=YmMyMTA2M2Y=",
+    link: "https://www.linkedin.com/in/ashmi-chattaraj",
+  },
+  {
+    id: 4,
     name: "Yash Soni",
     avatar: `${relativePath}yash_soni.jpeg`,
     position: "Event Manager",
@@ -32,15 +42,6 @@ export const year2 =
     link: "https://www.linkedin.com/in/yash-soni-aabab7223",
   },
   
-  {
-    id: 4,
-    name: "Ashmi",
-    avatar: `${relativePath}ashmi.jpeg`,
-    position: "Graphic designer",
-    fb: "https://www.facebook.com/profile.php?id=100075338811226",
-    insta: "https://instagram.com/imcrazyac?igshid=YmMyMTA2M2Y=",
-    link: "https://www.linkedin.com/in/ashmi-chattaraj",
-  },
 
   {
     id: 5,
