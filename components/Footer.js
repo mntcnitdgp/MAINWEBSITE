@@ -49,7 +49,7 @@ const Footer = () => {
           <div className={styles.FooterContactItems}>
             <a
               className={styles.FooterFilledLinks}
-              href="tel:+919970628425"
+              href="tel:+919007795158"
               target="_blank"
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
