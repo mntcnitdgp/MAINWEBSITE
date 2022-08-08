@@ -108,7 +108,7 @@ export const year2 =
   },
   {
     id: 12,
-    name: "Joychir Hansda",
+    name: "Joychir",
     avatar: `${relativePath}joychir.jpeg`,
     position: "Graphic Designer, Video Editor",
     fb: "https://www.facebook.com/profile.php?id=100078145237796",
