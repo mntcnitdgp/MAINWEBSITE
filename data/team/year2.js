@@ -67,8 +67,8 @@ export const year2 =
     avatar: `${relativePath}riya.jpeg`,
     position: "Content Writer",
     fb: "https://www.facebook.com/profile.php?id=100074318982774",
-    insta: "https://www.instagram.com/niraj_raj13/",
-    link: "https://www.linkedin.com/in/niraj-kumar-82658220b",
+    insta: "https://www.instagram.com/riya.amaze/",
+    link: "https://www.linkedin.com/in/riya-maiti-772b34230",
   },
   {
     id: 8,
@@ -76,8 +76,8 @@ export const year2 =
     avatar: `${relativePath}sirisha.jpeg`,
     position: "Event Manager",
     fb: "https://www.facebook.com/profile.php?id=100078007337598",
-    insta: "https://www.instagram.com/riya.amaze/",
-    link: "https://www.linkedin.com/in/riya-maiti-772b34230",
+    insta: "https://www.instagram.com/__sirisha__27/",
+    link: "https://www.linkedin.com/in/sirisha-menaka-270a15231",
   },
   {
     id: 9,
@@ -85,8 +85,8 @@ export const year2 =
     avatar: `${relativePath}utkarsh.jpeg`,
     position: "Event Manager",
     fb: "https://www.facebook.com/profile.php?id=100057396392171",
-    insta: "https://www.instagram.com/im_prajakta_7/",
-    link: "https://www.linkedin.com/in/sirisha-menaka-270a15231",
+    insta: "https://www.instagram.com/utkarsh9652/",
+    link: "https://www.linkedin.com/in/utkarsh-kumar-078626201",
   },
   {
     id: 10,
