@@ -4,7 +4,7 @@ import React from "react";
 import styles from "../styles/events.module.css";
 
 function EventCard(props) {
-  const { id, name, image, smallDesc, startDate, endDate, link } =
+  const { id, name, image, smallDesc, startDate, endDate, link, openlink } =
     props.details;
   const date = startDate == endDate ? startDate : `${startDate} - ${endDate}`;
   return (
@@ -39,10 +39,15 @@ function EventCard(props) {
           <p className={styles.DetailsDate}>{date}</p>
           <p className={styles.DetailsDesc}>
             {smallDesc}
-            {console.log(name + " " + smallDesc.length)}
-            <Link href={`/events/${name}?` + `index=${id}`}>
-              <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
-            </Link>
+            {openlink ? (
+              <Link href={openlink}>
+                <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
+              </Link>
+            ) : (
+              <Link href={`/events/${name}?` + `index=${id}`}>
+                <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
+              </Link>
+            )}
           </p>
         </div>
       </div>

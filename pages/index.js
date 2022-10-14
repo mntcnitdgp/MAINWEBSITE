@@ -7,11 +7,21 @@ import { events } from "../data/events/event";
 import EventCard from "../components/EventCard";
 import { reviews } from "../data/reviews";
 import Carousel from "react-multi-carousel";
+import { useEffect } from "react";
 import "react-multi-carousel/lib/styles.css";
 
 const relativePath = "/images/svg/";
 
 export default function Home() {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-TY7544TP54");
+  }, []);
+
   return (
     <motion.div
       className={styles.container}

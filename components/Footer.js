@@ -49,12 +49,12 @@ const Footer = () => {
           <div className={styles.FooterContactItems}>
             <a
               className={styles.FooterFilledLinks}
-              href="tel:+919970628425"
+              href="tel:+919007795158"
               target="_blank"
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                99706-28425 (Anto)
+                90077-95158 (Abantika)
               </span>
             </a>
 
