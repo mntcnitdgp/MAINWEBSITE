@@ -2,6 +2,94 @@ const relativePath = '/images/event images/' //Change this on deploy
 export const events = [
   {
     id: 1,
+    name: 'Campasudo',
+    image: `${relativePath}campasudo.jpeg`,
+    desc: `Have you ever been enthralled by 'Jumanji' and felt like taking part in an adventurous game as such? Do these memories take you back to the good old days when playing snakes and ladders was all the entertainment?
+
+    Then buckle up because Maths N Tech Club is soon bringing to you all, the first ever version of 'Campusudo', an offline intrepid hunting game, that will have your brains engaged in mind boggling assumptions and leave you craving for more.
+    
+    So fasten your belts for an unprecedented experience of something that you might never have envisaged before.
+    16th October 2022. 11 AM. See you there!`,
+    smallDesc: `Maths N Tech Club is soon bringing to you all, the first ever version of 'Campusudo', an offline intrepid hunting game, that will have your brains engaged in mind boggling assumptions and leave you craving for more.`,
+
+    startDate: 'Oct 16 2022',
+    endDate: 'Oct 16 2022',
+  },
+  {
+    id: 2,
+    name: 'Breakout 2.0',
+    image: `${relativePath}breakout2.jpeg`,
+    desc: `Have you ever watched 'The Maze Runner' and wondered what it would be like to get trapped in a place as such?
+
+    There is a mysterious mansion sealed off with magic by a group of riddlers who have kept all participants captive. Escape requires solving the mystical questions that will open the doors to the outside world.
+    
+    But not always what seems to be right is the reality, isn't it? Some choices may lead to grave consequences. The matter is of your luck and choice. And beware, the stakes get higher as you move forward. Remember, in the end, only the wittiest and quickest will get to breakout.
+    
+    So, buckle up for a thrilling one-time experience at Breakout 2.0, brought to you by your beloved MNTC. See you guys on 25th 6PM!`,
+    smallDesc: `There is a mysterious mansion sealed off with magic by a group of riddlers who have kept all participants captive. Escape requires solving the mystical questions that will open the doors to the outside world.`,
+
+    startDate: 'Jul 25 2022',
+    endDate: 'Jul 25 2022',
+    link: `https://breakout2.mntcnitdgp.co.in`,
+  },
+  {
+    id: 2,
+    name: 'Mergers Alliance',
+    image: `${relativePath}mergersalliance.jpeg`,
+    desc: `Have you ever dreamt of being the CEO of a company and bringing overnight success in its revenue?
+    Does your intellect pop-up with some thought- provoking business strategies?
+    
+    Do you believe that you have what it takes to revolutionize the business arena? If so then we have some real good news for you.
+    
+    Maths N Tech Club brings to you the first edition of Mergers Alliance, an online case study event where you will be a part of an alliance aiming to work on a company’s loopholes.
+    So it’s time to evoke the Steve Jobs inside of you. Let your innovative ideas and solutions find its way by reviving a business model. Exciting prizes await!`,
+    smallDesc: `Maths N Tech Club brings to you the first edition of Mergers Alliance, an online case study event where you will be a part of an alliance aiming to work on a company’s loopholes. `,
+
+    startDate: 'Jun 16 2022',
+    endDate: 'Jun 19 2022',
+  },
+  {
+    id: 3,
+    name: 'Graphic Design Workshop',
+    image: `${relativePath}gd.jpeg`,
+    desc: `Ever been awestruck by the brilliance of sci-fi movie posters or ever wondered how the Black Friday sales poster attracts so many customers? Well, with every great enterprise must come an even greater design!
+
+    Maths N Tech Club presents to you a two-day workshop on Graphic Design where you get to explore the creator inside of you.
+    
+    You mightn't be the greatest painter or maybe the idea of mixing colors might give you nightmares. But, fret not! Because digital design gives you infinite attempts to make your own masterpiece.
+    
+    On completion of this workshop, you will be able to understand the fundamentals of digital design and discover how to apply design by structuring a visual hierarchy using space, colors, and type.
+    
+    What can be even better than all this?
+    
+    The fact that it's absolutely FREE OF COST!!
+    
+    Remember, seats are limited! We bet you don't want to miss this opportunity of being the creative genius among your friends, so register now!!
+    `,
+    smallDesc: `Maths N Tech Club presents to you a two-day workshop on Graphic Design where you get to explore the creator inside of you.`,
+
+    startDate: 'Jan 22 2022',
+    endDate: 'Jan 23 2022',
+  },
+  {
+    id: 4,
+    name: 'Eventually 4.0',
+    image: `${relativePath}eventually4.jpeg`,
+    desc: `We know, 2021 has been a year marred by Covid. Life is as mundane as it has been for the last two years.
+    In this situation, is adrenaline what you crave for, to escape the mundanity of our online schedule?
+    
+    Then we have some excellent news for you! That’s where we come in. Maths N Tech Club is back with the 4th edition of EVENTually, an annual online picture-connect event where you are required to decipher the word symbolised by a set of images with the help of hints to steer your thinking process. It’s the ultimate test of your aptitude, intelligence and of your knowledge in matters encompassing from sports and movies to science and technology. It's finally time to pair up all the adrenaline in store with the gray matter waiting to be put to use!
+    
+    We are sure EVENTually 4.0 is gonna be as addictive and intense as it has been for the last 3 editions. So, buckle up and get ready for the fun ride scheduled for you!
+    
+    Exciting prizes awaiting!`,
+    smallDesc: `Maths N Tech Club is back with the 4th edition of EVENTually, an annual online picture-connect event where you are required to decipher the word symbolised by a set of images with the help of hints to steer your thinking process.`,
+
+    startDate: 'Dec 29 2021',
+    endDate: 'Jan 2 2022',
+  },
+  {
+    id: 5,
     name: 'Breakout 1.0',
     image: `${relativePath}breakout.jpeg`,
     desc: `Hello All!
@@ -16,7 +104,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     link: `https://breakout.mntcnitdgp.co.in`,
   },
   {
-    id: 2,
+    id: 6,
     name: 'Ideathon',
     image: `${relativePath}ideathon.jpeg`,
     desc: `Are you brimming with ideas to address the common real world problems and revolutionize the field of solutions?! Then, we bring to you the perfect opportunity to share your ideas with the world.
@@ -33,7 +121,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     openlink: `https://ideathon.mntcnitdgp.co.in`,
   },
   {
-    id: 3,
+    id: 7,
     name: 'Tech Orbis 2.0',
     image: `${relativePath}techorbis2.jpeg`,
     desc: `Hey everyone!
@@ -55,7 +143,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     link: `https://techorbis2-21d6e.web.app/`,
   },
   {
-    id: 4,
+    id: 8,
     name: 'Ankshala',
     image: `${relativePath}ankshala.jpeg`,
     desc: `Hola Students!
@@ -85,7 +173,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
   },
   {
-    id: 5,
+    id: 9,
     name: 'EVENTually 3.0',
     image: `${relativePath}eventually3.jpeg`,
     desc: `Whew! We are finally through 2020- completely uneventful but alarmingly energy sapping. The lethargy and mundanity has left us craving for an adrenaline rush. Well, Maths N Tech Club is here with yet another edition of EVENTually, an annual online picture-connect event where you are required to unscramble the word symbolised by a set of images with the help of hints to steer your thinking process.
@@ -100,7 +188,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'January 16 2021',
   },
   {
-    id: 6,
+    id: 10,
     name: 'NASA Space Apps Challenge',
     image: `${relativePath}nasa.jpg`,
     desc: ` Maths N Tech Club, NIT Durgapur was no less delighted than honoured to bring to all an opportunity of this magnitude for the first time in Durgapur. 
@@ -118,7 +206,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'Sept 09, 2019',
   },
   {
-    id: 7,
+    id: 11,
     name: 'Tech Charades',
     image: `${relativePath}tech.jpeg`,
     desc: `
@@ -132,7 +220,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 04, 2021',
   },
   {
-    id: 8,
+    id: 12,
     name: 'CATIA Workshop',
     image: `${relativePath}catia.jpeg`,
     desc: `The increasing usability and application of CATIA in the industry has led to an increase in demand for CATIA designers. Propelled by the diligent and religious system developers at Dassault Systèmes’ who regularly keep track of the requirements, suggestions, feedbacks and complaints from their customers, the two recent versions of CATIA that is CATIA V5 & V6 are now renowned as the world’s leading design product suite. 
@@ -143,7 +231,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 03, 2021',
   },
   {
-    id: 9,
+    id: 13,
     name: 'Kryptic',
     image: `${relativePath}kryptic.jpeg`,
     desc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
@@ -152,7 +240,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 03, 2021',
   },
   {
-    id: 10,
+    id: 14,
     name: 'Matrix',
     image: `${relativePath}matrix.jpeg`,
     desc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
@@ -162,7 +250,7 @@ Bring out the Mathematician in you, gather your teams, expand your territories i
     endDate: 'April 02, 2021',
   },
   {
-    id: 11,
+    id: 15,
     name: 'Knock Knock',
     image: `${relativePath}knock.jpeg`,
     desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
@@ -186,7 +274,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 03, 2021',
   },
   {
-    id: 12,
+    id: 16,
     name: 'Brain darts',
     image: `${relativePath}brain.jpeg`,
     desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
@@ -195,7 +283,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 02, 2021',
   },
   {
-    id: 13,
+    id: 17,
     name: 'Terrorist takedown',
     image: `${relativePath}terrorist.jpeg`,
     desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
@@ -204,7 +292,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 03, 2021',
   },
   {
-    id: 14,
+    id: 18,
     name: 'Darwinia',
     image: `${relativePath}darwinia.jpeg`,
     desc: `Have you ever thought of playing football online rather than going to the field? And, we’re definitely not talking about PES or FIFA. Sounds intriguing and interesting right? This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.
