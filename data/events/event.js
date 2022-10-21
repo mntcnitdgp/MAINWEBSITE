@@ -2,7 +2,7 @@ const relativePath = '/images/event images/' //Change this on deploy
 export const events = [
   {
     id: 1,
-    name: 'Campasudo',
+    name: 'Campusudo',
     image: `${relativePath}campasudo.jpeg`,
     desc: `Have you ever been enthralled by 'Jumanji' and felt like taking part in an adventurous game as such? Do these memories take you back to the good old days when playing snakes and ladders was all the entertainment?
 
