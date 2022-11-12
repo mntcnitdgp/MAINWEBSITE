@@ -33,7 +33,7 @@ export const events = [
     link: `https://breakout2.mntcnitdgp.co.in`,
   },
   {
-    id: 2,
+    id: 3,
     name: 'Mergers Alliance',
     image: `${relativePath}mergersalliance.jpeg`,
     desc: `Have you ever dreamt of being the CEO of a company and bringing overnight success in its revenue?
@@ -49,7 +49,7 @@ export const events = [
     endDate: 'Jun 19 2022',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Graphic Design Workshop',
     image: `${relativePath}gd.jpeg`,
     desc: `Ever been awestruck by the brilliance of sci-fi movie posters or ever wondered how the Black Friday sales poster attracts so many customers? Well, with every great enterprise must come an even greater design!
@@ -72,7 +72,7 @@ export const events = [
     endDate: 'Jan 23 2022',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Eventually 4.0',
     image: `${relativePath}eventually4.jpeg`,
     desc: `We know, 2021 has been a year marred by Covid. Life is as mundane as it has been for the last two years.
@@ -89,7 +89,7 @@ export const events = [
     endDate: 'Jan 2 2022',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Breakout 1.0',
     image: `${relativePath}breakout.jpeg`,
     desc: `Hello All!
@@ -104,7 +104,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     link: `https://breakout.mntcnitdgp.co.in`,
   },
   {
-    id: 6,
+    id: 7,
     name: 'Ideathon',
     image: `${relativePath}ideathon.jpeg`,
     desc: `Are you brimming with ideas to address the common real world problems and revolutionize the field of solutions?! Then, we bring to you the perfect opportunity to share your ideas with the world.
@@ -121,7 +121,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     openlink: `https://ideathon.mntcnitdgp.co.in`,
   },
   {
-    id: 7,
+    id: 8,
     name: 'Tech Orbis 2.0',
     image: `${relativePath}techorbis2.jpeg`,
     desc: `Hey everyone!
@@ -143,7 +143,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     link: `https://techorbis2-21d6e.web.app/`,
   },
   {
-    id: 8,
+    id: 9,
     name: 'Ankshala',
     image: `${relativePath}ankshala.jpeg`,
     desc: `Hola Students!
@@ -173,7 +173,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
   },
   {
-    id: 9,
+    id: 10,
     name: 'EVENTually 3.0',
     image: `${relativePath}eventually3.jpeg`,
     desc: `Whew! We are finally through 2020- completely uneventful but alarmingly energy sapping. The lethargy and mundanity has left us craving for an adrenaline rush. Well, Maths N Tech Club is here with yet another edition of EVENTually, an annual online picture-connect event where you are required to unscramble the word symbolised by a set of images with the help of hints to steer your thinking process.
@@ -188,7 +188,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'January 16 2021',
   },
   {
-    id: 10,
+    id: 11,
     name: 'NASA Space Apps Challenge',
     image: `${relativePath}nasa.jpg`,
     desc: ` Maths N Tech Club, NIT Durgapur was no less delighted than honoured to bring to all an opportunity of this magnitude for the first time in Durgapur. 
@@ -206,7 +206,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'Sept 09, 2019',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Tech Charades',
     image: `${relativePath}tech.jpeg`,
     desc: `
@@ -220,7 +220,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 04, 2021',
   },
   {
-    id: 12,
+    id: 13,
     name: 'CATIA Workshop',
     image: `${relativePath}catia.jpeg`,
     desc: `The increasing usability and application of CATIA in the industry has led to an increase in demand for CATIA designers. Propelled by the diligent and religious system developers at Dassault Systèmes’ who regularly keep track of the requirements, suggestions, feedbacks and complaints from their customers, the two recent versions of CATIA that is CATIA V5 & V6 are now renowned as the world’s leading design product suite. 
@@ -231,7 +231,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 03, 2021',
   },
   {
-    id: 13,
+    id: 14,
     name: 'Kryptic',
     image: `${relativePath}kryptic.jpeg`,
     desc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
@@ -240,7 +240,7 @@ If innovation is your forte, then Ideathon is what you wish for! We invite all d
     endDate: 'April 03, 2021',
   },
   {
-    id: 14,
+    id: 15,
     name: 'Matrix',
     image: `${relativePath}matrix.jpeg`,
     desc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
@@ -250,7 +250,7 @@ Bring out the Mathematician in you, gather your teams, expand your territories i
     endDate: 'April 02, 2021',
   },
   {
-    id: 15,
+    id: 16,
     name: 'Knock Knock',
     image: `${relativePath}knock.jpeg`,
     desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
@@ -274,7 +274,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 03, 2021',
   },
   {
-    id: 16,
+    id: 17,
     name: 'Brain darts',
     image: `${relativePath}brain.jpeg`,
     desc: `Welcome to NIT Durgapur! Did you fare well in physics? Well, doesn't matter. But just like a vector, the magnitude is not the only thing that matters, witness your scores run riot, just by a correct sense of direction. Miss and see yourself fall behind on the leaderboard. Hit and you’ll see yourself reach the pinnacle. And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
@@ -283,7 +283,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 02, 2021',
   },
   {
-    id: 17,
+    id: 18,
     name: 'Terrorist takedown',
     image: `${relativePath}terrorist.jpeg`,
     desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
@@ -292,7 +292,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     endDate: 'April 03, 2021',
   },
   {
-    id: 18,
+    id: 19,
     name: 'Darwinia',
     image: `${relativePath}darwinia.jpeg`,
     desc: `Have you ever thought of playing football online rather than going to the field? And, we’re definitely not talking about PES or FIFA. Sounds intriguing and interesting right? This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.
