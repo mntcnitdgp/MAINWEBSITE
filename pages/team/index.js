@@ -2,6 +2,8 @@ import { year4 } from "../../data/team/year4";
 import { year3 } from "../../data/team/year3";
 import { year2 } from "../../data/team/year2";
 import { year0 } from "../../data/team/year0";
+import { year5 } from "../../data/team/year5";
+import { year6 } from "../../data/team/year6";
 
 import Head from "next/head";
 import TeamCard from "../../components/TeamCard";
@@ -116,8 +118,32 @@ const Team = () => {
             setMemberList(year2);
           }}
         >
-          Second Year
+          First Year
         </span>
+        <span
+          className={
+            year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(5);
+            setMemberList(year5);
+          }}
+        >
+          Batch of 2019-23
+        </span>
+        <span
+          className={
+            year == 6 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(6);
+            setMemberList(year6);
+          }}
+        >
+          Batch of 2018-22
+        </span>
+        
+        
       </motion.div>
     );
   }
