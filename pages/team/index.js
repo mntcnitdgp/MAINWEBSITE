@@ -129,9 +129,9 @@ const Team = () => {
             setMemberList(year5);
           }}
         >
-          Batch of 2019-23
+          ALUMINI
         </span>
-        <span
+        {/*<span
           className={
             year == 6 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
@@ -141,7 +141,7 @@ const Team = () => {
           }}
         >
           Batch of 2018-22
-        </span>
+        </span>*/}
         
         
       </motion.div>

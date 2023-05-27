@@ -3,7 +3,7 @@ export const year6 = [
   {
     id: 1,
     name: "Anto",
-    position: "President",
+    position: "President(Batch Of 2018-22)",
     avatar: `${relativePath}anto.jpeg`,
     link: "https://www.linkedin.com/in/anto-prathik-savio-a29158154",
     fb: "https://www.facebook.com/p.antoprathiksavio",
@@ -11,14 +11,14 @@ export const year6 = [
   {
     id: 2,
     name: "Snehit",
-    position: "Vice President",
+    position: "Vice President(Batch Of 2018-22)",
     avatar: `${relativePath}snehit.jpeg`,
     link: "https://www.linkedin.com/in/snehit-mishra-64b391165/",
   },
   {
     id: 3,
     name: "Sharbashis",
-    position: "General Secretary",
+    position: "General Secretary(Batch Of 2018-22)",
     avatar: `${relativePath}sharbashis.jpg`,
     insta: "https://www.instagram.com/dundermufflin_09/",
     link: " https://www.linkedin.com/in/sharbashisdas/",
@@ -27,7 +27,7 @@ export const year6 = [
   {
     id: 4,
     name: "Ankan",
-    position: "Treasurer",
+    position: "Treasurer(Batch Of 2018-22)",
     avatar: `${relativePath}ankan.jpeg`,
     insta: "https://www.instagram.com/a_n_k_a_n_02/",
     link: "https://www.linkedin.com/in/ankanchakraborty02/",
@@ -36,7 +36,7 @@ export const year6 = [
   {
     id: 5,
     name: "Ankita",
-    position: "Convenor",
+    position: "Convenor(Batch Of 2018-22)",
     avatar: `${relativePath}ankita.jpeg`,
     fb: "https://www.facebook.com/ankita.bhattacharya.161214 ",
     insta: "https://instagram.com/bhattacharya_anki?utm_medium=copy_link",
@@ -44,13 +44,13 @@ export const year6 = [
   {
     id: 6,
     name: "Shraddha",
-    position: "Public Relations Head",
+    position: "Public Relations Head(Batch Of 2018-22)",
     avatar: `${relativePath}shraddha.jpeg`,
   },
   {
     id: 7,
     name: "Piyush",
-    position: "Sponsorship Head",
+    position: "Sponsorship Head(Batch Of 2018-22)",
     avatar: `${relativePath}piyush.jpeg`,
     insta: "https://www.instagram.com/piyush.__.dwivedi/",
     fb: "https://www.facebook.com/piyushkumar.dwivedi.336",
@@ -58,7 +58,7 @@ export const year6 = [
   {
     id: 8,
     name: "Sayantan",
-    position: "Technical Head",
+    position: "Technical Head(Batch Of 2018-22)",
     avatar: `${relativePath}sayantan.jpg`,
     insta: "https://www.instagram.com/raj_maity_047/",
     link: "https://www.linkedin.com/in/sayantan-maity-047",
@@ -67,7 +67,7 @@ export const year6 = [
   {
     id: 9,
     name: "Shubhankar",
-    position: "Graphics Head",
+    position: "Graphics Head(Batch Of 2018-22)",
     avatar: `${relativePath}shubhankar.jpeg`,
     insta: "https://instagram.com/subhankardatta973",
     link: "https://www.linkedin.com/in/subhankar-datta-909120207",
@@ -76,7 +76,7 @@ export const year6 = [
   {
     id: 10,
     name: "Bighnesh",
-    position: "Multimedia Head",
+    position: "Multimedia Head(Batch Of 2018-22)",
     avatar: `${relativePath}bighnesh.jpeg`,
     insta: "https://www.instagram.com/bighnesh__mohanty/",
     link: "https://www.linkedin.com/in/bighnesh-mohanty-255b04215/",
@@ -85,7 +85,7 @@ export const year6 = [
   {
     id: 11,
     name: "Risabh",
-    position: "Creative Head",
+    position: "Creative Head(Batch Of 2018-22)",
     avatar: `${relativePath}risabh.jpeg`,
     fb: "https://www.facebook.com/risabh.udgata",
     insta: "https://instagram.com/risabh_udgata",
@@ -93,7 +93,7 @@ export const year6 = [
   {
     id: 12,
     name: "Avirup",
-    position: "Logistics Head",
+    position: "Logistics Head(Batch Of 2018-22)",
     avatar: `${relativePath}avirup.jpeg`,
     insta: "https://www.instagram.com/the_crytogenic_psysico/",
     link: "https://www.linkedin.com/in/avirup-mazumder-601000181",
@@ -103,7 +103,7 @@ export const year6 = [
   {
     id: 13,
     name: "Geeta",
-    position: "Logistics Head",
+    position: "Logistics Head(Batch Of 2018-22)",
     avatar: `${relativePath}geeta.jpeg`,
     fb: "https://www.facebook.com/profile.php?id=100061623151194",
     link: "https://www.linkedin.com/in/gottapu-geeta-deepika-00a3461aa",
@@ -111,7 +111,7 @@ export const year6 = [
   {
     id: 14,
     name: "Rabin",
-    position: "RnD Head",
+    position: "RnD Head(Batch Of 2018-22)",
     avatar: `${relativePath}rabin.jpeg`,
     fb: "https://www.facebook.com/profile.php?id=100033457952581",
     insta: "https://instagram.com/warrior_2093?utm_medium=copy_link",
@@ -120,7 +120,7 @@ export const year6 = [
   {
     id: 15,
     name: "Harshit",
-    position: "Workshop Head",
+    position: "Workshop Head(Batch Of 2018-22)",
     avatar: `/images/member images/male.png`,
     fb: "https://www.facebook.com/harshit.shrinet.1",
     insta: "https://instagram.com/harshit_shrinet",
@@ -129,12 +129,12 @@ export const year6 = [
     id: 16,
     name: "Sweta",
     avatar: `/images/member images/female.png`,
-    position: "Workshop Head",
+    position: "Workshop Head(Batch Of 2018-22)",
   },
   {
     id: 17,
     name: "Ashwini",
-    position: "Event Head",
+    position: "Event Head(Batch Of 2018-22)",
     avatar: `${relativePath}ashwini.jpg`,
     tw: "https://twitter.com/Ashwini46447799?s=08",
   },
