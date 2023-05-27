@@ -4,7 +4,7 @@ export const year4 = [
     id: 1,
     name: "Kabita",
     avatar: `${relativePath}kabita.jpg`,
-    position: "PRESIDENTt",
+    position: "PRESIDENT",
     fb: "https://www.facebook.com/kabita.harijan.96",
     insta: "https://www.instagram.com/kabita_harijan/",
     link: "https://www.linkedin.com/in/kabita-harijan-33a4b0202/",
@@ -55,8 +55,8 @@ export const year4 = [
     git: "https://github.com/a2nurag",
   },
 
-  
-  
+
+
   {
     id: 7,
     name: "Jay",
@@ -67,7 +67,7 @@ export const year4 = [
     link: "https://www.linkedin.com/in/jay-gupta-0697321a5",
   },
 
-  
+
   {
     id: 8,
     name: "Prannoy",
@@ -90,7 +90,7 @@ export const year4 = [
     id: 10,
     name: "Anubhav",
     avatar: `${relativePath}anubhav.jpg`,
-    position:"PR AND FINANCE HEAD",
+    position: "PR AND FINANCE HEAD",
     link: "https://www.linkedin.com/in/anubhav-mandal-2b9908232/",
   },
   {
@@ -120,15 +120,15 @@ export const year4 = [
     insta: "https://www.instagram.com/kati_yar_shobhit/",
     link: "https://www.linkedin.com/in/shobhit-katiyar-2885a2204",
   },
- 
-  
-   {
-     id: 14,
-     name: "Rupam",
-     position:"WORKSHOP HEAD",
-     avatar: `${relativePath}rupam.jpeg`,
-     fb: "https://www.facebook.com/rupam.maity.56884/",
-     link: "https://www.linkedin.com/in/rupam-maity-553b381b8",
-   },
-  
+
+
+  {
+    id: 14,
+    name: "Rupam",
+    position: "WORKSHOP HEAD",
+    avatar: `${relativePath}rupam.jpeg`,
+    fb: "https://www.facebook.com/rupam.maity.56884/",
+    link: "https://www.linkedin.com/in/rupam-maity-553b381b8",
+  },
+
 ];
