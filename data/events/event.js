@@ -414,7 +414,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     smallDesc: `Will you be excited to hear that we are back again with an enthralling opportunity to unleash the hidden detective inside of you? 
     `,
     startDate: 'March 10, 2023',
-    endDate: 'March 02, 2023',
+    endDate: 'March 10, 2023',
   },
  
 ]
