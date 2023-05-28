@@ -8,6 +8,19 @@
   scrollbar-width: none;
   cursor: pointer;
 }
+.YearSwitchA {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.YearSwitchA::-webkit-scrollbar {
+  display: none;
+}
+
 
 .YearSwitch::-webkit-scrollbar {
   display: none;
@@ -23,6 +36,28 @@
   white-space: nowrap;
   transition: all 250ms ease-in-out;
 }
+.AluminiD {
+  padding-left: 0;
+  padding-top: 0.5rem;
+  background: transparent;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  width: 1%;
+  position: absolute;
+  border: none;
+  font-weight: 700;
+}
+.options
+{
+  background: var(--card-bg);
+  color: var(--text-dark-color);
+}
+
+
+
 
 .Year:hover {
   background-color: var(--text-lighter-color);

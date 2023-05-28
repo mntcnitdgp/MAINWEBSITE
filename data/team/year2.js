@@ -98,6 +98,7 @@ export const year2 =
     name:"Ranit",
     avatar: `${relativePath}ranit.jpg`,
     position: "Graphic Designer",
+    fb:"https://www.facebook.com/profile.php?id=100092757409184&mibextid=ZbWKwL",
     insta: "https://instagram.com/ranitbarua2004?igshid=MzRlODBiNWFlZA==",
     link: "https://www.linkedin.com/in/ranit-barua-a46a93256",
   },
@@ -188,7 +189,9 @@ export const year2 =
     name: "Vatsal",
     avatar: `${relativePath}vatsal.jpg`,
     position: "Video Editor",
+    fb:"",
     insta: "https://instagram.com/Vatsall_22",
+    link:"",
     
   },
   {
@@ -206,7 +209,9 @@ export const year2 =
     name: "Souradeep",
     avatar: `${relativePath}souradeep.jpeg`,
     position: "Event Manager",
+    fb:"https://www.facebook.com/profile.php?id=100093002924319&mibextid=ZbWKwL",
     insta: "https://instagram.com/Vatsall_22",
+    link:"https://www.linkedin.com/in/souradeep-halder-985071265",
     
   },
 
