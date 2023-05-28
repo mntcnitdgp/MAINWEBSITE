@@ -11,7 +11,7 @@ export const events = [
   },
   {
     id: 2,
-    name: 'Call Out Sherlock',
+    name: 'Clash Of Titans',
     image: `${relativePath}cot.jpeg`,
     desc: `Do you remember how much fun it was to watch those game shows with your family back in the day? Those enjoyable, heartwarming, and humorous games.
 
@@ -401,6 +401,20 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     smallDesc: `Just like a vector, the magnitude is not the only thing that matters in Brain Darts .As you witness your scores run riot, just by a correct sense of direction!!!Miss and see yourself fall behind on the leaderboad. Hit and you’ll see yourself reach the pinnacle!!!And, as you decide amongst yourselves who has the better aim, Team Aavishkar presents before you BRAIN DARTS! Can you aim for the eye… Arjuna?`,
     startDate: 'April 01, 2021',
     endDate: 'April 02, 2021',
+  },
+  {
+    id: 26,
+    name: 'Call Out Sherlock',
+    image: `${relativePath}cos.jpeg`,
+    desc: `Will you be excited to hear that we are back again with an enthralling opportunity to unleash the hidden detective inside of you? 
+
+    Well, this Aarohan we have arranged for a wholesome breath-taking experience where you can employ your investigating skills gathered by binge-watching Sherlock and other detective series.
+    It’s time to prepare yourself and nourish the mystery solver in you. All you need is to reveal the identity of the culprit convincingly after examining the given clues and evidence. CALL OUT SHERLOCK brings forth the amazing opportunity to probe the mystery case and deduce the solution to the puzzle from a logical interpretation of the clues.  
+    Amazing prizes await you! `,
+    smallDesc: `Will you be excited to hear that we are back again with an enthralling opportunity to unleash the hidden detective inside of you? 
+    `,
+    startDate: 'March 10, 2023',
+    endDate: 'March 02, 2023',
   },
  
 ]
