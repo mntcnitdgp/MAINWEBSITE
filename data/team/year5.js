@@ -3,7 +3,7 @@ export const year5 = [
   {
     id: 1,
     name: "Abantika",
-    position: "PRESIDENT(Batch Of 2019-23)",
+    position: "PRESIDENT",
     avatar: `${relativePath}abantika.jpg`,
     fb: "https://www.facebook.com/abantika.basu.5",
     insta: "https://instagram.com/abantika_basu/",
@@ -12,7 +12,7 @@ export const year5 = [
   {
     id: 2,
     name: "Harsh Jha",
-    position: "GENERAL SECRETARY(Batch Of 2019-23)",
+    position: "GENERAL SECRETARY",
     avatar: `${relativePath}harshJ.jpg`,
     fb: "https://www.facebook.com/hello.jha.wtf.hahaha.username",
     insta: "https://instagram.com/jhatwo",
@@ -23,7 +23,7 @@ export const year5 = [
   {
     id: 3,
     name: "Arghya",
-    position: "TREASURER(Batch Of 2019-23)",
+    position: "TREASURER",
     avatar: `${relativePath}arghya.jpg`,
     fb: "https://www.facebook.com/P.a.p.a.i.0",
     insta: "https://www.instagram.com/arghyagorai.in/",
@@ -32,7 +32,7 @@ export const year5 = [
   {
     id: 4,
     name: "Karam",
-    position: "RnD and TECH HEAD(Batch Of 2019-23)",
+    position: "RnD and TECH HEAD",
     avatar: `${relativePath}karam.jpeg`,
     fb: "https://www.facebook.com/KaramKumarSahoo/",
     insta: "https://www.instagram.com/a_cosmic_teen/",
@@ -43,7 +43,7 @@ export const year5 = [
     id: 5,
     name: "Siddharth",
     avatar: `${relativePath}siddharth.jpg`,
-    position: "VICE PRESIDENT(Batch Of 2019-23)",
+    position: "VICE PRESIDENT",
     fb: "https://m.facebook.com/profile.php?id=100009051800014&ref=content_filter",
     insta: "https://www.instagram.com/_wake_up_sid._/",
     link: "https://www.linkedin.com/in/siddharth-tripathi-8299861aa",
@@ -52,7 +52,7 @@ export const year5 = [
   {
     id: 6,
     name: "Rishabh",
-    position: "CONVENOR(Batch Of 2019-23)",
+    position: "CONVENOR",
     avatar: `${relativePath}rishabh.jpg`,
     fb: "https://www.facebook.com/profile.php?id=100038906024845",
     insta: "https://instagram.com/puru03.01",
@@ -62,7 +62,7 @@ export const year5 = [
   {
     id: 7,
     name: "Pratik",
-    position: "SPONSORSHIP HEAD(Batch Of 2019-23)",
+    position: "SPONSORSHIP HEAD",
     avatar: `${relativePath}pratik.jpg`,
     fb: "https://www.facebook.com/frezcot",
     insta: "https://instagram.com/burnn_it_downn/",
@@ -72,7 +72,7 @@ export const year5 = [
   {
     id: 8,
     name: "Sayandip",
-    position: "ANKSHALA HEAD(Batch Of 2019-23)",
+    position: "ANKSHALA HEAD",
     avatar: `${relativePath}sayandip.jpeg`,
     fb: "https://www.facebook.com/sayandip.acharjee.16",
     insta: "https://www.instagram.com/acharjeesayandip/",
@@ -81,7 +81,7 @@ export const year5 = [
   {
     id: 9,
     name: "Swastik",
-    position: "GRAPHICS HEAD(Batch Of 2019-23)",
+    position: "GRAPHICS HEAD",
     avatar: `/images/member images/male.png`,
     fb: "https://www.facebook.com/swastik.das.944",
     link: "https://www.linkedin.com/in/swastik-das-aa9a66210",
@@ -90,7 +90,7 @@ export const year5 = [
   {
     id: 10,
     name: "Kriti",
-    position: "PR HEAD(Batch Of 2019-23)",
+    position: "PR HEAD",
     avatar: `${relativePath}kriti.jpg`,
     fb: "https://www.facebook.com/profile.php?id=100007515439364",
     insta: "https://www.instagram.com/pramanikkriti27/",
@@ -100,7 +100,7 @@ export const year5 = [
   {
     id: 11,
     name: "Shreya",
-    position: "CREATIVE HEAD(Batch Of 2019-23)",
+    position: "CREATIVE HEAD",
     avatar: `${relativePath}shreya.jpeg`,
     fb: "https://www.facebook.com/profile.php?id=100040498443637",
     insta: "https://www.instagram.com/shreyarai127/",
@@ -110,7 +110,7 @@ export const year5 = [
   {
     id: 12,
     name: "Anurag",
-    position: "LOGISTIC HEAD(Batch Of 2019-23)",
+    position: "LOGISTIC HEAD",
     avatar: `${relativePath}anurag.jpg`,
     fb: "https://m.facebook.com/akr440",
     insta: "https://www.instagram.com/itsanuragkr/",
@@ -120,7 +120,7 @@ export const year5 = [
   {
     id: 13,
     name: "Abhishek",
-    position: "EVENT HEAD(Batch Of 2019-23)",
+    position: "EVENT HEAD",
     avatar: `${relativePath}abhishek.jpeg`,
     fb: "https://www.facebook.com/profile.php?id=100010224999683",
     insta: "https://www.instagram.com/abhiking54/",
@@ -129,7 +129,7 @@ export const year5 = [
   {
     id: 14,
     name: "Harsh Sodhani",
-    position: "WORKSHOP HEAD(Batch Of 2019-23)",
+    position: "WORKSHOP HEAD",
     insta: "https://www.instagram.com/harshsodhani/",
     avatar: `${relativePath}harshS.jpeg`,
     link: "https://www.linkedin.com/in/harsh-sodhani-338b74121/",

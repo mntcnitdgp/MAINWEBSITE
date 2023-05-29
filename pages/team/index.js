@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { FormHelperText, InputLabel } from "@mui/material";
+import AluminiCard from "../../components/AkuminiCard";
 
 const Team = () => {
   const [year, setYear] = useState(4);
@@ -44,8 +45,49 @@ const Team = () => {
 
       <div className={`container`}>
         <YearSwitch />
-
-        <motion.div
+        {year==7?<motion.div
+          className={styles.TeamList}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          
+          <span
+          className={
+            year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(5);
+            setMemberList(year5);
+          }}
+        >
+          <AluminiCard
+               
+               batch="Batch Of 2019-23"
+              
+             />
+        </span>
+        <span
+          className={
+            year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(6);
+            setMemberList(year6);
+          }}
+        >
+              
+                <AluminiCard
+               
+               batch="Batch Of 2018-22"
+              
+             />
+             </span>
+            
+            
+        
+        </motion.div>:
+          <motion.div
           className={styles.TeamList}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -66,8 +108,11 @@ const Team = () => {
             );
           })}
         </motion.div>
+        }
+      
       </div>
     </motion.div>
+    
   );
 
   function YearSwitch() {
@@ -139,14 +184,19 @@ const Team = () => {
           First Year
         </span>
         <span
-         className={
-          year > 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
-        }
-         
-        
+          className={
+            year >4  ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(7);
+          
+          }}
         >
-          <span
->
+           ALUMINI
+        </span>
+        
+       
+          {/*<span>
         
         {year>4?year>5?"Batch of 2018-22":"Batch of 2019-23":"ALUMINI"}
         <span >
@@ -161,7 +211,7 @@ const Team = () => {
      
     </span>
         </span >
-        </span>
+      </span>*/}
         
       </motion.div>
     );
@@ -170,41 +220,7 @@ const Team = () => {
   }
  
 
-  function YearSwitchAlumini() {
-    return (
-      <motion.div
-        className={styles.YearSwitchA}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        <span
-          className={
-            year == 5 ? `${styles.YearA} ${styles.YearActive}` : `${styles.Year}`
-          }
-          onClick={() => {
-            setYear(5);
-            setMemberList(year5);
-          }}
-        >
-          Batch of 2019-23
-        </span>
-        <span
-          className={
-            year == 6 ? `${styles.YearA} ${styles.YearActive}` : `${styles.Year}`
-          }
-          onClick={() => {
-            setYear(6);
-            setMemberList(year6);
-          }}
-        >
-          Batch of 2018-22
-        </span>
-        
-        
-      </motion.div>
-    );
-  }
-  
+
 };
 
 export default Team;
