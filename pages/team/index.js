@@ -192,7 +192,7 @@ const Team = () => {
           
           }}
         >
-           ALUMINI
+           ALUMNI
         </span>
         
        

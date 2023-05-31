@@ -74,7 +74,9 @@ export const year2 =
     name: "Aditi",
     avatar: `${relativePath}aditi.jpg`,
     position: "Event Manager",
-    link: "https://www.instagram.com/___._aditi_.___/",
+    fb:"https://www.facebook.com/profile.php?id=100093171608393",
+    insta: "https://www.instagram.com/___._aditi_.___/",
+    link:"https://www.linkedin.com/in/aditi-mahto-581bb3278",
   },
   {
     id: 9,
