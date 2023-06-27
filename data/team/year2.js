@@ -219,6 +219,16 @@ export const year2 =
     link:"https://www.linkedin.com/in/souradeep-halder-985071265",
     
   },
+  {
+    id: 24,
+    name: "Sneha",
+    avatar: `${relativePath}sneha.jpeg`,
+    position: "Event Manager",
+    fb:"https://www.facebook.com/profile.php?id=100092562927331&mibextid=ZbWKwL",
+    insta: "https://instagram.com/__sneha_singh19?igshid=MzNlNGNkZWQ4Mg==",
+    link:"https://www.linkedin.com/in/sneha-singh-71aa5a268",
+    
+  }
 
 
 ];
