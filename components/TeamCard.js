@@ -20,19 +20,20 @@ function TeamCard({
       <div className={styles.TeamCardAvatarContainer}>
         {avatar && (
           <Image
-            src={avatar}
-            layout="fill"
-            alt={name}
-            quality="10"
-            placeholder="blur"
-            priority={true}
-          />
+          src={avatar}
+          layout="fill"
+          alt={name}
+          quality="10"
+          
+          priority={true}
+        />
+          
         )}
       </div>
 
       <div className={styles.TeamCardDetailsContainer}>
         <h3 className={styles.DetailsName}>{name}</h3>
-        {position && <p className={styles.DetailsPosition}>{position}</p>}
+        {position && <div className={styles.DetailsPosition}>{position}</div>}
 
         <div className={styles.TeamCardSocial}>
           {facebook && (

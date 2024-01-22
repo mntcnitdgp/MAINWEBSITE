@@ -52,7 +52,7 @@ const Anveshan = () => {
             <h3 className={styles.AnveshanSubHeader}>
               The Official Tech Magazine of MNTC, NIT Durgapur
             </h3>
-            <p className={styles.AnveshanDetails}>
+            <div className={styles.AnveshanDetails}>
               We are stoked to present to you the newest edition of Anveshan –
               the official tech magazine of Maths N Tech Club, NIT Durgapur.
               Feeling tired of assignments and regular 9-6 classes? Replete with
@@ -61,7 +61,7 @@ const Anveshan = () => {
               that would require your analytical skills at their peak to solve
               them, Anveshan is definitely the ideal magazine to provide a
               reprieve to you from your monotonous lifestyle.
-            </p>
+            </div>
 
             <a
               className={`${styles.AnveshanDownloadBtn} solid`}

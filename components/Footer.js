@@ -85,13 +85,13 @@ const Footer = () => {
         <div className={styles.FooterNav}>
           <h3 className={styles.FooterHeader}>Visit Our Other Pages</h3>
           <div className={styles.FooterLinksItems}>
-            <Link href="/events" className={styles.FooterFilledLinks}>
+            <Link legacyBehavior href="/events" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>Events</a>
             </Link>
-            <Link href="/team" className={styles.FooterFilledLinks}>
+            <Link legacyBehavior  href="/team" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>Our Team</a>
             </Link>
-            <Link href="/about" className={styles.FooterFilledLinks}>
+            <Link  legacyBehavior href="/about" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>About Us</a>
             </Link>
           </div>

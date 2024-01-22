@@ -73,11 +73,15 @@
 .TeamHeader {
   margin: 1em 0;
 }
-
 .TeamList {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.content
+{
+  height: 200px;
+  object-fit: contain;
 }
 
 /* Team Card starts */

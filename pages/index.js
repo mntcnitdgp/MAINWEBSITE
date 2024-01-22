@@ -107,7 +107,7 @@ function About() {
           various events, webinars and workshops that inspire one to explore new
           fields and innovations.
         </p>
-        <Link href="/about">
+        <Link legacyBehavior href="/about">
           <a className={`text ${styles.HomeAboutLink}`}>
             Know More About Us {">"}
           </a>
@@ -148,7 +148,7 @@ function Team() {
           our endeavours are nothing but a display of the united attempts of our
           zestful squad. Meet the MNTC family, the dynamic gang behind it all.
         </p>
-        <Link href="/team">
+        <Link  legacyBehavior href="/team">
           <a className={`text ${styles.HomeAboutLink}`}>Meet Our Team {">"}</a>
         </Link>
       </div>
@@ -167,7 +167,7 @@ function Events() {
           {today >= eventDate ? "Our Recent" : "Upcoming"} Event
         </h2>
         <EventCard details={events[0]} />
-        <Link href="/events">
+        <Link legacyBehavior href="/events">
           <a className={`text ${styles.HomeAboutLink}`}>
             Check Out All Events {">"}
           </a>

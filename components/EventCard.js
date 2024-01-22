@@ -4,15 +4,15 @@ import React from "react";
 import styles from "../styles/events.module.css";
 
 function EventCard(props) {
-  const { id, name, image, smallDesc, startDate, endDate, link, openlink } =
+  const { id, name, image, smallDesc, startDate, endDate,no, link, openlink } =
     props.details;
   const date = startDate == endDate ? startDate : `${startDate} - ${endDate}`;
   return (
     <>
-      <Link href={`/events/${name}?` + `index=${id}`}>
+      <Link href={`/events/${name}?` + `index=${no}`}>
         <div className={styles.EventCardMobile}>
           <div className={styles.EventPosterContainer}>
-            <Image src={image} alt={name} src={image} layout="fill"></Image>
+            <Image src={image} alt={name} blurDataURL={image} layout="fill"></Image>
           </div>
 
           <div className={styles.EventDetails}>
@@ -27,7 +27,7 @@ function EventCard(props) {
           <Image
             src={image}
             alt={name}
-            src={image}
+            blurDataURL={image}
             layout="fill"
             placeholder="blur"
             priority={true}
@@ -40,11 +40,11 @@ function EventCard(props) {
           <p className={styles.DetailsDesc}>
             {smallDesc}
             {openlink ? (
-              <Link href={openlink}>
+              <Link legacyBehavior href={openlink}>
                 <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
               </Link>
             ) : (
-              <Link href={`/events/${name}?` + `index=${id}`}>
+              <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
                 <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
               </Link>
             )}

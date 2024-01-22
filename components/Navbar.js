@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
 
           <div className={styles.TopBarLinks}>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a
                 className={
                   page === "/"
@@ -86,7 +86,7 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/about">
+            <Link legacyBehavior href="/about">
               <a
                 className={
                   page === "/about"
@@ -98,7 +98,7 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/anveshan">
+            <Link legacyBehavior  href="/anveshan">
               <a
                 className={
                   page === "/anveshan"
@@ -110,7 +110,7 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/events">
+            <Link legacyBehavior href="/events">
               <a
                 className={
                   page === "/events"
@@ -122,7 +122,7 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/team">
+            <Link legacyBehavior href="/team">
               <a
                 className={
                   page === "/team"

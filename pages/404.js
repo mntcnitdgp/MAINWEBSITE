@@ -13,9 +13,9 @@ const notFound = () => {
         </h1>
 
         <Link href="/">
-          <a className={`${styles.ErrorButton} solid`}>
+          <div className={`${styles.ErrorButton} solid`}>
             Get back to the Home Page
-          </a>
+          </div>
         </Link>
       </div>
     </div>

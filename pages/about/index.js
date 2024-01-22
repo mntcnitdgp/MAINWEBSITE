@@ -39,14 +39,14 @@ export default function About() {
 
         <div className={styles.AboutInfo}>
           <div className={styles.AboutInfoPara}>
-            <p className={styles.AboutInfoPara1}>
+            <div className={styles.AboutInfoPara1}>
               We, Maths N Tech Club are the official knowledge club of National
               Institute of Technology, Durgapur. Back in 2004, when the Regional
               Engineering College Durgapur got the status of an Institute of
               National Importance and was renamed as the National Institute of
               Technology Durgapur, Maths N Tech Club was formed.
-            </p>
-            <p>
+            </div>
+            <div>
               Our club was set up with the aim of creating a platform that helps
               in stimulating passion for mathematics and interest in the
               technology of today’s world. At Maths N Tech Club, we understand
@@ -54,14 +54,14 @@ export default function About() {
               Hence, we organise a plethora of events throughout the year that
               aims at reinvigorating the seemingly dormant passion for
               mathematics and the thirst for knowledge about today’s technology.
-            </p>
-            <p>
+            </div>
+            <div>
               It is our continuous goal to try our best to deliver knowledge
               about recent technical enhancements through the various workshops
               that we conduct around the year. Our attempts also aim to kindle
               analytical reasoning and logical aptitude in the brain though
               various fun events and experiences.
-            </p>
+            </div>
           </div>
 
           <div className={styles.AboutInfoSide}>

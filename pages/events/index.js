@@ -3,11 +3,31 @@ import EventCard from "../../components/EventCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "../../data/events/event";
+//import { events } from "../../data/events/event";
 import styles from "../../styles/events.module.css";
-import { useState } from "react";
 
+import React, { useState, useEffect } from 'react';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from '../../firebase';
+import _ from 'lodash'
 export default function Events() {
+
+  const[events,setEvents]=useState([])
+  const fetchPost = async () => {
+       
+    await getDocs(collection(db, "events"))
+        .then((querySnapshot)=>{              
+            const newData = querySnapshot.docs
+                .map((doc) => ({...doc.data(), id:doc.id }));
+            
+            setEvents(_.orderBy(newData, ['no', 'timeSnapshot'], ['desc', 'asc']))                
+            console.log(events, newData);
+        })
+        
+}
+useEffect(()=>{
+  fetchPost();
+}, [])
   return (
     <motion.div
       initial="pageInitial"
