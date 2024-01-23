@@ -1,7 +1,4 @@
 //import { year4 } from "../../data/team/year4";
-//import { year3 } from "../../data/team/year3";
-//import { year2 } from "../../data/members/year2";
-//import { year0 } from "../../data/team/year0";
 import { year5 } from "../../data/team/year5";
 import { year6 } from "../../data/team/year6";
 import React, { useState, useEffect } from 'react';

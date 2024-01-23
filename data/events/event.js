@@ -1,24 +1,6 @@
 const relativePath = '/images/event images/' //Change this on deploy
 export const events = [
   
- 
-  
- 
- 
-  
-  
- 
-
-  
- 
- 
- 
-  
-  
-  
-  
- 
-  
   {
     id: 1,
     name: 'NASA Space Apps Challenge',
@@ -65,7 +47,7 @@ export const events = [
     endDate: 'April 02, 2021',
   },
   {
-    id: 24,
+    id: 3,
     name: 'Knock Knock',
     image: `${relativePath}knock.jpeg`,
     desc: `Are you Math-aholic? No, seriously. Brainstorming problem statements, mind-boggling permutations and  seemingly impossible-to-crack codes your fortress?
@@ -82,14 +64,12 @@ Given below are a few simple rules that need to be adhered to:
 7. This event is EXCLUSIVELY for first years.
 
 So dear freshers, what are you waiting for? Solve as many questions as you can in the least time possible and experience the thrill of seeing your name at the very top!`,
-    smallDesc: `Are you a Math-aholic?
-Do brainstorming problem statements,mind-boggling  permutations and  seemingly impossible-to-crack codes excite you?
-With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy when you crave for that serene bliss of solving the unsolvable.`,
+    smallDesc: ' Solve as many questions as you can in the least time possible and experience the thrill of seeing your name at the very top',
     startDate: 'April 02, 2021',
     endDate: 'April 03, 2021',
   },
   {
-    id: 19,
+    id: 4,
     name: 'Ankshala',
     image: `${relativePath}ankshala.jpeg`,
     desc: `Hola Students!
@@ -111,15 +91,16 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
 		Class 11-12:https://dare2compete.com/.../ankshala-2021-class-11-12...`,
 
     smallDesc: `Is the adrenaline rush whilst solving reasoning problems, mind-boggling equations and seemingly insurmountable sequences and series the reason why math excites you more than the other subjects?
-    	Do you aspire to crack exams like JEE, IMO, NTSE, KVPY, ISI etc.?
-	    Aptitude is definitely your forte.`,
+    Do you aspire to crack exams like JEE, IMO, NTSE, KVPY, ISI etc.?
+    Aptitude is definitely your forte. Well, fellow Math Nerds, you’re at the right place as Maths N Tech Club, NIT Durgapur in association with  Swadesh Academics powered by Swadesh Softwares brings to you ANKSHALA, a golden opportunity to help you analyze your proficiency in mathematics.
+   Given below are certain things you need to know about the exam:`,
 
     startDate: 'May 18 2021',
-    endDate: 'May 18 2021',
+    endDate: 'May 18,2021',
     link: `https://dare2compete.com/.../ankshala-2021-class-11-12`,
   },
   {
-    id: 18,
+    id: 5,
     name: 'Tech Orbis 2.0',
     image: `${relativePath}techorbis2.jpeg`,
     desc: `Hey everyone!
@@ -141,7 +122,7 @@ With the right blend of Aptitude and Mathematics, Knock-Knock comes in handy whe
     link: `https://techorbis2-21d6e.web.app/`,
   },
   {
-    id: 17,
+    id: 6,
     name: 'Ideathon',
     image: `${relativePath}ideathon.jpeg`,
     desc: `Are you brimming with ideas to address the common real world problems and revolutionize the field of solutions?! Then, we bring to you the perfect opportunity to share your ideas with the world.
@@ -153,12 +134,12 @@ So what are you waiting for? Awaken your inner Bill Gates. Innovate. Aspire. Be 
 If innovation is your forte, then Ideathon is what you wish for! We invite all developers, who dream big and aspire to innovate to participate in this new and innovative hackathon and showcase your best in front of our exemplary panel of judges.`,
 
     startDate: 'September 19 2021',
-    endDate: 'October 1 2021',
+    endDate: 'October 01 2021',
     link: `https://ideathon.mntcnitdgp.co.in`,
     openlink: `https://ideathon.mntcnitdgp.co.in`,
   },
   {
-    id: 16,
+    id: 7,
     name: 'Breakout 1.0',
     image: `${relativePath}breakout.jpeg`,
     desc: `Hello All!
@@ -173,7 +154,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     link: `https://breakout.mntcnitdgp.co.in`,
   },
   {
-    id: 1,
+    id: 8,
     name: 'Eventually 4.0',
     image: `${relativePath}eventually4.jpeg`,
     desc: `We know, 2021 has been a year marred by Covid. Life is as mundane as it has been for the last two years.
@@ -190,7 +171,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Jan 2 2022',
   },
   {
-    id: 13,
+    id: 9,
     name: 'Mergers Alliance',
     image: `${relativePath}mergersalliance.jpeg`,
     desc: `Have you ever dreamt of being the CEO of a company and bringing overnight success in its revenue?
@@ -206,7 +187,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Jun 19 2022',
   },
   {
-    id: 12,
+    id: 10,
     name: 'Breakout 2.0',
     image: `${relativePath}breakout2.jpeg`,
     desc: `Have you ever watched 'The Maze Runner' and wondered what it would be like to get trapped in a place as such?
@@ -238,7 +219,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Oct 16 2022',
   },
   {
-    id: 10,
+    id: 12,
     name: 'TechOrbis 3.O',
     image: `${relativePath}techorbis3.jpeg`,
     desc: `There is always something waiting for us to find its incredibility somewhere. Let's dwell into its search with Maths N Tech Club's newest version of the most anticipated annual event TechOrbis 3.0.
@@ -252,7 +233,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Dec 16 2022',
   },
   {
-    id: 14,
+    id: 13,
     name: 'Graphic Design Workshop',
     image: `${relativePath}gd.jpeg`,
     desc: `Ever been awestruck by the brilliance of sci-fi movie posters or ever wondered how the Black Friday sales poster attracts so many customers? Well, with every great enterprise must come an even greater design!
@@ -275,7 +256,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Jan 23 2022',
   },
   {
-    id: 9,
+    id: 14,
     name: 'Graphic Design Workshop',
     image: `${relativePath}GDworkshop2.jpeg`,
     desc: `Ever been fascinated by website designs or by the incredible posters Marvel and Netflix keep churning out? 
@@ -291,7 +272,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Jan 7 2023',
   },
   {
-    id: 8,
+    id: 15,
     name: 'A Session With Striver',
     image: `${relativePath}striver.jpeg`,
     desc: `At this point in our college careers, we have observed the value of YouTube sessions, whether for last-minute exam preparation or completely established courses from the start.
@@ -310,7 +291,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'Jan 15 2023',
   },
   {
-    id: 7,
+    id: 16,
     name: 'Stock Market Workshop',
     image: `${relativePath}stockmarket.jpeg`,
     desc: `Do you ever imagine yourself as a star investor ruling the markets of the Stock Exchange and reaping sumptuous?
@@ -330,7 +311,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
   },
 
   {
-    id: 26,
+    id: 17,
     name: 'Call Out Sherlock',
     image: `${relativePath}cos.jpeg`,
     desc: `Will you be excited to hear that we are back again with an enthralling opportunity to unleash the hidden detective inside of you? 
@@ -344,7 +325,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'March 10, 2023',
   },
   {
-    id: 6,
+    id: 18,
     name: 'House Of Cups',
     image: `${relativePath}houseofcups.jpeg`,
     desc: `We all remember playing the childhood game of building a home of pyramids out of playing cards or plastic cups. Also, it was a joy to demolish these houses that someone else had built, something we had all been looking forward to.
@@ -356,7 +337,7 @@ Gear up! Cause it's time to prove who's the champion of wit and might!`,
     endDate: 'March 10, 2023',
   },
   {
-    id: 3,
+    id: 19,
     name: 'Matrix',
     image: `${relativePath}matrix.jpeg`,
     desc: `This Aarohan relive those adrenaline packed days of family game nights,  those same tears of defeat, the roars of success and the incessant praying for the dice to roll in your favour! Team Aavishkar brings to you the chance of travelling down the memory lane, with twist of numbers and logic, in MATRIX.
@@ -366,7 +347,7 @@ Bring out the Mathematician in you, gather your teams, expand your territories i
     endDate: 'March 10, 2023',
   },
   {
-    id: 5,
+    id: 20,
     name: 'Darwinia',
     image: `${relativePath}darwinia.jpeg`,
     desc: `Have you ever thought of playing football online rather than going to the field? And, we’re definitely not talking about PES or FIFA. Sounds intriguing and interesting right? This Aarohan, Team Aavishkar brings to you DARWINIA, a football match for all the soccer enthusiasts out there, with numerous twists and turns.
@@ -377,7 +358,7 @@ startDate: 'March 11, 2023',
 endDate: 'March 11, 2023',
   },
   {
-    id: 23,
+    id: 21,
     name: 'Digital Marketing Workshop',
     image: `${relativePath}digital.jpeg`,
     desc: ` Digital Marketing is really important in today's world. You can make a really good product, but without proper marketing, it is destined for failure. Marketing can make or break an organisation.
@@ -393,7 +374,7 @@ endDate: 'March 11, 2023',
     endDate: 'March 12, 2023',
   },
   {
-    id: 1,
+    id: 22,
     name: 'Kryptic',
     image: `${relativePath}kryptic.jpeg`,
     desc: `Is adrenaline rush what you crave for whilst cracking codes? Fascinated by outlandish and bizarre cyphers, eh? This Aarohan, Team Aavishkar brings to you KRYPTIC, to put your  crypto-hungry soul to rest. Delve deeper into this enigmatic World of Cryptology, sail  through the labyrinthine trail of codes and decipher them to climb up to the pinnacle!`,
@@ -402,7 +383,7 @@ endDate: 'March 11, 2023',
     endDate: 'March 11, 2023',
   },
   {
-    id: 22,
+    id: 23,
     name: 'Tech Charades',
     image: `${relativePath}tech.jpeg`,
     desc: `
@@ -416,7 +397,7 @@ endDate: 'March 11, 2023',
     endDate: 'March 11, 2023',
   },
   {
-    id: 4,
+    id: 24,
     name: 'Terrorist takedown',
     image: `${relativePath}terrorist.jpeg`,
     desc: `Bored of the same old monotonous tasks and a keen desire to go out, reach into the unknown and find that treasure, but terrified of this virus? We feel you Master Snow. The Night’s Watch is definitely not where you belong. This Aarohan, Team Aavishkar presents before you the annual edition of the prolific treasure hunt, TERRORIST TAKEDOWN! Never let your guard down as you reach out to the east of Essos and to the west of Westeros to find the answers to the mysteries. But always keep in mind, one wrong step and you might as well fall into the Dragon's breath! So what are you waiting for? Bring out the gothic fanatic inside you as you unravel all these mysteries!`,
@@ -426,7 +407,7 @@ endDate: 'March 11, 2023',
   },
  
   {
-    id: 2,
+    id: 25,
     name: 'Clash Of Titans',
     image: `${relativePath}cot.jpeg`,
     desc: `Do you remember how much fun it was to watch those game shows with your family back in the day? Those enjoyable, heartwarming, and humorous games.
@@ -435,7 +416,7 @@ endDate: 'March 11, 2023',
     
     Team Aavishkar has something comparable for you this time. Let your dopamine levels reach a sufficient level, and in this busy world, let's reminisce about our happy childhoods`,
     smallDesc: `Do you remember how much fun it was to watch those game shows with your family back in the day? Those enjoyable, heartwarming, and humorous games.`,
-    startDate: 'March 12, 2023',
+    startDate: 'March 12,2023',
     endDate: 'March 12, 2023',
   },
   
