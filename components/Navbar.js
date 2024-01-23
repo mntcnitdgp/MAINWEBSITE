@@ -42,7 +42,7 @@ const Navbar = () => {
           animate={animation}
         >
           <div className={styles.TopBarLogo}>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <motion.svg
                 width="100"
                 height="33"
@@ -98,7 +98,7 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link legacyBehavior  href="/anveshan">
+            <Link legacyBehavior href="/anveshan">
               <a
                 className={
                   page === "/anveshan"

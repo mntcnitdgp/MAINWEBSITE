@@ -88,10 +88,10 @@ const Footer = () => {
             <Link legacyBehavior href="/events" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>Events</a>
             </Link>
-            <Link legacyBehavior  href="/team" className={styles.FooterFilledLinks}>
+            <Link legacyBehavior href="/team" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>Our Team</a>
             </Link>
-            <Link  legacyBehavior href="/about" className={styles.FooterFilledLinks}>
+            <Link legacyBehavior href="/about" className={styles.FooterFilledLinks}>
               <a className={styles.FooterFilledLink}>About Us</a>
             </Link>
           </div>

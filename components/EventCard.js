@@ -9,49 +9,49 @@ function EventCard(props) {
   const date = startDate == endDate ? startDate : `${startDate} - ${endDate}`;
   return (
     <>
-      <Link href={`/events/${name}?` + `index=${no}`}>
-        <div className={styles.EventCardMobile}>
-          <div className={styles.EventPosterContainer}>
-            <Image src={image} alt={name} blurDataURL={image} layout="fill"></Image>
-          </div>
-
-          <div className={styles.EventDetails}>
-            <h3 className={styles.DetailsName}>{name}</h3>
-            <p className={styles.DetailsDate}>{date}</p>
-          </div>
-        </div>
-      </Link>
-
-      <div className={styles.EventCardPC}>
+    <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
+      <div className={styles.EventCardMobile}>
         <div className={styles.EventPosterContainer}>
-          <Image
-            src={image}
-            alt={name}
-            blurDataURL={image}
-            layout="fill"
-            placeholder="blur"
-            priority={true}
-          />
+          <Image src={image} alt={name}  layout="fill"></Image>
         </div>
 
         <div className={styles.EventDetails}>
           <h3 className={styles.DetailsName}>{name}</h3>
           <p className={styles.DetailsDate}>{date}</p>
-          <p className={styles.DetailsDesc}>
-            {smallDesc}
-            {openlink ? (
-              <Link legacyBehavior href={openlink}>
-                <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
-              </Link>
-            ) : (
-              <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
-                <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
-              </Link>
-            )}
-          </p>
         </div>
       </div>
-    </>
+    </Link>
+
+    <div className={styles.EventCardPC}>
+      <div className={styles.EventPosterContainer}>
+        <Image
+          src={image}
+          alt={name}
+          
+          layout="fill"
+          
+          priority={true}
+        />
+      </div>
+
+      <div className={styles.EventDetails}>
+        <h3 className={styles.DetailsName}>{name}</h3>
+        <p className={styles.DetailsDate}>{date}</p>
+        <p className={styles.DetailsDesc}>
+          {smallDesc}
+          {openlink ? (
+            <Link legacyBehavior href={openlink}>
+              <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
+            </Link>
+          ) : (
+            <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
+              <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
+            </Link>
+          )}
+        </p>
+      </div>
+    </div>
+  </>
   );
 }
 

@@ -21,7 +21,7 @@ export default function Events() {
             const newData = querySnapshot.docs
                 .map((doc) => ({...doc.data(), id:doc.id }));
             
-            setEvents(_.orderBy(newData, ['no', 'timeSnapshot'], ['desc', 'asc']))               
+            setEvents(_.orderBy(_.orderBy(newData, ['timestamp'], ['desc'])))               
             console.log(events, newData);
         })
         
