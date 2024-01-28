@@ -17,7 +17,7 @@ import AluminiCard from "../../components/AkuminiCard";
 import _ from "lodash";
 
 const Team = () => {
-  const [year, setYear] = useState(0);
+  const [year, setYear] = useState(4);
   const [year0, setYear0] = useState(0);
   const[year4,setYear4]=useState([])
   const [memberList, setMemberList] = useState(year4);
@@ -220,7 +220,7 @@ useEffect(()=>{
             setMemberList(year2);
           }}
         >
-          First Year
+         Second Year
         </span>
         <span
           className={
