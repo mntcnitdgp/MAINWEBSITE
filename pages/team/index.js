@@ -20,17 +20,24 @@ const Team = () => {
   const [year, setYear] = useState(4);
   const [year0, setYear0] = useState(0);
   const[year4,setYear4]=useState([])
-  const [memberList, setMemberList] = useState(year4);
+  
   const[year2,setYear2]=useState([])
   const[year3,setYear3]=useState([])
+  const [memberList, setMemberList] = useState(year4);
   
   const fetchPost = async () => {
-       
+    await getDocs(collection(db, "mntc/members/year4"))
+    .then((querySnapshot)=>{              
+        const newData = querySnapshot.docs
+            .map((doc) => ({...doc.data(), id:doc.id }));
+      
+        setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
+    })       
     await getDocs(collection(db, "mntc/members/year2"))
         .then((querySnapshot)=>{              
             const newData = querySnapshot.docs
                 .map((doc) => ({...doc.data(), id:doc.id }));
-                setYear2(_.orderBy(newData, ['timeSnapshot'], ['asc']))                 
+                setYear2(_.orderBy(newData, ['timestamp'], ['desc']))                 
             
         })
         await getDocs(collection(db, "mntc/members/year3"))
@@ -39,13 +46,7 @@ const Team = () => {
                 .map((doc) => ({...doc.data(), id:doc.id }));
                 setYear3(_.orderBy(newData, ['timestamp'], ['desc']))
         })               
-        await getDocs(collection(db, "mntc/members/year4"))
-        .then((querySnapshot)=>{              
-            const newData = querySnapshot.docs
-                .map((doc) => ({...doc.data(), id:doc.id }));
-          
-            setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
-        })         
+         
         await getDocs(collection(db, "mntc/members/yearfacad"))
         .then((querySnapshot)=>{              
             const newData = querySnapshot.docs
