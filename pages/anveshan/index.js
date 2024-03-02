@@ -46,7 +46,7 @@ const Anveshan = () => {
               transition={{ delay: 0.2 }}
               className={`${styles.AnveshanHeader} secondary`}
             >
-              Anveshan 2021
+              Anveshan 2024
             </motion.h1>
 
             <h3 className={styles.AnveshanSubHeader}>
@@ -65,7 +65,7 @@ const Anveshan = () => {
 
             <a
               className={`${styles.AnveshanDownloadBtn} solid`}
-              href="./anveshan21.pdf"
+              href="./Anveshan_23_24.pdf"
             >
               Download it now!
             </a>
