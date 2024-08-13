@@ -1,4 +1,4 @@
-//import { year4 } from "../../data/team/year4";
+import { year1 as year2 } from "../../data/team/year1";
 import { year5 } from "../../data/team/year5";
 import { year6 } from "../../data/team/year6";
 import React, { useState, useEffect } from 'react';
@@ -19,47 +19,47 @@ import _ from "lodash";
 const Team = () => {
   const [year, setYear] = useState(4);
   const [year0, setYear0] = useState(0);
-  const[year4,setYear4]=useState([])
-  
-  const[year2,setYear2]=useState([])
-  const[year3,setYear3]=useState([])
+  const [year4, setYear4] = useState([])
+
+  // const [year2, setYear2] = useState([])
+  const [year3, setYear3] = useState([])
+  const [year8, setYear8] = useState([])
   const [memberList, setMemberList] = useState(year4);
-  
+
   const fetchPost = async () => {
     await getDocs(collection(db, "mntc/members/year4"))
-    .then((querySnapshot)=>{              
+      .then((querySnapshot) => {
         const newData = querySnapshot.docs
-            .map((doc) => ({...doc.data(), id:doc.id }));
-      
-        setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
-    })       
+          .map((doc) => ({ ...doc.data(), id: doc.id }));
+
+        setYear8(_.orderBy(newData, ['timestamp'], ['desc']))
+      })
     await getDocs(collection(db, "mntc/members/year2"))
-        .then((querySnapshot)=>{              
-            const newData = querySnapshot.docs
-                .map((doc) => ({...doc.data(), id:doc.id }));
-                setYear2(_.orderBy(newData, ['timestamp'], ['desc']))                 
-            
-        })
-        await getDocs(collection(db, "mntc/members/year3"))
-        .then((querySnapshot)=>{              
-            const newData = querySnapshot.docs
-                .map((doc) => ({...doc.data(), id:doc.id }));
-                setYear3(_.orderBy(newData, ['timestamp'], ['desc']))
-        })               
-         
-        await getDocs(collection(db, "mntc/members/yearfacad"))
-        .then((querySnapshot)=>{              
-            const newData = querySnapshot.docs
-                .map((doc) => ({...doc.data(), id:doc.id }));
-          
-            setYear0(_.orderBy(newData, ['timestamp'], ['desc']))
-        })              
-       
-   
-}
-useEffect(()=>{
-  fetchPost();
-}, [])
+      .then((querySnapshot) => {
+        const newData = querySnapshot.docs
+          .map((doc) => ({ ...doc.data(), id: doc.id }));
+        setYear3(_.orderBy(newData, ['timestamp'], ['desc']))
+
+      })
+    await getDocs(collection(db, "mntc/members/year3"))
+      .then((querySnapshot) => {
+        const newData = querySnapshot.docs
+          .map((doc) => ({ ...doc.data(), id: doc.id }));
+        setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
+      })
+
+    await getDocs(collection(db, "mntc/members/yearfacad"))
+      .then((querySnapshot) => {
+        const newData = querySnapshot.docs
+          .map((doc) => ({ ...doc.data(), id: doc.id }));
+
+        setYear0(_.orderBy(newData, ['timestamp'], ['desc']))
+      })
+  }
+  useEffect(() => {
+    fetchPost();
+  }, [])
+
   return (
     <motion.div
       initial="pageInitial"
@@ -85,91 +85,90 @@ useEffect(()=>{
 
       <div className={`container`}>
         <YearSwitch />
-        {year==7?<motion.div
+        {year == 7 ? <motion.div
           className={styles.TeamList}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          
+
           <span
-          className={
-            year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
-          }
-          onClick={() => {
-            setYear(5);
-            setMemberList(year5);
-          }}
-        >
-          <AluminiCard
-               
-               batch="Batch Of 2019-23"
-              
-             />
-        </span>
-        <span
-          className={
-            year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
-          }
-          onClick={() => {
-            setYear(6);
-            setMemberList(year6);
-          }}
-        >
-              
-                <AluminiCard
-               
-               batch="Batch Of 2018-22"
-              
-             />
-             </span>
-            
-            
-        
-        </motion.div>:
+            className={
+              year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            }
+            onClick={() => {
+              setYear(8);
+              setMemberList(year8);
+            }}
+          >
+            <AluminiCard
+
+              batch="Batch Of 2020-24"
+
+            />
+          </span>
+          <span
+            className={
+              year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            }
+            onClick={() => {
+              setYear(5);
+              setMemberList(year5);
+            }}
+          >
+            <AluminiCard
+
+              batch="Batch Of 2019-23"
+
+            />
+          </span>
+          <span
+            className={
+              year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            }
+            onClick={() => {
+              setYear(6);
+              setMemberList(year6);
+            }}
+          >
+
+            <AluminiCard
+
+              batch="Batch Of 2018-22"
+
+            />
+          </span>
+
+
+
+        </motion.div> :
           <motion.div
-          className={styles.TeamList}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
-          {memberList.map((member) => {
-            return (
-              <TeamCard
-                key={member.id}
-                name={member.name}
-                avatar={member.avatar}
-                position={member.position}
-                facebook={member.fb}
-                instagram={member.insta}
-                linkedin={member.link}
-              
-              />
-            );
-          })}
-        </motion.div>
+            className={styles.TeamList}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            {memberList.length && memberList.map((member) => {
+              return (
+                <TeamCard
+                  key={member.id}
+                  name={member.name}
+                  avatar={member.avatar}
+                  position={member.position}
+                  facebook={member.fb}
+                  instagram={member.insta}
+                  linkedin={member.link}
+
+                />
+              );
+            })}
+          </motion.div>
         }
-      
       </div>
     </motion.div>
-    
   );
 
   function YearSwitch() {
-    const handleSelect = async (e) => {
-      e.preventDefault()
-     
-      if(e.target.value=="5")
-      {
-        setYear(5)
-        setMemberList(year5);
-      }
-      else if(e.target.value=="6"){
-        setYear(6)
-        setMemberList(year6);
-      }
-    }
-   
     return (
       <motion.div
         className={styles.YearSwitch}
@@ -221,22 +220,22 @@ useEffect(()=>{
             setMemberList(year2);
           }}
         >
-         Second Year
+          Second Year
         </span>
         <span
           className={
-            year >4  ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            year > 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
             setYear(7);
-          
+
           }}
         >
-           ALUMNI
+          ALUMNI
         </span>
-        
-       
-          {/*<span>
+
+
+        {/*<span>
         
         {year>4?year>5?"Batch of 2018-22":"Batch of 2019-23":"ALUMINI"}
         <span >
@@ -252,13 +251,13 @@ useEffect(()=>{
     </span>
         </span >
       </span>*/}
-        
+
       </motion.div>
     );
-   
-    
+
+
   }
- 
+
 
 
 };

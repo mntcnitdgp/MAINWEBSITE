@@ -49,23 +49,23 @@ const Footer = () => {
           <div className={styles.FooterContactItems}>
             <a
               className={styles.FooterFilledLinks}
-              href="tel:+919883978154"
+              href="tel:+919339609242"
               target="_blank"
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                98839-78154 (Kabita)
+                93396-09242 (Tathagata)
               </span>
             </a>
 
             <a
               className={styles.FooterFilledLinks}
-              href="tel:+916296314025"
+              href="tel:+919792161125"
               target="_blank"
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                62963-14025 (Debjit)
+                97921-61125 (Shivanshu)
               </span>
             </a>
 
