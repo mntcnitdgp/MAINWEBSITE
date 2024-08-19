@@ -138,9 +138,9 @@ export const year1 =
         {
             id: 18,
             name: "Shivam Kumar",
-            avatar: `${relativePath}jit.jpg`,
+            avatar: `${relativePath}shivam.jpg`,
             position: "Web Developer",
-            insta: "https://www.instagram.com/__jee_t/?hl=en",
-            link: "https://www.linkedin.com/in/jit-sarkar-b26875292/",
+            insta: "https://www.instagram.com/shivamkumar0.88?igsh=MWZ1cTBtZmRhdXR0Ng==",
+            link: "https://www.linkedin.com/in/shivam-kumar-8b6452285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
     ]
