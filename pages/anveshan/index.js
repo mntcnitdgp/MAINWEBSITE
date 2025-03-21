@@ -36,9 +36,9 @@ const Anveshan = () => {
 
       <div className={`container ${styles.AnveshanContainer}`}>
         <div className={styles.AnweshanMobilePoster}>
-          <img src="/images/Anveshan1.png" />
+          <img src="/images/Anveshan_25.jpg" />
         </div>
-        <main className={styles.AnveshanMain}>
+        <div className={styles.AnveshanMain}>
           <div className={styles.AnveshanMainSubContainer}>
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
@@ -46,7 +46,7 @@ const Anveshan = () => {
               transition={{ delay: 0.2 }}
               className={`${styles.AnveshanHeader} secondary`}
             >
-              Anveshan 2024
+              Anveshan 2025
             </motion.h1>
 
             <h3 className={styles.AnveshanSubHeader}>
@@ -65,28 +65,16 @@ const Anveshan = () => {
 
             <a
               className={`${styles.AnveshanDownloadBtn} solid`}
-              href="./Anveshan_23_24.pdf"
+              href="./Anveshan_25.pdf"
             >
               Download it now!
             </a>
           </div>
-        </main>
+        </div>
 
-        <side className={styles.AnveshanSide}>
-          <div className>
-            <div className={styles.ImagesContainer}>
-              <div className={styles.Image1}>
-                <img src="/images/Anveshan1.png" />
-              </div>
-              <div className={styles.Image2}>
-                <img src="/images/Anveshan2.png" />
-              </div>
-              <div className={styles.Image3}>
-                <img src="/images/Anveshan3.png" />
-              </div>
-            </div>
-          </div>
-        </side>
+        <div className={styles.AnveshanSide}>
+          <img src="/images/Anveshan_25.jpg" className={styles.Image} />
+        </div>
       </div>
     </motion.div>
   );

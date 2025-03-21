@@ -1,7 +1,6 @@
 /* Responsive Mobile */
 
-.AnveshanDetails
-{
+.AnveshanDetails {
   color: var(--text-lighter-color);
 }
 @media screen and (max-width: 900px) {
@@ -14,6 +13,7 @@
     top: 4rem;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: -10;
   }
 
@@ -72,9 +72,11 @@
   .AnveshanContainer {
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.5rem;
     min-height: 80vh;
     margin-top: 4.2rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .AnveshanMain {
@@ -85,40 +87,12 @@
   }
 
   .AnveshanSide {
+    margin-left: 15rem;
     width: 50%;
-    display: flex;
-    align-items: center;
   }
 
-  .AnveshanSide div {
-    width: 100%;
-  }
-
-  .ImagesContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .Image1 {
-    margin-left: 10px;
-    z-index: 3;
-  }
-
-  .Image2 {
-    margin-left: -45%;
-    z-index: 2;
-  }
-
-  .Image3 {
-    margin-left: -65%;
-    z-index: 1;
-  }
-
-  .Image1 img,
-  .Image2 img,
-  .Image3 img {
-    height: 100%;
+  .Image {
+    height: 40rem;
+    width: 35rem;
   }
 }
