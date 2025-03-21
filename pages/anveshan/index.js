@@ -27,10 +27,10 @@ const Anveshan = () => {
       }}
     >
       <Head>
-        <title>MNTC | Anveshan 2021</title>
+        <title>MNTC | Anveshan 2025</title>
         <meta
           name="description"
-          content="Anveshan 2021-Maths N Tech Club, NIT Durgapur. The official Tech Magazine of NIT Durgapur"
+          content="Anveshan 2025-Maths N Tech Club, NIT Durgapur. The official Tech Magazine of NIT Durgapur"
         />
       </Head>
 
