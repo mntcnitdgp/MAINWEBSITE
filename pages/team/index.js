@@ -1,10 +1,13 @@
 import { year0 } from "../../data/team/year0";
 import { year2 } from "../../data/team/year2";
 import { year3 } from "../../data/team/year3";
+import { year5 } from "../../data/team/year5";
+import { year4 } from "../../data/team/year4";
+import { year6 } from "../../data/team/year6";
+import { year7 } from "../../data/team/year7";
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from '../../firebase';
-
 import Head from "next/head";
 import TeamCard from "../../components/TeamCard";
 import styles from "../../styles/Team.module.css";
@@ -15,7 +18,6 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { FormHelperText, InputLabel } from "@mui/material";
 import AluminiCard from "../../components/AkuminiCard";
 import _ from "lodash";
-
 
 const Team = () => {
   const [year, setYear] = useState(4);
@@ -87,7 +89,7 @@ const Team = () => {
 
       <div className={`container`}>
         <YearSwitch />
-        {year == 7 ? <motion.div
+        {year == 8 ? <motion.div
           className={styles.TeamList}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -99,16 +101,17 @@ const Team = () => {
               year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
             }
             onClick={() => {
-              setYear(8);
-              setMemberList(year8);
+              setYear(4);
+              setMemberList(year4);
             }}
           >
             <AluminiCard
 
-              batch="Batch Of 2020-24"
+              batch="Batch Of 2021-25"
 
             />
           </span>
+
           <span
             className={
               year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
@@ -120,10 +123,11 @@ const Team = () => {
           >
             <AluminiCard
 
-              batch="Batch Of 2019-23"
+              batch="Batch Of 2020-24"
 
             />
           </span>
+
           <span
             className={
               year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
@@ -131,6 +135,22 @@ const Team = () => {
             onClick={() => {
               setYear(6);
               setMemberList(year6);
+            }}
+          >
+            <AluminiCard
+
+              batch="Batch Of 2019-23"
+
+            />
+          </span>
+          
+          <span
+            className={
+              year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            }
+            onClick={() => {
+              setYear(7);
+              setMemberList(year7);
             }}
           >
 
@@ -213,6 +233,7 @@ const Team = () => {
         >
           Third Year
         </span>
+
         {/* <span
           className={
             year == 2 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
@@ -224,35 +245,29 @@ const Team = () => {
         >
           Second Year
         </span> */}
-        {/* <span
+
+        <span
           className={
             year > 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
-            setYear(7);
+            setYear(8);
 
           }}
         >
           ALUMNI
-        </span> */}
+        </span>
 
-
-        {/*<span>
-        
-        {year>4?year>5?"Batch of 2018-22":"Batch of 2019-23":"ALUMINI"}
-        <span >
-     
-      <Select sx={{ border: 0 }} value=""
-         
-        onChange={handleSelect}   >
-        <MenuItem  className={`${styles.options}`} value="5"  >Batch Of 2019-23</MenuItem>
-        <MenuItem className={`${styles.options}`} value="6">Batch Of 2018-22</MenuItem>
-        
-      </Select>
-     
-    </span>
-        </span >
-      </span>*/}
+        {/* <span>
+          {year>4?year>5?"Batch of 2018-22":"Batch of 2019-23":"ALUMINI"}
+          <span > 
+            <Select sx={{ border: 0 }} value=""
+              onChange={handleSelect}   >
+              <MenuItem  className={`${styles.options}`} value="5"  >Batch Of 2019-23</MenuItem>
+              <MenuItem className={`${styles.options}`} value="6">Batch Of 2018-22</MenuItem>
+            </Select>  
+          </span>
+        </span > */}
 
       </motion.div>
     );
