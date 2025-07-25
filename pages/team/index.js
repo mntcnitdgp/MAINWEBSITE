@@ -1,6 +1,6 @@
-import { year1 as year2 } from "../../data/team/year1";
-import { year5 } from "../../data/team/year5";
-import { year6 } from "../../data/team/year6";
+import { year0 } from "../../data/team/year0";
+import { year2 } from "../../data/team/year2";
+import { year3 } from "../../data/team/year3";
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from '../../firebase';
@@ -16,49 +16,51 @@ import { FormHelperText, InputLabel } from "@mui/material";
 import AluminiCard from "../../components/AkuminiCard";
 import _ from "lodash";
 
+
 const Team = () => {
   const [year, setYear] = useState(4);
-  const [year0, setYear0] = useState(0);
-  const [year4, setYear4] = useState([])
+  // const [year0, setYear0] = useState(0);
+  // const [year4, setYear4] = useState([])
 
   // const [year2, setYear2] = useState([])
-  const [year3, setYear3] = useState([])
-  const [year8, setYear8] = useState([])
-  const [memberList, setMemberList] = useState(year4);
+  // const [year3, setYear3] = useState([])
+  // const [year8, setYear8] = useState([])
 
-  const fetchPost = async () => {
-    await getDocs(collection(db, "mntc/members/year4"))
-      .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-          .map((doc) => ({ ...doc.data(), id: doc.id }));
+  const [memberList, setMemberList] = useState(year3);
 
-        setYear8(_.orderBy(newData, ['timestamp'], ['desc']))
-      })
-    await getDocs(collection(db, "mntc/members/year2"))
-      .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-          .map((doc) => ({ ...doc.data(), id: doc.id }));
-        setYear3(_.orderBy(newData, ['timestamp'], ['desc']))
+  // const fetchPost = async () => {
+  //   await getDocs(collection(db, "mntc/members/year4"))
+  //     .then((querySnapshot) => {
+  //       const newData = querySnapshot.docs
+  //         .map((doc) => ({ ...doc.data(), id: doc.id }));
 
-      })
-    await getDocs(collection(db, "mntc/members/year3"))
-      .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-          .map((doc) => ({ ...doc.data(), id: doc.id }));
-        setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
-      })
+  //       setYear8(_.orderBy(newData, ['timestamp'], ['desc']))
+  //     })
+  //   await getDocs(collection(db, "mntc/members/year2"))
+  //     .then((querySnapshot) => {
+  //       const newData = querySnapshot.docs
+  //         .map((doc) => ({ ...doc.data(), id: doc.id }));
+  //       setYear3(_.orderBy(newData, ['timestamp'], ['desc']))
 
-    await getDocs(collection(db, "mntc/members/yearfacad"))
-      .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-          .map((doc) => ({ ...doc.data(), id: doc.id }));
+  //     })
+  //   await getDocs(collection(db, "mntc/members/year3"))
+  //     .then((querySnapshot) => {
+  //       const newData = querySnapshot.docs
+  //         .map((doc) => ({ ...doc.data(), id: doc.id }));
+  //       setYear4(_.orderBy(newData, ['timestamp'], ['desc']))
+  //     })
 
-        setYear0(_.orderBy(newData, ['timestamp'], ['desc']))
-      })
-  }
-  useEffect(() => {
-    fetchPost();
-  }, [])
+  //   await getDocs(collection(db, "mntc/members/yearfacad"))
+  //     .then((querySnapshot) => {
+  //       const newData = querySnapshot.docs
+  //         .map((doc) => ({ ...doc.data(), id: doc.id }));
+
+  //       setYear0(_.orderBy(newData, ['timestamp'], ['desc']))
+  //     })
+  // }
+  // useEffect(() => {
+  //   fetchPost();
+  // }, [])
 
   return (
     <motion.div
@@ -189,29 +191,29 @@ const Team = () => {
 
         <span
           className={
-            year == 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
-          }
-          onClick={() => {
-            setYear(4);
-            setMemberList(year4);
-          }}
-        >
-          Fourth Year
-        </span>
-        <span
-          className={
-            year == 3
-              ? `${styles.Year}  ${styles.YearActive}`
-              : `${styles.Year}`
+            year == 3 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
             setYear(3);
             setMemberList(year3);
           }}
         >
-          Third Year
+          Fourth Year
         </span>
         <span
+          className={
+            year == 2
+              ? `${styles.Year}  ${styles.YearActive}`
+              : `${styles.Year}`
+          }
+          onClick={() => {
+            setYear(2);
+            setMemberList(year2);
+          }}
+        >
+          Third Year
+        </span>
+        {/* <span
           className={
             year == 2 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
@@ -221,8 +223,8 @@ const Team = () => {
           }}
         >
           Second Year
-        </span>
-        <span
+        </span> */}
+        {/* <span
           className={
             year > 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
@@ -232,7 +234,7 @@ const Team = () => {
           }}
         >
           ALUMNI
-        </span>
+        </span> */}
 
 
         {/*<span>

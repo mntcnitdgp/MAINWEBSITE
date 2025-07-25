@@ -3,34 +3,35 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-//import { events } from "../../data/events/event";
+import { events } from "../../data/events/event";
 import styles from "../../styles/events.module.css";
 import React, { useState, useEffect } from 'react';
-import { collection, addDoc, getDocs } from "firebase/firestore";
-import { db } from '../../firebase';
+// import { collection, addDoc, getDocs } from "firebase/firestore";
+// import { db } from '../../firebase';
 import _ from 'lodash'
 
 export default function Events() {
   const router = useRouter();
   const { id, index } = router.query;
-  const[events,setEvents]=useState([])
-  const fetchPost = async () => {
+  // const[events,setEvents]=useState([])
+//   const fetchPost = async () => {
        
-    await getDocs(collection(db, "events"))
-        .then((querySnapshot)=>{              
-            const newData = querySnapshot.docs
-                .map((doc) => ({...doc.data(), id:doc.id }));
+//     await getDocs(collection(db, "events"))
+//         .then((querySnapshot)=>{              
+//             const newData = querySnapshot.docs
+//                 .map((doc) => ({...doc.data(), id:doc.id }));
             
-            setEvents(_.orderBy(_.orderBy(newData, ['timestamp'], ['desc'])))               
-            console.log(events, newData);
-        })
+//             setEvents(_.orderBy(_.orderBy(newData, ['timestamp'], ['desc'])))               
+//             console.log(events, newData);
+//         })
         
-}
-useEffect(()=>{
-  fetchPost();
-}, [])
-  const l=events.length;
-  const event = events[l-index ];
+// }
+// useEffect(()=>{
+//   fetchPost();
+// }, [])
+  // const l=events.length;
+
+  const event = events[index-1];
 
   return (<motion.div
       initial="pageInitial"
