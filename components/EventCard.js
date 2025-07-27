@@ -9,7 +9,7 @@ function EventCard(props) {
   const date = startDate == endDate ? startDate : `${startDate} - ${endDate}`;
   return (
     <>
-    <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
+    <Link legacyBehavior href={`/events/${name}?` + `index=${id}`}>
       <div className={styles.EventCardMobile}>
         <div className={styles.EventPosterContainer}>
           <Image src={image} alt={name}  layout="fill"></Image>
@@ -44,7 +44,7 @@ function EventCard(props) {
               <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
             </Link>
           ) : (
-            <Link legacyBehavior href={`/events/${name}?` + `index=${no}`}>
+            <Link legacyBehavior href={`/events/${name}?` + `index=${id}`}>
               <a className={`text ${styles.DetailsMore}`}>Learn More {">"}</a>
             </Link>
           )}
