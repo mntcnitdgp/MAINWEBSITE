@@ -1,4 +1,5 @@
 import { year0 } from "../../data/team/year0";
+import { year1 } from "../../data/team/year1";
 import { year2 } from "../../data/team/year2";
 import { year3 } from "../../data/team/year3";
 import { year5 } from "../../data/team/year5";
@@ -234,17 +235,17 @@ const Team = () => {
           Third Year
         </span>
 
-        {/* <span
+        <span
           className={
-            year == 2 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            year == 1 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
-            setYear(2);
-            setMemberList(year2);
+            setYear(1);
+            setMemberList(year1);
           }}
         >
           Second Year
-        </span> */}
+        </span>
 
         <span
           className={
