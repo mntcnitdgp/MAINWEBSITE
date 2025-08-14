@@ -212,7 +212,7 @@ const Team = () => {
 
         <span
           className={
-            year == 3 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            year == 4 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
           }
           onClick={() => {
             setYear(3);
