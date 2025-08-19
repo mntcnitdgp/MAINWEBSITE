@@ -138,18 +138,18 @@ export const year2 =
         {
             id: 18,
             name: "Utsav Biswas",
-            avatar: `${relativePath}../male.png`,
-            position: "Event & Ideation",
-            insta: "",
+            avatar: `${relativePath}utsav.jpg`,
+            position: "Video Editor",
+            insta: "https://www.instagram.com/curious_utsav3?utm_source=qr&igsh=dGJnd3dxNzExdDY4",
             link: "",
         },
         {
             id: 19,
-            name: "Dibeyendu Guru",
-            avatar: `${relativePath}../male.png`,
+            name: "Dibyendu Guru",
+            avatar: `${relativePath}dibyendu.jpg`,
             position: "Event & Ideation",
-            insta: "",
-            link: "",
+            insta: "http://instagram.com/dibyenduguru/",
+            link: "http://linkedin.com/in/dibyendu-guru-nitdgp",
         },
         
         // {
