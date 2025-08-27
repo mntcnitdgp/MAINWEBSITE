@@ -96,5 +96,13 @@ export const year1 =
             position: "Web developer",
             insta: "https://www.instagram.com/sai_krishna_.2?igsh=MmpjcWo3NXlvazNo",
             link: "https://www.linkedin.com/in/sai-krishna-368328324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+            id: 13,
+            name: "Arpita Dash",
+            avatar: `${relativePath}arpita.jpg`,
+            position: "Graphic Designing",
+            insta: "",
+            link: "",
         }
     ]
