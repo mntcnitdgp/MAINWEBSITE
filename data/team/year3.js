@@ -109,17 +109,9 @@ export const year3 =
     insta: "https://instagram.com/__sneha_singh19?igshid=MzNlNGNkZWQ4Mg==",
     link:"https://www.linkedin.com/in/sneha-singh-71aa5a268",
   },
+ 
   {
     id: 13,
-    name: "Subhajeet Baskey",
-    avatar: `${relativePath}subhajeet.jpg`,
-    position: "RnD Head",
-    fb: "https://www.facebook.com/profile.php?id=100093166591910",
-    insta: "https://www.instagram.com/subhajeet575/?hl=en",
-    link: "https://www.linkedin.com/in/subhajeet-baskey-361202250/",
-  },
-  {
-    id: 14,
     name: "Aditi Mahato",
     avatar: `${relativePath}aditi.jpg`,
     position: "Event & ATH Head",
@@ -128,7 +120,7 @@ export const year3 =
     link:"https://www.linkedin.com/in/aditi-mahto-581bb3278",
   },
   {
-    id: 15,
+    id: 14,
     name: "Soumen Sen",
     avatar: `${relativePath}soumen.jpg`,
     position: "Finance Head",
