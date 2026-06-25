@@ -60,12 +60,12 @@ const Footer = () => {
 
             <a
               className={styles.FooterFilledLinks}
-              href="tel:+918900991919"
+              href="tel:+918617362907"
               target="_blank"
             >
               <PhoneLogo color="hsla(0, 0%, 100%, 0.7)" />
               <span className={styles.FooterFilledLink}>
-                +91-8900991919 (Shivam)
+                +91-8617362907 (Soham)
               </span>
             </a>
 
