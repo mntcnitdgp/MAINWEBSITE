@@ -13,7 +13,7 @@ export const year3 =
   {
     id: 2,
     name: "Soham Bhattacharya",
-    avatar: `${relativePath}soham.jpg`,
+    avatar: `${relativePath}soham2.jpeg`,
     position: "General Secretary",
     fb:"https://www.facebook.com/iamSohamB",
     insta: "https://instagram.com/iamsohamb?igshid=NGExMmI2YTkyZg==",
