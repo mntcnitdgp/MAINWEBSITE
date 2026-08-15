@@ -60,7 +60,7 @@ export const year1 =
         {
             id: 8,
             name: "Jyoti Soni",
-            avatar: `${relativePath}jyoti.jpg`,
+            avatar: `${relativePath}jyoti.jpeg`,
             position: "Web Developer",
             insta: "https://www.instagram.com/jyotisoni7707?igsh=ZzA3cWx3NmVrY21o",
             link: "https://www.linkedin.com/in/jyoti-soni-b279a93a4?utm_source=share_via&utm_content=profile&utm_medium=member_android",
