@@ -6,6 +6,7 @@ import { year5 } from "../../data/team/year5";
 import { year4 } from "../../data/team/year4";
 import { year6 } from "../../data/team/year6";
 import { year7 } from "../../data/team/year7";
+import { year8 } from "../../data/team/year8";
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from '../../firebase';
@@ -108,7 +109,7 @@ const Team = () => {
           >
             <AluminiCard
 
-              batch="Batch Of 2021-25"
+              batch="Batch Of 2022-26"
 
             />
           </span>
@@ -124,7 +125,7 @@ const Team = () => {
           >
             <AluminiCard
 
-              batch="Batch Of 2020-24"
+              batch="Batch Of 2021-25"
 
             />
           </span>
@@ -140,7 +141,7 @@ const Team = () => {
           >
             <AluminiCard
 
-              batch="Batch Of 2019-23"
+              batch="Batch Of 2020-24"
 
             />
           </span>
@@ -152,6 +153,23 @@ const Team = () => {
             onClick={() => {
               setYear(7);
               setMemberList(year7);
+            }}
+          >
+
+            <AluminiCard
+
+              batch="Batch Of 2019-23"
+
+            />
+          </span>
+
+          <span
+            className={
+              year == 5 ? `${styles.Year} ${styles.YearActive}` : `${styles.Year}`
+            }
+            onClick={() => {
+              setYear(8);
+              setMemberList(year8);
             }}
           >
 
