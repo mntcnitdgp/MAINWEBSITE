@@ -5,10 +5,10 @@ function AluminiCard({
 }) {
   return (
     <div className={styles.TeamCard}>
-     
+    
       <div className={styles.TeamCardDetailsContainer}>
         <h3 className={styles.DetailsName}>{batch}</h3>
-       
+      
 
       
       </div>
