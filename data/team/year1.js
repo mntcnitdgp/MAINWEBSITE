@@ -111,4 +111,12 @@ export const year1 =
             insta: "https://www.instagram.com/budhhpriy1705?igsh=MWZlbGVrcm12aWpwZg==&igsi=MWZlbGVrcm12aWpwZg==",
             link: "https://www.linkedin.com/in/gautam-undefined-2a602442a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         },
+        {
+            id: 15,
+            name: "Aditya",
+            avatar: `${relativePath}aditya.webp`,
+            position: "Graphic Designer",
+            insta: "https://www.instagram.com/adixtya15?igsh=MTlxdGdmYjBia3Z6YQ==&igsi=MTlxdGdmYjBia3Z6YQ==",
+            link: "https://www.linkedin.com/in/aditya-kumar-76779a393?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        },
     ]

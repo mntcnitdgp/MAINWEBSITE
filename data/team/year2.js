@@ -12,7 +12,7 @@ export const year2 =
         {
             id: 2,
             name: "Ipshita Mandal",
-            avatar: `${relativePath}ipshita.jpg`,
+            avatar: `${relativePath}ipshita.jpeg`,
             position: "Web developer",
             insta: "https://www.instagram.com/ipsh.ita___/",
             link: "https://www.linkedin.com/in/ipshita-mandal-680729317/",
